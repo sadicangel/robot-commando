@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "RobotCommando",
+  "display": "standalone",
+  "name": "RobotCommando",
+  "short_name": "RobotCommando",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
