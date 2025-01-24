@@ -14,6 +14,9 @@ end_of_line = crlf
 trim_trailing_whitespace = true
 insert_final_newline = true
 charset = utf-8
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
+indent_size = 4
 
 ##########################################
 # File Extension Settings
@@ -41,7 +44,7 @@ end_of_line = lf
 indent_size = 4
 
 [*.xaml]
-indent_size = 4
+indent_size = 2
 charset = utf-8-bom
 
 [*.xml]
@@ -152,16 +155,17 @@ dotnet_style_prefer_inferred_tuple_names = true:suggestion
 csharp_indent_labels = one_less_than_current
 csharp_using_directive_placement = outside_namespace:silent
 csharp_prefer_simple_using_statement = true:suggestion
-csharp_prefer_braces = true:silent
-csharp_style_namespace_declarations = file_scoped:warning
+csharp_prefer_braces = when_multiline:silent
+csharp_style_namespace_declarations = file_scoped:suggestion
 csharp_style_prefer_method_group_conversion = true:silent
 csharp_style_prefer_top_level_statements = true:silent
 csharp_style_prefer_primary_constructors = true:suggestion
-csharp_style_expression_bodied_methods = false:silent
-csharp_style_expression_bodied_constructors = false:silent
-csharp_style_expression_bodied_operators = false:silent
-csharp_style_expression_bodied_properties = true:silent
-csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_methods = when_on_single_line:suggestion
+csharp_style_expression_bodied_constructors = when_on_single_line:silent
+csharp_style_expression_bodied_operators = when_on_single_line:silent
+csharp_style_expression_bodied_properties = false:silent
+csharp_style_expression_bodied_indexers = false:silent
 csharp_style_expression_bodied_accessors = true:silent
-csharp_style_expression_bodied_lambdas = true:silent
-csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_expression_bodied_lambdas = true:suggestion
+csharp_style_expression_bodied_local_functions = when_on_single_line:suggestion
+csharp_prefer_system_threading_lock = true:suggestion

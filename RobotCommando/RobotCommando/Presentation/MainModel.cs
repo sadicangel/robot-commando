@@ -17,12 +17,14 @@ public partial record MainModel
 
     public string? Title { get; }
 
-    public IState<string> Name => State<string>.Value(this, () => string.Empty);
+    public IState<Player> Player => State<Player>.Value(this, () => new Player("Player"));
 
-    public async Task GoToSecond()
+    public async ValueTask Roll()
     {
-        var name = await Name;
-        await _navigator.NavigateViewModelAsync<SecondModel>(this, data: new Entity(name!));
+        await Player.UpdateAsync(player => new Player(player?.Name ?? "Player"));
     }
+
+    public async ValueTask Start() =>
+        await _navigator.NavigateViewModelAsync<SecondModel>(this, data: await Player);
 
 }
