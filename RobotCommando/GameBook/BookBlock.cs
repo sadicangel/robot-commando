@@ -1,5 +1,3 @@
-#nullable enable
-using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace RobotCommando.GameBook;
@@ -7,17 +5,13 @@ namespace RobotCommando.GameBook;
 [XmlRoot("block")]
 public sealed class BookBlock
 {
-    [XmlAttribute("id")]
-    public int Id { get; set; }
+    [XmlAttribute("id")] public int Id { get; set; }
 
-    [XmlAttribute("location")]
-    public WorldLocation Location { get; set; }
+    [XmlAttribute("location")] public WorldLocation Location { get; set; }
 
-    [XmlElement("text")]
-    public string Text { get; set; } = string.Empty;
+    [XmlElement("text")] public string Text { get; set; } = string.Empty;
 
-    [XmlElement("revisitText")]
-    public string? RevisitText { get; set; }
+    [XmlElement("revisitText")] public string? RevisitText { get; set; }
 
     [XmlArray("choices")]
     [XmlArrayItem("choice")]

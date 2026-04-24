@@ -1,7 +1,3 @@
-#nullable enable
-using System;
-using System.Collections.Generic;
-
 namespace RobotCommando.GameBook;
 
 public sealed class GameState

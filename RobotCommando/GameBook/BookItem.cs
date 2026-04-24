@@ -1,18 +1,14 @@
-#nullable enable
 using System.Xml.Serialization;
 
 namespace RobotCommando.GameBook;
 
 public sealed class BookItem : BookEntity
 {
-    [XmlElement("onAcquire")]
-    public ItemTrigger? OnAcquire { get; set; }
+    [XmlElement("onAcquire")] public ItemTrigger? OnAcquire { get; set; }
 
-    [XmlElement("onDiscard")]
-    public ItemTrigger? OnDiscard { get; set; }
+    [XmlElement("onDiscard")] public ItemTrigger? OnDiscard { get; set; }
 
-    [XmlElement("onUse")]
-    public ItemTrigger? OnUse { get; set; }
+    [XmlElement("onUse")] public ItemTrigger? OnUse { get; set; }
 
     public bool ShouldSerializeOnAcquire() => OnAcquire is not null;
 
