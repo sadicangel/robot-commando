@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="284" location="City of Storms">
+  <text>Flying over the sea-coast, you see nothing of interest except a huge herd of dinosaurs. They are clustered around something, but you cannot make out what it is. If you return to the city, turn to 144 and make another choice. If your robot can change shape to a land-going form, you may Jand and investigate the sea-coast: turn to 8. You realize that a flying robot is the wrong type for jungle exploration. What will you do:</text>
+  <choices>
+    <choice to="144">
+      <text>If you return to the city.</text>
+    </choice>
+    <choice to="8">
+      <text>and make another choice. If your robot can change shape to a land-going form, you may Jand and investigate the sea-coast.</text>
+    </choice>
+  </choices>
+</block>

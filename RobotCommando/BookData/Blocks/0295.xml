@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="295" location="City of Industry">
+  <text>While you are arguing with the machine, it picks you up—none too gently— and tosses you back into the lift. Lose STAMINA point. If you leave the floor, turn to 333 and make a new selection. If you attack the robot, turn to 142.</text>
+  <choices>
+    <choice to="333">
+      <text>If you leave the floor.</text>
+    </choice>
+    <choice to="142">
+      <text>and make a new selection. If you attack the robot.</text>
+    </choice>
+  </choices>
+</block>

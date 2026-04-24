@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="40" location="City of Knowledge">
+  <text>You have returned to the City of Knowledge. In the distance, you see the towers of the College of Medicine. But you also see a Karossean air-fighter, clos ing fast! If you know a password With which to challenge the enemy, turn to that number. If you do not know the password, turn to 305.</text>
+  <choices>
+    <choice to="305">
+      <text>If you do not know the password.</text>
+    </choice>
+  </choices>
+</block>

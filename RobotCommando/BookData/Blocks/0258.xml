@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="258" location="City of Industry">
+  <text>The dinosaur is not satisfied with its victory. Ripping and tearing. it demolishes your robot completely. It knows that the robot isn't good to eat, but it smells meat somewhere! Test your Luck. If you are Lucky, turn to 282. If you are Unlucky, turn to 391.</text>
+  <choices>
+    <choice to="282">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="391">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="70" location="Farm">
+  <text>Now what are you going to do? You know that, although there are probably Karosseans every­ where, their base is at the Capital City. But you can't just charge in there and attack them with your little robot! You must prepare well before you make your move. Fortunately, there are many cities in Thalos. You will be able to search the whole country for help, if need be, before you confront the invaders. Two large cities are fairly close.</text>
+  <choices>
+    <choice to="93">
+      <text>Got to the city of Knowledge.</text>
+    </choice>
+    <choice to="209">
+      <text>Go to the city of Industry.</text>
+    </choice>
+  </choices>
+</block>

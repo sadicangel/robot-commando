@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="86" location="Capital City">
+  <text>You summon your courage and confront the Powers Of Nothingness. You may not know the meaning of life, but you know you have a mission. And suddenly, nothing feels strange. You stalk out of the Temple of Nothingness. You have gained nothing... and lost nothing. Restore the LUCK point that you lost when Testing your Luck, and return to 166.</text>
+  <choices>
+    <choice to="166">
+      <text>Restore the LUCK point that you lost when Testing your Luck, and.</text>
+    </choice>
+  </choices>
+</block>

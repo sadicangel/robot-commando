@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="71" location="Capital City">
+  <text>You decide to go on foot. If you possess the Cloak of Invisibility and have not used it, you may use it now: turn to 106. If you have already used it, do not possess it, or if you simply choose not to use it, turn to 134.</text>
+  <choices>
+    <choice to="134">
+      <text>. If you have already used it, do not possess it, or if you simply choose not to use it.</text>
+    </choice>
+  </choices>
+</block>

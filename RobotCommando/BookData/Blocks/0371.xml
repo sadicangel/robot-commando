@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="371" location="City of Storms">
+  <text>If your robot is Very Fast or Fast (ground speed only), turn to 196. If it is Medium or Slow, turn to 318.</text>
+  <choices>
+    <choice to="196">
+      <text>If your robot is Very Fast or Fast (ground speed only).</text>
+    </choice>
+    <choice to="318">
+      <text>. If it is Medium or Slow.</text>
+    </choice>
+  </choices>
+</block>

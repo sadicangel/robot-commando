@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="275" location="Capital City">
+  <text>Your battle has caused great confusion. Stray shots are wreaking havoc among the Karosseans and their lesser robots. But now a group of sleek fighter-craft swoop out Of the sky to challenge you. If you have the Tangler Field and wish to activate it, turn to If you do not have this device (or do not wish to use it), Turn to 326.</text>
+  <choices>
+    <choice to="326">
+      <text>If you have the Tangler Field and wish to activate it, turn to If you do not have this device (or do not wish to use it).</text>
+    </choice>
+  </choices>
+</block>

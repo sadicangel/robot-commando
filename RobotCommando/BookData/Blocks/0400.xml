@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="400" location="Inherit">
+  <text>You fight the Ankylosaurus. This small but powerful dinosaur is studded with armour-plate. Its tail is tipped with a huge ball of bone which it swings like a mace. ANKYLOSAURUS ARMOUR 12 SPEED Slow SKtLL9 SPECIAL ABILITIES: If your robot has two or four legs and the Ankylosaurus hits you, it will knock you Off your feet. This does no extra damage. However, on the next turn, if you hit the Ankylosaurus you will do it no damage. You have only defended yourself against it. If you Escape. turn to 115. If you defeat ghe Ankylosaurus, turn to 56. If your robot is destroyed, you are Jost in the jungle and your adventure is over.</text>
+  <choices>
+    <choice to="56">
+      <text>. If you defeat ghe Ankylosaurus.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="225" location="City of the Jungle">
+  <text>You go south through the deserted city. Small lizards scuttle about. You remember that you are not far from the edge of the jungle here. Ahead you see a long, gleaming shape, like a huge length of mottled pipe. What will you do: Investigate it? Turn to 208 Turn around and search the north (if you have not done so already)? Turn to 16 Abandon your city exploration? Turn to 137</text>
+  <choices>
+    <choice to="208">
+      <text>Investigate it?</text>
+    </choice>
+    <choice to="16">
+      <text>Turn around and search the north (if you have not done so already)?</text>
+    </choice>
+    <choice to="137">
+      <text>Abandon your city exploration?</text>
+    </choice>
+  </choices>
+</block>

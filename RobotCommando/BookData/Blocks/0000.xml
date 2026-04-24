@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="0" location="Farm">
+  <text>You are a rancher in the kingdom of Thalos. Your people (and your enemies, the savage Karosseans) have built huge robots for many purposes. With a skilled operator at the controls, a robot can replace a hundred of men - to mine ore, erect buildings, - move cargo, or just about anything else.&#xD;
+&#xD;
+The robots are also your best defence against the vicious dinosaurs of Thalos. Many years ago, the great lizards caused much destruction. But now mankind has learned to tame the beasts, and many of the folk of Thalos - like you - are dinosaur ranchers. The ranchers use Mark 5A utility robots, known as 'cowboys', to herd the dinosaurs! But wild dinosaurs are still dangerous, and all robots have guns to defend themselves.&#xD;
+&#xD;
+Early one morning, you are just finishing your breakfast when one of your assistants staggers into the kitchen. 'So sleepy' he says. Then he sits down at the table, pillows his head on his arms and goes to sleep!&#xD;
+&#xD;
+You shake him, but you cannot rouse him. Alarmed, you go for help. But everyone else you see is asleep.&#xD;
+&#xD;
+You rush back inside and switch on a radio. But you can get only scraps of messages: 'Everybody asleep... Karossean attack... can't stay awake.. ' Soon there is nothing to be heard. You go outside again and pour cold water on several of your friends - but they just snore and mutter.&#xD;
+&#xD;
+Then you hear a rumble overhead, like thunder out of the clear sky. You look up. Streaking overhead is the unmistakable shape of a Karossean robojet!&#xD;
+&#xD;
+You realize what must have happened. Somehow, the Karosseans have managed to put everyone in Thalos to sleep... everyone but you. For some reason, you are immune.&#xD;
+&#xD;
+Over the next few hours, you listen to the enemy communications and piece together the story. In the past, the Karosseans had steered clear of Thalos; with its brave warriors and its many robots, your land was too tough to attack. But Minos, their leader, hit on a clever plan. His spies spread capsules of a virulent sleeping sickness - and before long, all Thalos was asleep!&#xD;
+&#xD;
+Soon you hear a broadcast from Minos himself, talking to his invading troops. An elite force of a thousand warriors, with hundreds of robots, has invaded Thalos. But this is only the beginning. With the population helpless, Minos plans to loot your country. Its riches and its robots will be his; its people will be sold as slaves! And only you can stop it...&#xD;
+&#xD;
+You know what you have to do. You walk back inside and buckle your father's old sword to your waist. Food will be no problem - you know supplies will be easy to find - but you pick up a supply of five medikits. Then you head for the robot parking-area. Alone, you must defeat the Karossean invaders and free your land!</text>
+  <choices>
+    <choice to="1">
+      <text>Start the adventure!</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="163" location="City of Storms">
+  <text>In the Weather Bureau, you find banks of humming instruments. You also find a printout that explains the flags you saw outside. Apparently a huge storm is due to hit Thalos in a few hours. It will come ashore at the City of Worship, and die away as it rolls over the rest Of the land. If you possess a flask of Potion, turn to 213. If not, Turn to 144.</text>
+  <choices>
+    <choice to="213">
+      <text>If you possess a flask of Potion.</text>
+    </choice>
+    <choice to="144">
+      <text>. If not.</text>
+    </choice>
+  </choices>
+</block>

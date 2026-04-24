@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="25" location="City of Industry">
+  <text>This is the Robot Experimental Centre. You know little about the Centre except its name, but you have heard rumours that top-secret work is being done here.</text>
+  <choices>
+    <choice to="251">
+      <text>Keep exploring the centre.</text>
+      <condition>context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="333">
+      <text>Keep exploring the centre.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+  </choices>
+</block>

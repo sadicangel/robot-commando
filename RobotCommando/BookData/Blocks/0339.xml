@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="339" location="Capital City">
+  <text>You decide to visit the Temple of Glory. After all, glory is what you will earn if you can drive off the Karosseans! The temple is large and stately, with multicoloured mosaics of battle scenes on the outer walls. You enter and approach the altar. You feel the presence Of the Powers Of Glory very strongly. A voice seems to ring in your head: 'Are you willing to risk all for glory?' If your reply is 'Yes', turn to 286. If it is 'No', turn to 149.</text>
+  <choices>
+    <choice to="286">
+      <text>'Are you willing to risk all for glory?' If your reply is 'Yes'.</text>
+    </choice>
+    <choice to="149">
+      <text>. If it is 'No'.</text>
+    </choice>
+  </choices>
+</block>

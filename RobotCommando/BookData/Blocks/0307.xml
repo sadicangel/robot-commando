@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="307" location="City of Industry">
+  <text>The lift shoots quickly upward. The force of its acceleration almost knocks you down — and it continues for a long time! Suddenly the lift doors pop open. You are in the lobby Of the Robot Experimental Centre. If you cross the square and re-enter your robot, turn to 206. If you investigate the Robot Experimental Centre, turn to 25.</text>
+  <choices>
+    <choice to="206">
+      <text>If you cross the square and re-enter your robot.</text>
+    </choice>
+    <choice to="25">
+      <text>. If you investigate the Robot Experimental Centre.</text>
+    </choice>
+  </choices>
+</block>

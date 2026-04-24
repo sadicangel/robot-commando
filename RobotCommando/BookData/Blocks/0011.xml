@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="11" location="Capital City">
+  <text>The hospital is crawling with Karosseans, both soldiers and doctors. By hiding and skulking, you manage to snatch two medikits. You cannot risk staying longer.</text>
+  <choices>
+    <choice to="308">
+      <text>Slip out of the hospital and away.</text>
+    </choice>
+  </choices>
+</block>

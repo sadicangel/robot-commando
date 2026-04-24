@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="14" location="City of Knowledge">
+  <text>You stay in your robot and travel to the huge Thalian Museum. This is the largest museum in all the land; it is full of exhibits on every imaginable subject.&#xD;
+&#xD;
+As you approach the museum, you keep a sharp watch, but you see no enemies. When you arrive, you park your robot in front of the building and walk up the steps, past a pair of carved stone dragons. The museum attendant is snoring, but the little Information Robot is alert. 'Can I help you?' it asks. What will you do:</text>
+  <revisitText>You stay in your robot and travel to the huge Thalian Museum. This is the largest museum in all the land; it is full of exhibits on every imaginable subject.</revisitText>
+  <choices>
+    <choice to="160">
+      <text>Keep going to the museum.</text>
+      <condition>context.Page.IsVisited</condition>
+    </choice>
+    <choice to="36">
+      <text>Ask for military information.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="80">
+      <text>Ask for information on sleeping sickness.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="58">
+      <text>Ask for information on the Karosseans.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="102">
+      <text>Leave the museum.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+  </choices>
+</block>

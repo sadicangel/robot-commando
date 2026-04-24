@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="174" location="City of the Jungle">
+  <text>You cautiously search through the building. Test your Luck. If you are Lucky, turn to 259. If you are Unlucky, turn to 114.</text>
+  <choices>
+    <choice to="259">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="114">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

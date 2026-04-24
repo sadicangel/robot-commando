@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="147" location="City of Knowledge">
+  <text>You are leaving the College of War. Where will you go: The College of Medicine? Turn to 54 Turn to The Thalian Museum? The Dinosaur Preserve? Turn to 66 Another city? Turn to 380</text>
+  <choices>
+    <choice to="54">
+      <text>The College of Medicine?</text>
+    </choice>
+    <choice to="66">
+      <text>Turn to The Thalian Museum? The Dinosaur Preserve?</text>
+    </choice>
+    <choice to="380">
+      <text>Another city?</text>
+    </choice>
+  </choices>
+</block>

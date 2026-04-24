@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="65" location="City of Knowledge">
+  <text>You park your robot beside the door and enter the College ot War. You are alert for other Karosseans, but apparently the sentry outside was the only one. The halls and rooms are littered with beribboned generals, fast asleep. Following the signs, you head for the library to see what you can learn. But, just as you get there, you hear a roaring sound from outside. Looking out of the window, you see three sleek fighter-planes hurtle down, sprout legs and turn into robots like the sentry outside. The Karosseans are arriving in force! You quickly look around the room. There are sev eral volumes on the counter, as though someone was trying to check them out just before the sleep ing sickness hit. The books are too large to carry, and you have time to look at only one. Which title will you choose: The City Of the Gnardians? Emergency Procedures? Yarossean Military Rot.vts?</text>
+  <choices>
+    <choice to="256">
+      <text>The City Of the Gnardians?</text>
+    </choice>
+    <choice to="300">
+      <text>Emergency Procedures?</text>
+    </choice>
+    <choice to="268">
+      <text>Yarossean Military Rot.vts?</text>
+    </choice>
+  </choices>
+</block>

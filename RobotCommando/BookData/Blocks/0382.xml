@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="382" location="Unknown">
+  <text>3S2 Lose 2 LUCK points for abandoning the sleepers to the tender mercies Of the hungry dinosaur. If you have not already explored the south of the city, you may do so (turn to 225). Otherwise, turn to 137,</text>
+  <choices>
+    <choice to="225">
+      <text>If you have not already explored the south of the city, you may do so (.</text>
+    </choice>
+    <choice to="137">
+      <text>). Otherwise.</text>
+    </choice>
+  </choices>
+</block>

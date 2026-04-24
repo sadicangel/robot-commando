@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="124" location="City of Knowledge">
+  <text>'Oh, very good', the little robot responds. 'We have a wonderful exhibition on Karossean history and culture in Hall Epsilon'.</text>
+  <choices>
+    <choice to="124">
+      <text>Go to Hall Epsilon to study Karossean history.</text>
+    </choice>
+    <choice to="14">
+      <text>Ask something more up to date.</text>
+    </choice>
+  </choices>
+</block>

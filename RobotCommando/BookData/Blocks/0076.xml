@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="76" location="Capital City">
+  <text>You continue through the enemy encampment. Soon you can see the wide barrier separating the main encampment from the Karossean officers' territory. There are not many robots near by, but the ones you can see are formidable. One of them signals you. 'Halt! What's the password?' What will you do: Reply 'Eighty-eight'? Attack immediately? Reply 'Minos'?</text>
+  <choices>
+    <choice to="120">
+      <text>Reply 'Eighty-eight'?</text>
+    </choice>
+    <choice to="264">
+      <text>Attack immediately?</text>
+    </choice>
+    <choice to="145">
+      <text>Reply 'Minos'?</text>
+    </choice>
+  </choices>
+</block>

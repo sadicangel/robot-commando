@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="23" location="City of Pleasure">
+  <text>Unfortunately, this experimental craft is different from all other robots you have handled. Its Combat Bonus of 2 does not count for you until you have been through two combats with it.</text>
+  <choices>
+    <choice to="378">
+      <text>Leave the City of Pleasure.</text>
+    </choice>
+  </choices>
+</block>

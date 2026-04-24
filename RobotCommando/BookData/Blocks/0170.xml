@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="170" location="City of the Jungle">
+  <text>Each Tripod will have a separate attack on you in each Attack Round, but you must choose which of the two you will fight. Attack your chosen foe each round as in a normal battle. Against the other you must throw for your Attack Strength in the normal way, but even if your Attack Strength is greater, you will not wound it. You must just count this as though you have defended yourself from it. However, if its Attack Strength is greater, it will damage your robot in the usual way. 170 How are you equipped for this trip: A flying robot? Turn to 285 A non-flying robot? Turn to 356 NO robot at all? Turn to 64</text>
+  <choices>
+    <choice to="285">
+      <text>A flying robot?</text>
+    </choice>
+    <choice to="356">
+      <text>A non-flying robot?</text>
+    </choice>
+    <choice to="64">
+      <text>NO robot at all?</text>
+    </choice>
+  </choices>
+</block>

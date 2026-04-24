@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="239" location="City of the Jungle">
+  <text>You attack the Iguanodon that is blocking your way. This plant-eating dinosaur walks on two legs. It is tough and heavy-set, and its spiky 'thumbs' are good weapons. IGUANODON ARMOUR 5 SPEED Medium SXtLL9 You cannot Escape. If you defeat the Iguanodon, Turn to 137. If your robot's ARMOUR is reduced to o, turn to 306.</text>
+  <choices>
+    <choice to="137">
+      <text>If you defeat the Iguanodon.</text>
+    </choice>
+    <choice to="306">
+      <text>. If your robot's ARMOUR is reduced to o.</text>
+    </choice>
+  </choices>
+</block>

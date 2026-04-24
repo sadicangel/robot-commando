@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="7" location="Inherit">
+  <text>You give the proper countersign. The Karossean sentry radios you back: 'Pass, friend!' You have fooled him! You can go about your work.</text>
+  <choices>
+    <choice to="63">
+      <text>Keep exploring the City of Knowledge.</text>
+      <condition>context.Page.Location == WorldLocation.CityOfKnowledge</condition>
+    </choice>
+    <choice to="132">
+      <text>Keep exploring the City of Industry.</text>
+      <condition>context.Page.Location == WorldLocation.CityOfIndustry</condition>
+    </choice>
+    <choice to="222">
+      <text>Keep exploring the Capital City.</text>
+      <condition>context.Page.Location == WorldLocation.CapitalCity</condition>
+    </choice>
+  </choices>
+</block>

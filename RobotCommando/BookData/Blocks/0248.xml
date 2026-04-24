@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="248" location="Inherit">
+  <text>i ROBOTANK ARMOUR 18 SPEED Slow COMBAT BONUS +2 SPECIAL ABILITIES: The Robotank contains a special Sonic Gun in one hand. It cannot be used by any other robot. It may be fired once per combat turn, in addition to the Robotank's regular attack. However, it may be used only three times in all; then it is useless. When fired, the Sonic Gun is instantly deadly to unprotected humans. Against a robot, roll one die to see how many ARMOUR points the target loses. Against a dinosaur, roll two dice to see how many A points the target loses. There are three of these robots here. You may take one and leave (turn to 376), or, if you prefer, you may turn to 167 to take a faster robot. The spiky leaves reach towards you, and the flower stalk pulls back to show a fanged mouth. The plant is hungry! MAN-TRAP PLANT ARMOUR 8 SPEED see below SXILL9 Since the Man-trap Plant has caught hold of you before the battle starts, differences in Speed do not matter. You cannot Escape. If you defeat the Mantrap Plant, turn to 97. If it reduces your ARMOUR to o, turn to 141.</text>
+  <choices>
+    <choice to="376">
+      <text>You may take one and leave (.</text>
+    </choice>
+    <choice to="167">
+      <text>), or, if you prefer, you may.</text>
+    </choice>
+    <choice to="97">
+      <text>to take a faster robot. The spiky leaves reach towards you, and the flower stalk pulls back to show a fanged mouth. The plant is hungry! MAN-TRAP PLANT ARMOUR 8 SPEED see below SXILL9 Since the Man-trap Plant has caught hold of you before the battle starts, differences in Speed do not matter. You cannot Escape. If you defeat the Mantrap Plant.</text>
+    </choice>
+    <choice to="141">
+      <text>. If it reduces your ARMOUR to o.</text>
+    </choice>
+  </choices>
+</block>

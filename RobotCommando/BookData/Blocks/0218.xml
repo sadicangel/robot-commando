@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="218" location="Inherit">
+  <text>You realize that you have stumbled on to a topsecret military base. Frantically, you tell the computer what has happened. Test your Luck. If you are Lucky, turn to 337. If you are Unlucky, turn to 2.</text>
+  <choices>
+    <choice to="337">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="2">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

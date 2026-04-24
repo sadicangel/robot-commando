@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="112" location="City of Knowledge">
+  <text>In the 'Dinosaur Hunt' game, you are given a huge gun with which to fire at holograms representing dinosaurs of all kinds. You fire for a while, but the game is very unrealistic and boring. The dinosaurs seem to walk right past, unaware that they are targets. You leave in disgust. But, as you do, you notice a plaque by the door. It reads, in part, this game is based on the prototype "Cloak of Invisibility" device, Model 3, now being tested at the Dinosaur Preserve.' Very interesting! If you want to play another game, turn to 288. If you would rather leave the arcade, turn to 165.</text>
+  <choices>
+    <choice to="288">
+      <text>If you want to play another game.</text>
+    </choice>
+    <choice to="165">
+      <text>. If you would rather leave the arcade.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="330" location="Capital City">
+  <text>Minos draws a huge, jewelled sword. You know he did not become Tyrant of Karossea by being soft or weak. But you didn't get this far by being weak, either. 'Defend yourself, Karossean!' you shout. A murmur — could it be approval? — rises from the watching officers. You battle Minos — to the death! MINOS SKILL 12 STAMINA 12 If you win, turn to 355.</text>
+  <choices>
+    <choice to="355">
+      <text>MINOS SKILL 12 STAMINA 12 If you win.</text>
+    </choice>
+  </choices>
+</block>

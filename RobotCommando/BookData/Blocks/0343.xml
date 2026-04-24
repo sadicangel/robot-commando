@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="343" location="Capital City">
+  <text>They scatter in fear — all but one. He climbs into a large Construction Robot near by and pilots it towards you. If your own robot is faster than Slow, you can Escape (turn to 216). If you would rather fight, turn to 386.</text>
+  <choices>
+    <choice to="216">
+      <text>If your own robot is faster than Slow, you can Escape (.</text>
+    </choice>
+    <choice to="386">
+      <text>). If you would rather fight.</text>
+    </choice>
+  </choices>
+</block>

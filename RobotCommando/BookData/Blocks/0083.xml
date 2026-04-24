@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="83" location="City of Industry">
+  <text>You fit yourself into the Amplifier Device and acti vate it. When you take an experimental step, you jump a metre in the air! You reach for the instructions on a nearby table— and your fist goes through the table! You are delighted. You pick up a hundredkilo file cabinet With one hand, toss it in the air and catch it. Then you try to jump. Maybe you can go over tall buildings with a single bound! At that point, the suit goes out of control. You bounce off several walls, the floor, and once the ceiling. Eventually you come toa stop. You carefully deactivate the suit— then you just lie and rest. Lose 2 STAMINA points. Now you know why you never heard Of this experiment, and Why the tester in the sweatsuit looked so battered! If you leave the building, Turn to 206. If you want to investigate elsewhere, return to 333 and make a new choice.</text>
+  <choices>
+    <choice to="206">
+      <text>If you leave the building.</text>
+    </choice>
+    <choice to="333">
+      <text>. If you want to investigate elsewhere.</text>
+    </choice>
+  </choices>
+</block>

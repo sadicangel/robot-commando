@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="34" location="City of Industry">
+  <text>You decide to wander around and see what you can find. The streets are choked with huge vehicles, stranded where they fell or rolled when their pilots went to sleep. If you explore to the east, turn to 342. If you go west, turn to 195.</text>
+  <choices>
+    <choice to="342">
+      <text>If you explore to the east.</text>
+    </choice>
+    <choice to="195">
+      <text>. If you go west.</text>
+    </choice>
+  </choices>
+</block>

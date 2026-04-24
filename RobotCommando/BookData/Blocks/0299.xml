@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="299" location="City of Storms">
+  <text>t You aim your weapons over their heads and fire a few times, hoping to herd them away from you. This is a mistake! They panic and run in all directions —and the narrow beach funnels many of them right at you. You are in the path of several hundred tonnes of frightened dinosaur! What will you do: Take off (if your robot can also fly)? Turn to Try to outrun them? Turn to 371 Head for the water? Turn to 233</text>
+  <choices>
+    <choice to="371">
+      <text>Take off (if your robot can also fly)? Turn to Try to outrun them?</text>
+    </choice>
+    <choice to="233">
+      <text>Head for the water?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="359" location="City of Pleasure">
+  <text>If you know the Wasp Fighter's model number, turn to that reference number. If not, turn to 23.</text>
+  <choices>
+    <choice to="23">
+      <text>If not.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="392" location="City of Industry">
+  <text>Exp1oring the second floor, you find several proto typemodels of an odd-looking helmet. According to the files you read there, it is an Interface Transponder. While you wear one of these helmets, increase your skill by1 when using a robot. It does not affect other combats.</text>
+  <choices>
+    <choice to="333">
+      <text>Explore the Centre further.</text>
+    </choice>
+    <choice to="206">
+      <text>Leave the Centre and return to your robot outside.</text>
+    </choice>
+  </choices>
+  <items>
+    <item tag="Interface Transponder" name="Interface Transponder" icon="interface_transponder.png">
+      <description>+1 skill with robots.</description>
+      <onAcquire>
+        <effect>context.Player.RobotSkill++</effect>
+      </onAcquire>
+      <onDiscard>
+        <effect>context.Player.RobotSkill--</effect>
+      </onDiscard>
+    </item>
+  </items>
+</block>

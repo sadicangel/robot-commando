@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="55" location="Capital City">
+  <text>Your robot takes to the air, and you can soon see the enemy encampment. But the enemy air patrols are vigilant: two flying robots swoop to challenge you. They do not ask for a password, but open fire immediately. You must fight these two Myrmidon robots. The Myrmidon is the standard Karossean combat robot. It has two forms — humanoid and fighter-plane. These two are in plane form and will not try to change during the battle. First MYRMIDON ARMOURS SPEED Very Fast SKILL Second MYRMIDON ARMOUR 8 SPEED Very Fast SKILL 9 SPECIAL ABILITIES: None If you defeat the two Myrmidons, turn to 75. If they defeat you, turn to 125. If you Escape, turn to 98.</text>
+  <choices>
+    <choice to="75">
+      <text>None If you defeat the two Myrmidons.</text>
+    </choice>
+    <choice to="125">
+      <text>. If they defeat you.</text>
+    </choice>
+    <choice to="98">
+      <text>. If you Escape.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="75" location="Capital City">
+  <text>You have eliminated the two enemy robots— but at a cost. You are somewhat shaken up by the manoeuvres you have been forced to perform; lose STAMINA point. More foes are approaching rapidly. If you press on towards the encampment, turn to 245. If you retreat, turn to 98.</text>
+  <choices>
+    <choice to="245">
+      <text>If you press on towards the encampment.</text>
+    </choice>
+    <choice to="98">
+      <text>. If you retreat.</text>
+    </choice>
+  </choices>
+</block>

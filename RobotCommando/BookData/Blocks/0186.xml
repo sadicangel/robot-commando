@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="186" location="City of Knowledge">
+  <text>Not long ago you passed a village. There might be something useful there. If you want to check, turn to 13. If you want to press on to the City of Knowledge, turn to 361.</text>
+  <choices>
+    <choice to="13">
+      <text>If you want to check.</text>
+    </choice>
+    <choice to="361">
+      <text>. If you want to press on to the City of Knowledge.</text>
+    </choice>
+  </choices>
+</block>

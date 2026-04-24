@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="365" location="Capital City">
+  <text>You decide to visit the Temple of Peace. It is a relatively small building in this city of great temples, but easy to find; it is surrounded on all sides by a cool green park. You leave your robot at the edge of the park and walk towards the temple, rather than take a war machine to the Temple of Peace. Somehow, you feel certain that nothing will harm you. The temple is full of sleeping worshippers— but they all wear gentle smiles, and you are sure their dreams are untroubled. You feel moved to pray. What will you pray for: Complete peace? Strength in battle? Freedom?</text>
+  <choices>
+    <choice to="37">
+      <text>Complete peace?</text>
+    </choice>
+    <choice to="390">
+      <text>Strength in battle?</text>
+    </choice>
+    <choice to="107">
+      <text>Freedom?</text>
+    </choice>
+  </choices>
+</block>

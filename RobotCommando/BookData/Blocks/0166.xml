@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="166" location="City of Worship">
+  <text>You are in the City of Worship. If you have been to this city before, turn to 67 immediately. If this is your first visit to the city (regardless of how many parts of the city you have been to on this visit), then keep reading. The whole of this metropolis is devoted to shrines, temples, churches, cemeteries and the like. It is always a quiet place, but you have never before seen it this quiet. Only the call of a sea-bird breaks the stillness. An uneasy thought occurs to you. If you are the only ntalian awake, then the attention Of all the Powers must be focused on you personally. YourvisittotheCityofWorshipmightberather... interesting. What would you like to do: Visit one of the temples? Turn to 49 Fly over the city (if you have Turn to 227 a flying robot)? Go to another city? Turn to 244</text>
+  <choices>
+    <choice to="67">
+      <text>If you have been to this city before.</text>
+    </choice>
+    <choice to="49">
+      <text>immediately. If this is your first visit to the city (regardless of how many parts of the city you have been to on this visit), then keep reading. The whole of this metropolis is devoted to shrines, temples, churches, cemeteries and the like. It is always a quiet place, but you have never before seen it this quiet. Only the call of a sea-bird breaks the stillness. An uneasy thought occurs to you. If you are the only ntalian awake, then the attention Of all the Powers must be focused on you personally. YourvisittotheCityofWorshipmightberather... interesting. What would you like to do: Visit one of the temples?</text>
+    </choice>
+    <choice to="227">
+      <text>Fly over the city (if you have.</text>
+    </choice>
+    <choice to="244">
+      <text>a flying robot)? Go to another city?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="340" location="City of Industry">
+  <text>This area proves to be full of rusting, abandoned robots. At the other side of the vault is a huge lift. The control panel has three coloured buttons, but none is marked. The lift containsa huge robot; in the dimness, you cannot make out what type it is, but it has treads and claws. If you enter the lift and push a button at random, turn to 269. If you take the small corridor beside the lift, Turn to 398.</text>
+  <choices>
+    <choice to="269">
+      <text>If you enter the lift and push a button at random.</text>
+    </choice>
+    <choice to="398">
+      <text>. If you take the small corridor beside the lift.</text>
+    </choice>
+  </choices>
+</block>

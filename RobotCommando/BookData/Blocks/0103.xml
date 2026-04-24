@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="103" location="Capital City">
+  <text>The enemy encampment is well patrolled. You are seized by Karossean guards. If you know something that might help you now, turn to the reference number that came with that information. OtherWise, turn to 228.</text>
+  <choices>
+    <choice to="228">
+      <text>OtherWise.</text>
+    </choice>
+  </choices>
+</block>

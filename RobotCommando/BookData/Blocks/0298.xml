@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="298" location="City of the Jungle">
+  <text>You are leaving the City of the Jungle. Where will you go: The City of Industry? Turn to 265 The City of Knowledge? Turn to 361 The City of Pleasure? Turn to 165 The Capital City? Turn to 30S</text>
+  <choices>
+    <choice to="265">
+      <text>The City of Industry?</text>
+    </choice>
+    <choice to="361">
+      <text>The City of Knowledge?</text>
+    </choice>
+    <choice to="165">
+      <text>The City of Pleasure?</text>
+    </choice>
+    <choice to="30">
+      <text>The Capital City?</text>
+    </choice>
+  </choices>
+</block>

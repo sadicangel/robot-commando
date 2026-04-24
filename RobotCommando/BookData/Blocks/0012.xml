@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="12" location="Capital City">
+  <text>You are now flying above the city. The storm is incredibly violent. You cannot control your flyer! You have to test your skill.</text>
+  <choices>
+    <choice to="-1">
+      <text>Test your skill!</text>
+      <effect>context.Page.Choices[0].To = context.Die.Roll(2) &gt; context.Player.Skill ? 279 : 316</effect>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="145" location="Capital City">
+  <text>sentry is not fooled. He fires immediately. Lose 2 ARMOUR points and turn to 27.</text>
+  <choices>
+    <choice to="27">
+      <text>Lose 2 ARMOUR points and.</text>
+    </choice>
+  </choices>
+</block>

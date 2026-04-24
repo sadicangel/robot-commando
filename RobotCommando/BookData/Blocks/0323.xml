@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="323" location="Capital City">
+  <text>The doctors pick you up and hoist you between them to a treatment room. Soon a robot surgeon is working on you. Restore your STAMINA to its Initial level. As soon as you are left alone in a recovery room, you take your leave. Unfortunately, your uniform is gone. You borrow suitable clothes from a sleeping man in the hallway and continue. If you look for information on sleeping sickness, turn to 395. If you leave the hospital and return to your robot, turn to 308.</text>
+  <choices>
+    <choice to="395">
+      <text>If you look for information on sleeping sickness.</text>
+    </choice>
+    <choice to="308">
+      <text>. If you leave the hospital and return to your robot.</text>
+    </choice>
+  </choices>
+</block>

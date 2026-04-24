@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="228" location="Capital City">
+  <text>If you try to bluff your way out of this situation, turn to 267. If you try to fight your way past, turn to 283.</text>
+  <choices>
+    <choice to="267">
+      <text>If you try to bluff your way out of this situation.</text>
+    </choice>
+    <choice to="283">
+      <text>. If you try to fight your way past.</text>
+    </choice>
+  </choices>
+</block>

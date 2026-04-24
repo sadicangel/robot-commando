@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="366" location="City of the Jungle">
+  <text>You decide to explore the city. If you explore the northern portion, turn to 16. If you explore to the south, turn to 225.</text>
+  <choices>
+    <choice to="16">
+      <text>If you explore the northern portion.</text>
+    </choice>
+    <choice to="225">
+      <text>. If you explore to the south.</text>
+    </choice>
+  </choices>
+</block>

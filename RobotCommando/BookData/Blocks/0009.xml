@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="9" location="City of Knowledge">
+  <text>There are several robots here, all identical. They are similar to the Cowboy Robot that you used on your ranch, but more heavily armed and armoured, for use against the largest dinosaurs. These Super-Cowboy Robots move by walking. Each has weapons almost as powerful as those of a war robot. You may take one of these robots if you like.</text>
+  <choices>
+    <choice to="129">
+      <text>Get in your robot and cross the electro-fence.</text>
+    </choice>
+    <choice to="85">
+      <text>Go to the Administrative Building.</text>
+    </choice>
+    <choice to="150">
+      <text>Leave the Dinosaur Preserve.</text>
+    </choice>
+  </choices>
+  <robots>
+    <robot tag="Robot" name="Super Cowboy" frame="Unspecified" armor="14" armorMax="14" speed="Average" speedMax="Average" combatBonus="1" combatBonusMax="1" />
+  </robots>
+</block>

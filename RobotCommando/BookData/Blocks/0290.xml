@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="290" location="Capital City">
+  <text>You clank through a small park and down a short street. In front of you, you see a crowd of Karossean soldiers, looting a shop. If you turn and flee, turn to 216. If you fight them, turn to 343.</text>
+  <choices>
+    <choice to="216">
+      <text>If you turn and flee.</text>
+    </choice>
+    <choice to="343">
+      <text>. If you fight them.</text>
+    </choice>
+  </choices>
+</block>

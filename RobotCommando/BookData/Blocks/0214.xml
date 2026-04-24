@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="214" location="Capital City">
+  <text>Minos is a huge, burly man with a curling black beard. His uniform is gold-encrusted and ornate. He studies you with amusement. 'Duel you?' he says. 'Why should I duel you, Thalian vermin?' 'I'm the only Thalian awake!' you reply. 'You Juve to duel me! I demand it!' Around Minos, the other officers mutter. Test your Luck. If you are Lucky, turn to 314. If you are Unlucky, Turn to 297.</text>
+  <choices>
+    <choice to="314">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="297">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

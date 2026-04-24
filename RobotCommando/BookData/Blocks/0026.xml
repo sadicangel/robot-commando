@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="26" location="City of Knowledge">
+  <text>You are being attacked by a Karossean Air-Fighter! ntis is a sleek, arrow-shaped robot. It can sprout legs to land on the ground, but it always fights in the shape of an aircraft. AIR-FIGHTER ARMOUR7 SPEED Fast sxn.L9 SPECIA L AblLtTIES: None If you defeat the Air-Fighter by reducing its ARMOUR to o, turn to 113. If your own robot's ARMOUR is reduced too, turn to 136.</text>
+  <choices>
+    <choice to="113">
+      <text>None If you defeat the Air-Fighter by reducing its ARMOUR to o.</text>
+    </choice>
+    <choice to="136">
+      <text>. If your own robot's ARMOUR is reduced too.</text>
+    </choice>
+  </choices>
+</block>

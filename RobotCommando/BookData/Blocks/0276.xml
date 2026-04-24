@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="276" location="City of Knowledge">
+  <text>This is a fatal error. Minutes later, you are trapped in a dead-end corridor by dozens of hungermaddened laboratory animals, many of which are mutations—a most embarrassing end for a hero... ne College of War is easy to find; it is a huge five-sided building built all of brick. If you have been here before, turn to 332. If you have not been here before, keep reading. A robot of unfamiliar design is standing in front of the building. You recognize it as a Karossean military robot. What will you do: Turn to 46 Attack immedia tely? Try to pass as one of the invaders? Turn to 87 Leave before you are noticed? Turn to 147</text>
+  <choices>
+    <choice to="332">
+      <text>If you have been here before.</text>
+    </choice>
+    <choice to="46">
+      <text>. If you have not been here before, keep reading. A robot of unfamiliar design is standing in front of the building. You recognize it as a Karossean military robot. What will you do.</text>
+    </choice>
+    <choice to="87">
+      <text>Attack immedia tely? Try to pass as one of the invaders?</text>
+    </choice>
+    <choice to="147">
+      <text>Leave before you are noticed?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="294" location="Unknown">
+  <text>The robot catches you. You must fight it as though it were a human opponent; this is a small robot, not a monster like the ones you have piloted, so your sharp sword may be enough to deal with its spindly arms! INFORMATION SKILL6 STAMINA ROBOT If the robot reduces your STAM to 2, turn to 344. If you defeat the robot, turn to 320.</text>
+  <choices>
+    <choice to="344">
+      <text>INFORMATION SKILL6 STAMINA ROBOT If the robot reduces your STAM to 2.</text>
+    </choice>
+    <choice to="320">
+      <text>. If you defeat the robot.</text>
+    </choice>
+  </choices>
+</block>

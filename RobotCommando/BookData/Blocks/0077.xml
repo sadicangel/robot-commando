@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="77" location="City of Knowledge">
+  <text>You turn your steps towards the hospital section Of the College of Medicine. Soon you find a medikit, which you may add to your Possessions. What will you do now: Continue to search the hospital? Turn to 185 Look for information on sleeping sickness? Turn to 126 Leave the hospital? Turn to 210</text>
+  <choices>
+    <choice to="185">
+      <text>Continue to search the hospital?</text>
+    </choice>
+    <choice to="126">
+      <text>Look for information on sleeping sickness?</text>
+    </choice>
+    <choice to="210">
+      <text>Leave the hospital?</text>
+    </choice>
+  </choices>
+</block>

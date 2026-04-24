@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="221" location="City of Pleasure">
+  <text>You sit down in the seat. Instantly, you find your self at the controls of a sleek fighter — the experimental Wasp 200! For twenty minutes you seem to fly through the skies, pursuing enemy robots. Then a timer buzzes and you find yourself back at the Arcade. In front of you, a screen is blinking 'Advanced Game Ready!' You have earned extra time. If you decide to play the extra time, turn to 324. If you leave this game, turn to 288.</text>
+  <choices>
+    <choice to="324">
+      <text>If you decide to play the extra time.</text>
+    </choice>
+    <choice to="288">
+      <text>. If you leave this game.</text>
+    </choice>
+  </choices>
+</block>

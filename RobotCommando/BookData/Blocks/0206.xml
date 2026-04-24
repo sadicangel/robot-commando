@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="206" location="City of Industry">
+  <text>You are back in your robot.</text>
+  <choices>
+    <choice to="265">
+      <text>Explore elsewhere in the City of Industry.</text>
+    </choice>
+    <choice to="309">
+      <text>Go to another city.</text>
+    </choice>
+  </choices>
+</block>

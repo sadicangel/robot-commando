@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="393" location="City of Pleasure">
+  <text>You step into the game and pick up the toy ray-gun that comes With it. A light comes on and you see yourself in a mirror — but a holographic trick has clothed your reflection in a beard and a Karossean uniform. You laugh and fire at it. Unfortunately, with all the repairmen sleeping, this machine is out of order. When you fire, you receive a severe electrical shock. Roll one die. On 1, 2 or 3, you lose point of SKILL On 4, 5 or 6, you lose point of STAM r NÅ. If you want to play another game. turn to 288. If you want to leave the Arcade, turn to 165.</text>
+  <choices>
+    <choice to="165">
+      <text>. If you want to leave the Arcade.</text>
+    </choice>
+  </choices>
+</block>

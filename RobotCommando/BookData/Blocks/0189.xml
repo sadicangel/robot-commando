@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="189" location="City of Knowledge">
+  <text>Everything seems to be as you left it. The Karosseans have no interest in this area, and no desire to get any closer to the monsters than they have to! What Will you do: Leave your robot and go to the Administrative Building? Turn to 85 Leave your robot and go to the other building? Turn to 171 Stay in your robot and cross the electro-fence? Turn to 129 Leave the Dinosaur Preserve? Turn to 150</text>
+  <choices>
+    <choice to="85">
+      <text>Leave your robot and go to the Administrative Building?</text>
+    </choice>
+    <choice to="171">
+      <text>Leave your robot and go to the other building?</text>
+    </choice>
+    <choice to="129">
+      <text>Stay in your robot and cross the electro-fence?</text>
+    </choice>
+    <choice to="150">
+      <text>Leave the Dinosaur Preserve?</text>
+    </choice>
+  </choices>
+</block>

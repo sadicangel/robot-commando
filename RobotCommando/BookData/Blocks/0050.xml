@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="50" location="Capital City">
+  <text>49 Which temple would you like to visit: The Temple of Peace? The Temple of Fear? The Temple of Nothingness? The Temple of Glory?</text>
+  <choices>
+    <choice to="365">
+      <text>The Temple of Peace?</text>
+    </choice>
+    <choice to="304">
+      <text>The Temple of Fear?</text>
+    </choice>
+    <choice to="249">
+      <text>The Temple of Nothingness?</text>
+    </choice>
+    <choice to="339">
+      <text>The Temple of Glory?</text>
+    </choice>
+  </choices>
+</block>

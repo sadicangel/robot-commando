@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="205" location="Capital City">
+  <text>You steer right for the crowd. Amazingly, no one attacks you! You make a creditable landing in the middle of a circle of gaudily uniformed Karosseans. You know that your only chance now is to put on as good a show as possible. If you know something that might help you now, turn to the reference number that came with that information. If not, turn to 228.</text>
+  <choices>
+    <choice to="228">
+      <text>If not.</text>
+    </choice>
+  </choices>
+</block>

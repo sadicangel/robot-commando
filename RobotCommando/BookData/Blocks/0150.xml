@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="150" location="City of Knowledge">
+  <text>What would you like to do now: Visit the College of Medicine? Visit the College of War? Visit the Thalian Museum? Leave the City Of Knowledge?</text>
+  <choices>
+    <choice to="54">
+      <text>Visit the College of Medicine?</text>
+    </choice>
+    <choice to="277">
+      <text>Visit the College of War?</text>
+    </choice>
+    <choice to="14">
+      <text>Visit the Thalian Museum?</text>
+    </choice>
+    <choice to="380">
+      <text>Leave the City Of Knowledge?</text>
+    </choice>
+  </choices>
+</block>

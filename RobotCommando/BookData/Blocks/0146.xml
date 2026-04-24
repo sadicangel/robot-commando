@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="146" location="City of Knowledge">
+  <text>Hall Beta proves to be a long walk away, through great shadowed corridors. You soon realize that you are lost. Eventually you come to a curtained exhibitroom. The sign over the door reads 'Favours ot Fortune'. But inside, you hear strange sounds — like something large moving about. If you enter, turn to 202. If you go on past, turn to 168.</text>
+  <choices>
+    <choice to="202">
+      <text>If you enter.</text>
+    </choice>
+    <choice to="168">
+      <text>. If you go on past.</text>
+    </choice>
+  </choices>
+</block>

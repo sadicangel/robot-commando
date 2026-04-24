@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="316" location="Unknown">
+  <text>You regain control of your flyer, though the buffeting is terrible. Lose STAMINA point. If you have a flask of liquid in your possession, count the letters in both words of its name, multiply that number by 10, and turn to that reference. If you have no flask, turn to 166.</text>
+  <choices>
+    <choice to="166">
+      <text>If you have no flask.</text>
+    </choice>
+  </choices>
+</block>

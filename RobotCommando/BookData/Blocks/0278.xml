@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="278" location="City of Worship">
+  <text>Fly into the storm (if you have a flying robot)? Turn to 12 Leave the city, travelling on the ground? Turn to 244 Explore the temples? Turn to 49</text>
+  <choices>
+    <choice to="12">
+      <text>Fly into the storm (if you have a flying robot)?</text>
+    </choice>
+    <choice to="244">
+      <text>Leave the city, travelling on the ground?</text>
+    </choice>
+    <choice to="49">
+      <text>Explore the temples?</text>
+    </choice>
+  </choices>
+</block>

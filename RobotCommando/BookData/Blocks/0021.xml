@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="21" location="City of Worship">
+  <text>You flee in fear out of the temple. You can feel the disapproval of the Powers of Glory. Lose 1 luck point and 1 skill point for your cowardice.</text>
+  <choices>
+    <choice to="166">
+      <text>Visit another part of the city.</text>
+    </choice>
+  </choices>
+  <effects>
+    <effect>context.Player.Skill -= 1</effect>
+    <effect>context.Player.Luck -= 1</effect>
+  </effects>
+</block>

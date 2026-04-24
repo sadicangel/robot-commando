@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="63" location="City of Knowledge">
+  <text>Where would you like to go: The Thalian Museum? The College of Medicine? The College of War? The Dinosaur Preserve? Out of the city?</text>
+  <choices>
+    <choice to="160">
+      <text>The Thalian Museum?</text>
+    </choice>
+    <choice to="54">
+      <text>The College of Medicine?</text>
+    </choice>
+    <choice to="277">
+      <text>The College of War?</text>
+    </choice>
+    <choice to="66">
+      <text>The Dinosaur Preserve?</text>
+    </choice>
+    <choice to="380">
+      <text>Out of the city?</text>
+    </choice>
+  </choices>
+</block>

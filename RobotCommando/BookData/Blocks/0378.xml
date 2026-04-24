@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="378" location="City of Pleasure">
+  <text>You are leaving the City of Pleasure. If you would like to go to the City of Industry, turn to 265. If you would like to go to the City of the Jungle, turn to 274.</text>
+  <choices>
+    <choice to="265">
+      <text>If you would like to go to the City of Industry.</text>
+    </choice>
+    <choice to="274">
+      <text>. If you would like to go to the City of the Jungle.</text>
+    </choice>
+  </choices>
+</block>

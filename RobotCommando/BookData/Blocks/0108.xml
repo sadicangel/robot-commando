@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="108" location="Capital City">
+  <text>Having provoked a battle, you must now finish it The enemy robot turns and attacks. It is a Battleman, a heavy-duty Karossean combat robot. BATTLEMAN SPEED Medium SKILL ARMOUR It SPECIAL ABILITIES: If the Battleman's roll exceeds your own roll by 4, it does 1 extra point Of damage to you. LUCK rolls will not affect thisextra point of damage. If you defeat the Battleman, turn to 290. If your own ARMOUR is reduced to o, turn to 61. You may not Escape.</text>
+  <choices>
+    <choice to="290">
+      <text>If you defeat the Battleman.</text>
+    </choice>
+    <choice to="61">
+      <text>. If your own ARMOUR is reduced to o.</text>
+    </choice>
+  </choices>
+</block>

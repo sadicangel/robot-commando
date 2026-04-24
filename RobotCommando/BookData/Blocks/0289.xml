@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="289" location="City of Knowledge">
+  <text>As your robot falls, you pop out of the hatch and roll safely away. You crawl under a bush near the wall and wait. The great steel foot of the enemy robot lands close to your head as it charges in pursuit. But it merely puts a few more shots into your wrecked robot and continues past, without seeing you. As you lie in hiding, you hear other robots arrive, as well as troopers on foot. But they seem to be looking for an invading force, rather than a single fugitive. Eventually, most of them go inside the building — leaving one of their war robots standing empty, a stone's throw from your hiding-place! If you make a dash for the robot, turn to 345. If you stay in hiding, turn to 61.</text>
+  <choices>
+    <choice to="345">
+      <text>If you make a dash for the robot.</text>
+    </choice>
+    <choice to="61">
+      <text>. If you stay in hiding.</text>
+    </choice>
+  </choices>
+</block>

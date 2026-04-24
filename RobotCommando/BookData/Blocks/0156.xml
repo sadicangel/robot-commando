@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="156" location="Capital City">
+  <text>The ground shakes, and from the shadows comes another enemy war machine to confront you. From within comes a radio transmission: Thalian! This is Minos! Now taste my wrath!' Your two robots hammer at each other. Around you the Karossean camp is going up in flames. You see a small fighter-robot smashed by a single stray shot. Then you can spare no attention for anything but the battle. The Supertank Minos is piloting is the biggest robot the Karosseans have. It looks like a vast, misshapen tank. A huge gun blazes in front; elsewhere are smaller weapons. Its arms are retracted for safety in the battle. SUPERTANK ARMOUR 16 SPEED Slow SKILL 12 SPECIAL A8tLITtES'. Even on a round in which the Supertank loses, you will take point of ARMOUR damage just from its smaller weapons! If you defeat the Supertank and have some A R MO VR points left for your own robot, turn to 354. If it reduces your ARMOUR to zero (even if you defeated it at the same time), turn to 6.</text>
+  <choices>
+    <choice to="354">
+      <text>If you defeat the Supertank and have some A R MO VR points left for your own robot.</text>
+    </choice>
+    <choice to="6">
+      <text>. If it reduces your ARMOUR to zero (even if you defeated it at the same time).</text>
+    </choice>
+  </choices>
+</block>

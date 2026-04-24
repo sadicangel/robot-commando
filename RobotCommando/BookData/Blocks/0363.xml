@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="363" location="Unknown">
+  <text>As you prepare to leave, it occurs to you that a few bars of this treasure— or, perhaps, more than a few— would be a fair compensation for your troubles so far. If you have taken the Cargo Crab, turn to 346. If not, turn to 220.</text>
+  <choices>
+    <choice to="346">
+      <text>If you have taken the Cargo Crab.</text>
+    </choice>
+    <choice to="220">
+      <text>. If not.</text>
+    </choice>
+  </choices>
+</block>

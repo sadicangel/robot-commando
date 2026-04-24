@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="349" location="City of the Jungle">
+  <text>You have run into a group of Karosseans patrolling the city! ntey do not have war machines, but have taken over several of the citys own robots. If your own speed is 'Very Fast', you may escape them before the battle starts by leaving the city (turn to 298). Otherwise, you must fight them one at a time, in order: STREET CLEANER ARMOUR 4 SPEED Slow SKILL 7 TOWING ROBOT ARMOUR 6 SPEED Medium SXtLt.7 TRAFFIC COPTER SXILL8 ARMOUR 3 SPEED Fast None of these robots has any special abilities. Once the battle starts, you may not Escape. If you defeat all three robots, turn to 35. If your own robot's ARMOUR is reduced to o, turn to 154. tat i</text>
+  <choices>
+    <choice to="298">
+      <text>If your own speed is 'Very Fast', you may escape them before the battle starts by leaving the city (.</text>
+    </choice>
+    <choice to="35">
+      <text>). Otherwise, you must fight them one at a time, in order: STREET CLEANER ARMOUR 4 SPEED Slow SKILL 7 TOWING ROBOT ARMOUR 6 SPEED Medium SXtLt.7 TRAFFIC COPTER SXILL8 ARMOUR 3 SPEED Fast None of these robots has any special abilities. Once the battle starts, you may not Escape. If you defeat all three robots.</text>
+    </choice>
+    <choice to="154">
+      <text>. If your own robot's ARMOUR is reduced to o.</text>
+    </choice>
+  </choices>
+</block>

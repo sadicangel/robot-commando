@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="30" location="Inherit">
+  <text>You quickly activate the controls to turn your robot into its flying form. The transition, usually so swift, seems incredibly slow in the face of the rampaging herd butin the nick of time you swoop away. If you wait until the dinosaurs have dispersed, then land to see what they were looking at, turn to 62. If you go back to the city, turn to 144. 30 You have defeated the Tripods, but you hear more enemies on the way. You have time for only one choice. If you examine the wreckage of the Tripods, turn to 68. If you enter the fuel plant, turn to 132.</text>
+  <choices>
+    <choice to="62">
+      <text>If you wait until the dinosaurs have dispersed, then land to see what they were looking at.</text>
+    </choice>
+    <choice to="144">
+      <text>. If you go back to the city.</text>
+    </choice>
+    <choice to="68">
+      <text>. 30 You have defeated the Tripods, but you hear more enemies on the way. You have time for only one choice. If you examine the wreckage of the Tripods.</text>
+    </choice>
+    <choice to="132">
+      <text>. If you enter the fuel plant.</text>
+    </choice>
+  </choices>
+</block>

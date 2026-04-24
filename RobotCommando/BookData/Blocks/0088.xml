@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="88" location="City of Knowledge">
+  <text>'Eighty-eight!' you bark at the Karosseans. 'Seven!' they reply to you. Aha! You have learned the countersign to their password! And because you gave the password, you are free to go about your business. Where were you when you challenged the enemy soldiers: The City of Industry? The City Of Knowledge? The Capital City?</text>
+  <choices>
+    <choice to="132">
+      <text>The City of Industry?</text>
+    </choice>
+    <choice to="63">
+      <text>The City Of Knowledge?</text>
+    </choice>
+    <choice to="192">
+      <text>The Capital City?</text>
+    </choice>
+  </choices>
+</block>

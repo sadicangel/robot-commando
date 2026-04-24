@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="288" location="City of Pleasure">
+  <text>You are in the Arcade building. With your robot parked outside. It is a madhouse of sound and coloured lights. Each arcade game is wilder than the next. Which one will you play: Wasp Fighter? Turn to 221 Dinosaur Hunt? Turn to Zap the Karossean? Turn to 393 None Of these? Turn to 165</text>
+  <choices>
+    <choice to="221">
+      <text>Wasp Fighter?</text>
+    </choice>
+    <choice to="393">
+      <text>Dinosaur Hunt? Turn to Zap the Karossean?</text>
+    </choice>
+    <choice to="165">
+      <text>None Of these?</text>
+    </choice>
+  </choices>
+</block>

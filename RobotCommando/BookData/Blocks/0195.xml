@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="195" location="City of Industry">
+  <text>Al 195 At the outskirts of the city, you find a huge robot junkyard. If you have been here before, turn to 82. Otherwise, keep reading. As far as the eye can see, scrapped and damaged robots and pieces of robots are standing, sitting and lying on the ground. But out Of the corner Of your eye, you see motion. Something seems to be watching you from behind a pile of scrap! If you investigate the junkyard, turn to 370. If you leave, turn to Ito.</text>
+  <choices>
+    <choice to="82">
+      <text>If you have been here before.</text>
+    </choice>
+    <choice to="370">
+      <text>. Otherwise, keep reading. As far as the eye can see, scrapped and damaged robots and pieces of robots are standing, sitting and lying on the ground. But out Of the corner Of your eye, you see motion. Something seems to be watching you from behind a pile of scrap! If you investigate the junkyard.</text>
+    </choice>
+  </choices>
+</block>

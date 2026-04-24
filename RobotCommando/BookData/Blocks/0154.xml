@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="154" location="City of the Jungle">
+  <text>Lose 2 STAMINA points. Dazed and bleeding, you are pulled from the wreckage of your robot. 'This is the trouble-maker, all right!' you hear one Karossean say. You do not have time to use medikits right now! If you possess a Karossean uniform, turn to 241. If not, turn to 89.</text>
+  <choices>
+    <choice to="241">
+      <text>If you possess a Karossean uniform.</text>
+    </choice>
+    <choice to="89">
+      <text>. If not.</text>
+    </choice>
+  </choices>
+</block>

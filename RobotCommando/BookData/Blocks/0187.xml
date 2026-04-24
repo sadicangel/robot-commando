@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="187" location="Capital City">
+  <text>You have not gone far before you have to pass through a narrow gate that leads into the outer part of the stadium. There, you are challenged by a group Of robots. 'Eighty-eight!' comes the word. If you know the countersign, turn to that number. If not, turn to 50.</text>
+  <choices>
+    <choice to="50">
+      <text>If not.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="356" location="City of the Jungle">
+  <text>You set off into the jungle, along a path wide enough for a robot — or a dinosaur. Soon the path forks. If you go right, turn to 19. If you go left, turn ton.</text>
+  <choices>
+    <choice to="19">
+      <text>If you go right.</text>
+    </choice>
+  </choices>
+</block>

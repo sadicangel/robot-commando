@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="46" location="City of Knowledge">
+  <text>You charge to the attack! The Karossean controlling the other robot is caught totally by surprise. Roll two dice and do that much damage to the enemy robot before its pilot can react. If you roll 12, turn to 109. Otherv.'ise, turn to 78, mark off the damage you did, and fight.</text>
+  <choices>
+    <choice to="109">
+      <text>If you roll 12.</text>
+    </choice>
+    <choice to="78">
+      <text>. Otherv.'ise.</text>
+    </choice>
+  </choices>
+</block>

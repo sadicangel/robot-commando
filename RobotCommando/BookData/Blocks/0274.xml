@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="274" location="City of the Jungle">
+  <text>If you are flying, turn to 341. If you are travelling on the ground, turn to 5.</text>
+  <choices>
+    <choice to="341">
+      <text>If you are flying.</text>
+    </choice>
+    <choice to="5">
+      <text>. If you are travelling on the ground.</text>
+    </choice>
+  </choices>
+</block>

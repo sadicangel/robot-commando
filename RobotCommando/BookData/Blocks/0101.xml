@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="101" location="Unknown">
+  <text>You have defeated the Tylosaurus. Small scaven gers are already appearing in the water around you drawn by the blood. If you return to the city, turn tc 144. If you continue towards the spot where you saw the herd of dinosaurs, turn to 62.</text>
+  <choices>
+    <choice to="62">
+      <text>If you continue towards the spot where you saw the herd of dinosaurs.</text>
+    </choice>
+  </choices>
+</block>

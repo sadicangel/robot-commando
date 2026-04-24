@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="236" location="Unknown">
+  <text>Over the radio comes a challenge: 'Eighty-eight!' If you know the countersign that is required for that password, turn to the number of the countersign. If you do not know the proper response, turn to 389.</text>
+  <choices>
+    <choice to="389">
+      <text>If you do not know the proper response.</text>
+    </choice>
+  </choices>
+</block>

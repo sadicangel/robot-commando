@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="188" location="Inherit">
+  <text>Your path narrows; the ground underfoot seems marshy. Roll two dice. If the result is less than or equal to your SKILL forrobot control, turn to 151. If the result is greater than your SKI LL, turn to 312.</text>
+  <choices>
+    <choice to="151">
+      <text>If the result is less than or equal to your SKILL forrobot control.</text>
+    </choice>
+    <choice to="312">
+      <text>. If the result is greater than your SKI LL.</text>
+    </choice>
+  </choices>
+</block>

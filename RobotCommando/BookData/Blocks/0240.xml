@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="240" location="City of Industry">
+  <text>The tunnel winds until you have lost all sense Of direction. Then it forks. One fork seems to go up; the other turns downward. If you go up, turn to 72. If you go down, Turn to 15.</text>
+  <choices>
+    <choice to="72">
+      <text>If you go up.</text>
+    </choice>
+    <choice to="15">
+      <text>. If you go down.</text>
+    </choice>
+  </choices>
+</block>

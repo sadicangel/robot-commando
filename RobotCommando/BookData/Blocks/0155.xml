@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="155" location="City of Knowledge">
+  <text>You examine the smashed robot. Inside, you see its pilot; he does not appear to be wounded. But as you reach a metal claw towards his bubble, he stabs at a control. His machine self-destructs! Your own robot is thrown back several metres and you are shaken up: lose 2 ARMOUR points and 2 STAMINA points. If your ARMOUR has been reduced to o, turn to 61. Otherwise, Turn to 65.</text>
+  <choices>
+    <choice to="61">
+      <text>If your ARMOUR has been reduced to o.</text>
+    </choice>
+    <choice to="65">
+      <text>. Otherwise.</text>
+    </choice>
+  </choices>
+</block>

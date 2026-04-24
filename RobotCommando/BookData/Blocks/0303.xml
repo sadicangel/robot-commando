@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="303" location="Capital City">
+  <text>You round a corner — and run right into three Karossean doctors! They look at you keenly. What will you do: Pretend to faint? Attack them? Apologize and go on your way?</text>
+  <choices>
+    <choice to="323">
+      <text>Pretend to faint?</text>
+    </choice>
+    <choice to="353">
+      <text>Attack them?</text>
+    </choice>
+    <choice to="375">
+      <text>Apologize and go on your way?</text>
+    </choice>
+  </choices>
+</block>

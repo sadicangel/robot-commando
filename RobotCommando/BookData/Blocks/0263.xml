@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="263" location="Inherit">
+  <text>It is a large Crawler Robot. The crew, of course, is asleep, and you do not want to take their robot and leave them to the jungle. But within the robot is an interesting piece of equipment, like nothing you have ever seen. Reading the Crawler pilot's orders, you see the following: experimental Tangler Field works on flying machines — but not always. Your orders are to test it against flying dinosaurs immediately.' Beneath this is written, in large red letters, 'NO GOOD!' You may add the Tangler Field to your Possessions and continue. If you explore the other path of the jungle, turn to 73. If you want to go elsewhere, turn to 137.</text>
+  <choices>
+    <choice to="73">
+      <text>If you explore the other path of the jungle.</text>
+    </choice>
+    <choice to="137">
+      <text>. If you want to go elsewhere.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="385" location="Unknown">
+  <text>You have arrived at the National Treasure House. A great, grey building, it is the repository of all IhaIOS's gold. To your surprise, it is guarded only by a single Karossean sentry, standing in front of the building. If you have a robot, turn to 319. If you are on foot, Turn to 271.</text>
+  <choices>
+    <choice to="319">
+      <text>If you have a robot.</text>
+    </choice>
+    <choice to="271">
+      <text>. If you are on foot.</text>
+    </choice>
+  </choices>
+</block>

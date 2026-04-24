@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="138" location="City of Industry">
+  <text>The Ape throws several large chunks of metal at you. Lose 2 ARMOUR points (if this reduces your ARMOUR to o, turn immediately to 61). When you attack the Ape, it flees. You look around the junkyard, but the only useful things you see are too heavy for you to move, and the junkyard equipment is out of order. Turn to 110.</text>
+  <choices>
+    <choice to="61">
+      <text>Lose 2 ARMOUR points (if this reduces your ARMOUR to o.</text>
+    </choice>
+    <choice to="110">
+      <text>). When you attack the Ape, it flees. You look around the junkyard, but the only useful things you see are too heavy for you to move, and the junkyard equipment is out of order.</text>
+    </choice>
+  </choices>
+</block>

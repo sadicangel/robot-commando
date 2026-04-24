@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="249" location="Capital City">
+  <text>You decide to visit the Temple Of Nothingness. You have never been there before, and you have no idea what to expect. When you arrive, you see the usual sprawled forms on the sidewalk in front. Several were carrying signs and placards. Were they protes tors? You look at a sign; it reads, 'Nothing is wrong. If you would rather not get involved with this strange bit of business, you may return to 166. If you want to go inside, turn to 123.</text>
+  <choices>
+    <choice to="166">
+      <text>If you would rather not get involved with this strange bit of business, you may.</text>
+    </choice>
+    <choice to="123">
+      <text>. If you want to go inside.</text>
+    </choice>
+  </choices>
+</block>

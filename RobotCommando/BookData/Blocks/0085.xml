@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="85" location="City of Knowledge">
+  <text>You are inside the Administrative Building. Everyone is asleep, Of course. You see nothing Of special interest. What will you do now: Look for a specific object? Turn to 17 Search the whole Office thoroughly? Turn to 96 Investigate the other building? Turn to 171 Get in your robot and cross the electro-fence? Turn to 129 Leave the Dinosaur Preserve? Turn to 150</text>
+  <choices>
+    <choice to="17">
+      <text>Look for a specific object?</text>
+    </choice>
+    <choice to="96">
+      <text>Search the whole Office thoroughly?</text>
+    </choice>
+    <choice to="171">
+      <text>Investigate the other building?</text>
+    </choice>
+    <choice to="129">
+      <text>Get in your robot and cross the electro-fence?</text>
+    </choice>
+    <choice to="150">
+      <text>Leave the Dinosaur Preserve?</text>
+    </choice>
+  </choices>
+</block>

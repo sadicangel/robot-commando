@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="125" location="Capital City">
+  <text>As your faithful robot disintegrates around you, you hit the 'Eject' button. Test your Luck. If you are Lucky, turn to 176. If you are Unlucky, the ejection system was destroyed in the fight, and your adven ture ends here.</text>
+  <choices>
+    <choice to="176">
+      <text>If you are Lucky.</text>
+    </choice>
+  </choices>
+</block>

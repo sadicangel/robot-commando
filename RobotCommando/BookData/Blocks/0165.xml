@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="165" location="City of Pleasure">
+  <text>You are in the City of Pleasure. It is your country's vacation spot, where rich and poor alike come to partake of a thousand different amusements. What would you like to do: Visit the arcades? Visit the airfield? Leave the city?</text>
+  <choices>
+    <choice to="288">
+      <text>Visit the arcades?</text>
+    </choice>
+    <choice to="41">
+      <text>Visit the airfield?</text>
+    </choice>
+    <choice to="131">
+      <text>Leave the city?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="224" location="City of Knowledge">
+  <text>You leave the military display and take a short cut through a hallway overlooking a huge gallery. As you look down, you are surprised to see devasta­tion! A huge area of exhibits has been demolished. Two black-clad Karossean soldiers are lying there, dead or wounded, and a trail of devastation leads right through a huge hole in the wall. You hear shouts from below.</text>
+  <choices>
+    <choice to="374">
+      <text>Go down and investigate.</text>
+    </choice>
+    <choice to="1014">
+      <text>Go back to the information desk.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="18" location="Capital City">
+  <text>How will you approach the enemy encampment?</text>
+  <choices>
+    <choice to="55">
+      <text>Fly towards it.</text>
+    </choice>
+    <choice to="187">
+      <text>Travel on the ground.</text>
+    </choice>
+  </choices>
+</block>

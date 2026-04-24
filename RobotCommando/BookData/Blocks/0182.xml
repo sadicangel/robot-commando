@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="182" location="City of Industry">
+  <text>NO ADMITTANCE 182 When you leave the lift on the third floor, you immediately spy a man-sized Guard Robot standing in the hallway. 'Sorry. No admittance,' squawks its mechanical voice. What Will you do: Try to reason with the robot? Turn to 295 Attack the robot? Turn to 142 Go to another floor? Turn to 333</text>
+  <choices>
+    <choice to="295">
+      <text>Try to reason with the robot?</text>
+    </choice>
+    <choice to="142">
+      <text>Attack the robot?</text>
+    </choice>
+    <choice to="333">
+      <text>Go to another floor?</text>
+    </choice>
+  </choices>
+</block>

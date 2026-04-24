@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="8" location="City of Storms">
+  <text>The sea-coast is a narrow strip of sand, bounded on one side by the ocean and on the other side by steep cliffs. After a few minutes of travel, you see something ahead. It is a huge herd of Brontosaurus dinosaurs. Most of them are munching on seaweed thrown up by the storms, but a few are investigating something that glitters.</text>
+  <revisitText>The sea-coast is a narrow strip of sand, bounded on one side by the ocean and on the other side by steep cliffs. After a few minutes of travel, you don't see anything special.</revisitText>
+  <choices>
+    <choice to="84">
+      <text>Investigate it yourself.</text>
+      <condition>!context.Page.IsVisited</condition>
+    </choice>
+    <choice to="144">
+      <text>Turn around and go back to the city.</text>
+    </choice>
+  </choices>
+</block>

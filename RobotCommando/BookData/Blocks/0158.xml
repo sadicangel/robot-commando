@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="158" location="Capital City">
+  <text>If you possess the Sword of State, turn to 242. If you do not possess that sword, Turn to 214.</text>
+  <choices>
+    <choice to="242">
+      <text>If you possess the Sword of State.</text>
+    </choice>
+    <choice to="214">
+      <text>. If you do not possess that sword.</text>
+    </choice>
+  </choices>
+</block>

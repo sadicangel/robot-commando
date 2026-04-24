@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="302" location="City of Knowledge">
+  <text>As you leave the research labs, you hear once again the strange shuffling and squeaking. You step through a pair of double doors, into a room full of large wire cages. You see that some are opened. Then you realize what the sounds were. The hospi­tal's experimental animals have escaped... and they are hungry! You are facing a trio of red-eyed Giant Lizards.</text>
+  <choices>
+    <choice to="328">
+      <text>Fight the creatures.</text>
+    </choice>
+    <choice to="350">
+      <text>Turn to flee.</text>
+    </choice>
+  </choices>
+</block>

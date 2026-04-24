@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="231" location="City of Knowledge">
+  <text>The barn-like building where you found the robots is also as you left it. Your old robot is there— you may take it back if you like. Or you may get another Super-Cowboy Robot. What will you do now: Walk over to the Administrative Turn to 85 Building? Get in your robot and cross the electro-fence? Turn to 129 Turn to 150 Leave the Dinosaur Preserve?</text>
+  <choices>
+    <choice to="85">
+      <text>Walk over to the Administrative.</text>
+    </choice>
+    <choice to="129">
+      <text>Building? Get in your robot and cross the electro-fence?</text>
+    </choice>
+  </choices>
+</block>

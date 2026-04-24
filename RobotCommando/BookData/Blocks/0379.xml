@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="379" location="Unknown">
+  <text>To your horror, you are caught in a downdraught! Your robot falls, spinning. You are thrown against the side Of the cockpit. Around you, metal shrieks. Lose 2 STAMINA points; your robot loses 2 ARMOUR points. If either STAMINA or ARMOUR is reduced too, you aredead. If not, you have a chance to regain control. Turn to 12.</text>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="73" location="Inherit">
+  <text>Almost immediately the path forks again. To the left, a large sign reads 'Danger! Man-trap!' There is no sign by the right path. If you go left, turn to 128. If you go right, turn to 188.</text>
+  <choices>
+    <choice to="128">
+      <text>If you go left.</text>
+    </choice>
+    <choice to="188">
+      <text>. If you go right.</text>
+    </choice>
+  </choices>
+</block>

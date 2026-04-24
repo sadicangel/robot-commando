@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="380" location="City of Knowledge">
+  <text>You are leaving the City of Knowledge... hopefulIy, wiser than when you came. Where will you travel now: The City of Industry? The City Of the Jungle? The City of Storms?... The City of Worship?</text>
+  <choices>
+    <choice to="265">
+      <text>The City of Industry?</text>
+    </choice>
+    <choice to="137">
+      <text>The City Of the Jungle?</text>
+    </choice>
+    <choice to="179">
+      <text>The City of Storms?...</text>
+    </choice>
+    <choice to="166">
+      <text>The City of Worship?</text>
+    </choice>
+  </choices>
+</block>

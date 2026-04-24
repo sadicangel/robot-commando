@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="80" location="City of Knowledge">
+  <text>Tm sorry,' replies the Information Robot. 'We have a general medical display in Hall Omicron, but for the kind of specific information you want, you would need to inquire at a hospital, or at the College of Medicine.' If you want to leave the museum, turn tot02. If you want to ask another question, return to 14 and make another choice.</text>
+  <choices>
+    <choice to="14">
+      <text>If you want to ask another question.</text>
+    </choice>
+  </choices>
+</block>

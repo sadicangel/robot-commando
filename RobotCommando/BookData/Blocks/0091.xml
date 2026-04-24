@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="91" location="City of Knowledge">
+  <text>Fortunately, the problem seems to be nothing worse than a pair of crossed wires. You activate the robot surgeon and tell it you need treatment. Lights blinking and motors humming, it obliges. Restore all lost STAMINA points and 1 LUCK point. If you nowlook for information on sleeping sickness, turn to 126. If you leave the building, turn to 210.</text>
+  <choices>
+    <choice to="126">
+      <text>If you nowlook for information on sleeping sickness.</text>
+    </choice>
+    <choice to="210">
+      <text>. If you leave the building.</text>
+    </choice>
+  </choices>
+</block>

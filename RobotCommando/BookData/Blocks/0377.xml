@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="377" location="Capital City">
+  <text>Your opponent falls, mortally wounded. A gasp goes up from the circle of officers watching the battle. As you reel back, one of them catches you. You see Minos dusting off his hands and drawing his sword. 'Here! Drink this!' says the Karossean officer who kept you from falling. If you drink the flask he offers, turn to 388. If you decline, turn to 330.</text>
+  <choices>
+    <choice to="388">
+      <text>If you drink the flask he offers.</text>
+    </choice>
+    <choice to="330">
+      <text>. If you decline.</text>
+    </choice>
+  </choices>
+</block>

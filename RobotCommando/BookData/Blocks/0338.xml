@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="338" location="Inherit">
+  <text>You have no control over the Borer Robot's path. For hours it tunnels underground; then it turns upward again. Eventually it reaches the surface, and you open the hatch into daylight. You seem to be in a small town. You will need to find new transportation; the Borer Robot will not stir from its new site. The only robot you can find to take you there, unfortunately, is an ancient, rattling Stilter. Thisisa very tall, thin robot, apparently designed for painting the upper storeys of buildings or something of the sort. Its arms and legs are very long. You hope this tired, creaky machine will make the trip safely. STILTER ARMOUR 4 srEED Medium COMBAT BONUS —t SPECIAL A BILITIES: None You are midway between two cities. If you will go to the City Of Knowledge, turn to 361. If you will go to the City of Worship, Turn to 166.</text>
+  <choices>
+    <choice to="361">
+      <text>If you will go to the City Of Knowledge.</text>
+    </choice>
+    <choice to="166">
+      <text>. If you will go to the City of Worship.</text>
+    </choice>
+  </choices>
+</block>

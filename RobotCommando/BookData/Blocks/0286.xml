@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="286" location="Capital City">
+  <text>'Then face your foe!' comes the answer. In front of you appears a Karossean soldier, armed like yourself. You must fight him. SOLDIER SKILL to STAMINA 10 If you Escape, turn to 21. If you defeat him, Turn to 352.</text>
+  <choices>
+    <choice to="21">
+      <text>SOLDIER SKILL to STAMINA 10 If you Escape.</text>
+    </choice>
+    <choice to="352">
+      <text>. If you defeat him.</text>
+    </choice>
+  </choices>
+</block>

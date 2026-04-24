@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="29" location="Capital City">
+  <text>You cannot Escape. If you destroy the Crusher, turn to 275. If it reduces your ARMOUR too, turn to 384. 29 You put on the Cloak of Invisibility and explore the hospital. Although the building is full of enemies, the Cloak lets you pass among them without being spotted. You find a robot surgeon which heals your wounds: restore your STAMINA to its Initial level. You also find two medikits in an unguarded room. You find nothing else of any particular use. At length, your Cloak begins to flicker; you will not be able to use it again. You Return to your robot. Turn to 308.</text>
+  <choices>
+    <choice to="275">
+      <text>If you destroy the Crusher.</text>
+    </choice>
+    <choice to="384">
+      <text>. If it reduces your ARMOUR too.</text>
+    </choice>
+    <choice to="308">
+      <text>. 29 You put on the Cloak of Invisibility and explore the hospital. Although the building is full of enemies, the Cloak lets you pass among them without being spotted. You find a robot surgeon which heals your wounds: restore your STAMINA to its Initial level. You also find two medikits in an unguarded room. You find nothing else of any particular use. At length, your Cloak begins to flicker; you will not be able to use it again. You Return to your robot.</text>
+    </choice>
+  </choices>
+</block>

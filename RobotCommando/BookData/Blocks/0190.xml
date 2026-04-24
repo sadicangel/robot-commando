@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="190" location="Capital City">
+  <text>Test your Luck. If you are Lucky, you can get behind the case and remove the sword without either guard being the wiser. You hide it under your Cloak and leave the Capitol Building (turn to 296). If you are Unlucky, one of the guards notices the sword seemingly hanging in mid-air. Turn to 215 and fight.</text>
+  <choices>
+    <choice to="296">
+      <text>You hide it under your Cloak and leave the Capitol Building (.</text>
+    </choice>
+    <choice to="215">
+      <text>). If you are Unlucky, one of the guards notices the sword seemingly hanging in mid-air.</text>
+    </choice>
+  </choices>
+</block>

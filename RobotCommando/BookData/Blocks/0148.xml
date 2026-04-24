@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="148" location="City of Knowledge">
+  <text>Test your Luck. If you are Lucky, turn to 91. If you are Unlucky, turn to 161.</text>
+  <choices>
+    <choice to="91">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="161">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

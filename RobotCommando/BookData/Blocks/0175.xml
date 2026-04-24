@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="175" location="City of the Guardians">
+  <text>The computer guides you to the main building Of the City of the Guardians. You get out of your robot to investigate. Unfortunately, you soon learn that 'Level Zero' means your security clearance is very low. The Guardian Computer cannot or Will not give you full access to the secrets of the base. However, it does seem willing to let you exchange your current robot for a high-powered war robot. (If you do so, make a note of the fact that your old robot remains here.) Will you select a slow, powerful tank robot (turn to 247), or a speedy shape-changing humanoid/plane robot (turn to 167)? If you prefer to keep your current robot, turn to 376.</text>
+  <choices>
+    <choice to="247">
+      <text>) Will you select a slow, powerful tank robot (.</text>
+    </choice>
+    <choice to="167">
+      <text>), or a speedy shape-changing humanoid/plane robot (.</text>
+    </choice>
+    <choice to="376">
+      <text>)? If you prefer to keep your current robot.</text>
+    </choice>
+  </choices>
+</block>

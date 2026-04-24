@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="111" location="Capital City">
+  <text>What will you do: Challenge Minos to a personal duel? Claim to be a message-bearer? Use a password? Try to fight your way out?</text>
+  <choices>
+    <choice to="253">
+      <text>Challenge Minos to a personal duel?</text>
+    </choice>
+    <choice to="267">
+      <text>Claim to be a message-bearer?</text>
+    </choice>
+    <choice to="173">
+      <text>Use a password?</text>
+    </choice>
+    <choice to="283">
+      <text>Try to fight your way out?</text>
+    </choice>
+  </choices>
+</block>

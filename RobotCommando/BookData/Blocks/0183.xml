@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="183" location="Inherit">
+  <text>You push the 'Eject' button. To your surprise, your cockpit separates and takes Off on its own! A second later, the rest of your robot explodes. Seeing the explosion, the Wasp loops away and disappears. You take stock of your new craft: the cockpit of your robot has grown stubby wings and short grasping arms. It is a tiny flying robot, just big enough to hold, you—but enough to get you to your destination. ESCAPE ROBOT ARMOURI SPEED Very Fast COMBAT BONUSO Turn to 137.</text>
+  <choices>
+    <choice to="137">
+      <text>ESCAPE ROBOT ARMOURI SPEED Very Fast COMBAT BONUSO.</text>
+    </choice>
+  </choices>
+</block>

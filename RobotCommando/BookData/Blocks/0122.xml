@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="122" location="Inherit">
+  <text>Your radio suddenly crackles to life with a mechanical voice. you are approaching the City of the Guardians. Please give your authorization.' If you have read a military volume on the City of the Guardians, turn to the map reference you were given there. If you have not read this volume, turn to 218.</text>
+  <choices>
+    <choice to="218">
+      <text>If you have not read this volume.</text>
+    </choice>
+  </choices>
+</block>

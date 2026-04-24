@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="109" location="City of Knowledge">
+  <text>The enemy robot falls, blasted to scrap. There is no sign of its pilot. If you want to examine the fallen robot more carefully, turn to 155. If you want to ignore it and enter the War College, turn to 65.</text>
+  <choices>
+    <choice to="155">
+      <text>If you want to examine the fallen robot more carefully.</text>
+    </choice>
+    <choice to="65">
+      <text>. If you want to ignore it and enter the War College.</text>
+    </choice>
+  </choices>
+</block>

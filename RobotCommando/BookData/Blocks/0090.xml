@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="90" location="Capital City">
+  <text>Using the Cloak of Invisibility, you easily slip through the enemy lines and into their officers' camp. There you spy Minos himself! If you attack him by surprise, turn to 201. If you shed your Cloak and try another stratagem, turn to 103.</text>
+  <choices>
+    <choice to="201">
+      <text>If you attack him by surprise.</text>
+    </choice>
+    <choice to="103">
+      <text>. If you shed your Cloak and try another stratagem.</text>
+    </choice>
+  </choices>
+</block>

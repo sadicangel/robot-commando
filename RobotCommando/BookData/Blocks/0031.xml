@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="31" location="Capital City">
+  <text>You decide to explore the streets of the Capital City. How will you travel: Flying about? Ground travel, going left? Ground travel, going right?</text>
+  <choices>
+    <choice to="55">
+      <text>Flying about?</text>
+    </choice>
+    <choice to="153">
+      <text>Ground travel, going left?</text>
+    </choice>
+    <choice to="290">
+      <text>Ground travel, going right?</text>
+    </choice>
+  </choices>
+</block>

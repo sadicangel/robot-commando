@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="127" location="City of Industry">
+  <text>You park your robot outside the tunnel entrance and slip inside. You don't know what you expect to find here, but you have never been in this tunnel system, and its aura of secrecy attracts you. The tunnels are dimly lit, but you can see well enough. Soon you come to a turning. If you go right, turn to 15. If you go left, turn to 240.</text>
+  <choices>
+    <choice to="15">
+      <text>If you go right.</text>
+    </choice>
+    <choice to="240">
+      <text>. If you go left.</text>
+    </choice>
+  </choices>
+</block>

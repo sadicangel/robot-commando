@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="180" location="City of Knowledge">
+  <text>Just as you are about ready to give up, you stumble across an interesting book on the duelling customs of the Karosseans. Apparently the ancient Karos­ seans would settle a tribal dispute by choosing champions - one from each tribe - instead of allow­ing a battle between the whole tribes. The reference number of the book is 111.</text>
+  <choices>
+    <choice to="224">
+      <text>Return to the front desk.</text>
+    </choice>
+  </choices>
+  <items>
+    <item tag="Karossean Book Reference" name="Karossean Book Reference" icon="karossean_book_reference.png">
+      <description>'..the ancient Karosseans would settle a tribal dispute by choosing champions..'.</description>
+    </item>
+  </items>
+</block>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="98" location="Capital City">
+  <text>You realize that you cannot win a dogfight against this many foes. Dodging and weaving between the buildings of the Capital City, you lose your pur suers. You have stirred up a hornets' nest now! You must press the attack before they hunt you down. What will you do: Look elsewhere in the Capital City for help? Turn to 30S Try to slip into the enemy camp on foot? Turn to 32 Stay in your robot and attack Turn to 187 on the ground?</text>
+  <choices>
+    <choice to="30">
+      <text>Look elsewhere in the Capital City for help?</text>
+    </choice>
+    <choice to="32">
+      <text>S Try to slip into the enemy camp on foot?</text>
+    </choice>
+    <choice to="187">
+      <text>Stay in your robot and attack.</text>
+    </choice>
+  </choices>
+</block>

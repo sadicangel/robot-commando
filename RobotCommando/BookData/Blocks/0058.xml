@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="58" location="City of Knowledge">
+  <text>You make your way to Hall Epsilon. The trip is a long one, and several times you hear odd echoing sounds. You realize that you are not alone in the building! You press on, and find the exhibition on the history of the Karossoans. Studying it briefly, you see that it has nothing to do with their military abilities; it is all about their culture and customs. It will take an hour to study the material.</text>
+  <choices>
+    <choice to="180">
+      <text>Study the material.</text>
+    </choice>
+    <choice to="224">
+      <text>Return to the front desk.</text>
+    </choice>
+  </choices>
+</block>

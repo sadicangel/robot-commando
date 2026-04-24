@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="184" location="City of Knowledge">
+  <text>You continue towards the museum. When you arrive, you see a strange sight! Two Karossean utility robots are lying wrecked in front of the building. Several Karossean soldiers are also sprawled unmoving. A huge, gleaming, metal Tyrannosaurus is walking in jerky circles in front Of the museum. You recognize it as the robot dinosaur that was part of the museum's prize exhibit. The Karosseans must have meddled and activated it! You are tempted to leave it alone to harass the foe. On the other hand, it is likely to cause damage to the buildings and your sleeping countrymen as well. If you attack the Robot Tyrannosaurus, turn to 207. If you leave it alone and go elsewhere, turn to 63, but do not choose to return to the museum!</text>
+  <choices>
+    <choice to="207">
+      <text>If you attack the Robot Tyrannosaurus.</text>
+    </choice>
+    <choice to="63">
+      <text>. If you leave it alone and go elsewhere.</text>
+    </choice>
+  </choices>
+</block>

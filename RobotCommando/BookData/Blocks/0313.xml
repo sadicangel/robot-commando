@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="313" location="City of Knowledge">
+  <text>Roll one die. On a roll Of 1, 2 or 3, turn to 137. On a roll of 4, 5 or 6, turn to 341.</text>
+  <choices>
+    <choice to="137">
+      <text>On a roll Of 1, 2 or 3.</text>
+    </choice>
+    <choice to="341">
+      <text>. On a roll of 4, 5 or 6.</text>
+    </choice>
+  </choices>
+</block>

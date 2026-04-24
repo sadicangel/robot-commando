@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="285" location="City of the Jungle">
+  <text>Transform your robot into a walking shape (if you can) and enter the jungle? Turn to 356 Leave the city? Turn to 298 Explore the city? Turn to 366</text>
+  <choices>
+    <choice to="356">
+      <text>Transform your robot into a walking shape (if you can) and enter the jungle?</text>
+    </choice>
+    <choice to="298">
+      <text>Leave the city?</text>
+    </choice>
+    <choice to="366">
+      <text>Explore the city?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="246" location="Unknown">
+  <text>As you jet through the water, you see a huge shadow swimming to intercept you. It is a Tylosaurus, one of the most feared of marine dinosaurs. This monster looks like a cross between a huge, toothy lizard and a shark; it has finny paddles instead of legs. It normally lives on fish, but is willing to try a robot for variety! TYLOSAURUS ARMOUR 9 SPEED Medium SKILL 10 Note that, in the water, your robot's speed is also Medium, so neither Of you has a disadvantage. If you lose this battle, you will be drowned or eaten, if not both. If you win, turn to 101.</text>
+  <choices>
+    <choice to="101">
+      <text>If you win.</text>
+    </choice>
+  </choices>
+</block>

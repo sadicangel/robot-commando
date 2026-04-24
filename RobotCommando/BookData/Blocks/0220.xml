@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="220" location="Unknown">
+  <text>Since your robot is not designed for cargo, you can carry only a small amount of gold. If you want to load up what you can. turn to 287. If you leave empty-handed, turn to 30S.</text>
+  <choices>
+    <choice to="30">
+      <text>. If you leave empty-handed.</text>
+    </choice>
+  </choices>
+</block>

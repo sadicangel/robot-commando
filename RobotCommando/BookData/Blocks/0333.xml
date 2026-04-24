@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="333" location="City of Industry">
+  <text>You are in the lobby of the Robot Experimental Centre. You read the directory, and see that different sorts of work are being done on different floors of the building. Severall seem interesting.&#xD;
+&#xD;
+Where will you go:</text>
+  <choices>
+    <choice to="392">
+      <text>Second floor: Interface Mechanisms.</text>
+    </choice>
+    <choice to="182">
+      <text>Third floor: Weapons Development</text>
+    </choice>
+    <choice to="20">
+      <text>Sixth floor: Amplifier Project</text>
+    </choice>
+    <choice to="229">
+      <text>Tenth floor: Deteronics</text>
+    </choice>
+    <choice to="206">
+      <text>Leave the building</text>
+    </choice>
+  </choices>
+</block>

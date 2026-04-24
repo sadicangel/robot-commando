@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="115" location="Inherit">
+  <text>You hurriedly move to the side. The creature blunders past you and vanishes. You are on the outskirts of the City of the Jungle. If you re-enter the jungle, on the other path, turn to 73. If you want to go elsewhere, turn to 137.</text>
+  <choices>
+    <choice to="73">
+      <text>If you re-enter the jungle, on the other path.</text>
+    </choice>
+    <choice to="137">
+      <text>. If you want to go elsewhere.</text>
+    </choice>
+  </choices>
+</block>

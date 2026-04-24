@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="19" location="City of the Jungle">
+  <text>You hear a crashing sound in the jungle, coming towards you. It is a low, armoured dinosaur, waving a club-like tail back and forth. It is coming straight at you.</text>
+  <choices>
+    <choice to="400">
+      <text>Attack the Dinosaur.</text>
+    </choice>
+    <choice to="115">
+      <text>Flee!</text>
+    </choice>
+  </choices>
+</block>

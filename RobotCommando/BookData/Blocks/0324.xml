@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="324" location="City of Pleasure">
+  <text>Test your Luck. If you are Lucky, turn 1079. If you are Unlucky, turn to 257.</text>
+  <choices>
+    <choice to="257">
+      <text>If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

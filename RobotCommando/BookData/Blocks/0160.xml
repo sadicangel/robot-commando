@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="160" location="City of Knowledge">
+  <text>As you approach the museum, you see smoke rising from in front of the building. A confused babble of Karossean voices comes over the radio. If you continue, turn to 184. If you go elsewhere, turn to 63, but do not choose to return to the museum!</text>
+  <choices>
+    <choice to="184">
+      <text>If you continue.</text>
+    </choice>
+    <choice to="63">
+      <text>. If you go elsewhere.</text>
+    </choice>
+  </choices>
+</block>

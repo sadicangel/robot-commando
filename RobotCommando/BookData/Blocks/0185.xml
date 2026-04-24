@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="185" location="City of Knowledge">
+  <text>Soon, you spot a sign saying 'SURGERY'. Following it, you see a robot surgeon over a table. But it is marked 'OUT OF ORDER'. If you will try to find what is wrong and repair it, turn to 148. If you leave it alone and look for information on sleeping sickness, turn to 126.</text>
+  <choices>
+    <choice to="148">
+      <text>If you will try to find what is wrong and repair it.</text>
+    </choice>
+    <choice to="126">
+      <text>. If you leave it alone and look for information on sleeping sickness.</text>
+    </choice>
+  </choices>
+</block>

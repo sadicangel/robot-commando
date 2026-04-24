@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="143" location="Unknown">
+  <text>You enter the National Treasure House. Normally you would never be allowed inside— but now, who is to stop you? You feast your eyes on gold bars Of all sizes, sacks of coins and bags of jewels. But you see nothing that looks like a weapon. However, in the warehouse area is a cargo-handling robot. You may take it if you wish. If you have no robot right now, you will certainly take it! This machine looks like a gigantic crab, and is called a Cargo Crab. It has eight legs, plus two huge claws for lifting cargo. Its armoured back opens up to carry heavy loads. CARGO CRAB ARMOUR 12 SPEED Slow COMBAT BONUSO SPECIAL ABILITIES: The Cargo Crab can carry large quantities Of goods or equipment. If you take the Cargo Crab, you must leave your other robot (if any) at the Treasure House. Now turn to 363.</text>
+  <choices>
+    <choice to="363">
+      <text>Now.</text>
+    </choice>
+  </choices>
+</block>

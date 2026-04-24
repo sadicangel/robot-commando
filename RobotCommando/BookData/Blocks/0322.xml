@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="322" location="City of Knowledge">
+  <text>You reach for the controls. The enemy pilots are still not in sight. If you want to try to destroy the other robots, turn to 381. If you just want to leave, turn to 399.</text>
+  <choices>
+    <choice to="381">
+      <text>If you want to try to destroy the other robots.</text>
+    </choice>
+    <choice to="399">
+      <text>. If you just want to leave.</text>
+    </choice>
+  </choices>
+</block>

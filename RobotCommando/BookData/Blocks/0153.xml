@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="153" location="Capital City">
+  <text>You go down a street of tall buildings and turn a comer. In front of you is a Karossean robot! But its back is turned to you. What will you do: Leave quietly? Attack it? Challenge it?</text>
+  <choices>
+    <choice to="290">
+      <text>Leave quietly?</text>
+    </choice>
+    <choice to="311">
+      <text>Attack it?</text>
+    </choice>
+    <choice to="108">
+      <text>Challenge it?</text>
+    </choice>
+  </choices>
+</block>

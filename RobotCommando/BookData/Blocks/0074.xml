@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="74" location="Capital City">
+  <text>If you seek treatment for your own injuries, turn to 219. If you look for information on sleeping sickness, Turn to 395.</text>
+  <choices>
+    <choice to="219">
+      <text>If you seek treatment for your own injuries.</text>
+    </choice>
+    <choice to="395">
+      <text>. If you look for information on sleeping sickness.</text>
+    </choice>
+  </choices>
+</block>

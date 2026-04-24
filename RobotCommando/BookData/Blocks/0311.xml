@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="311" location="Capital City">
+  <text>Test your Luck. If you are Lucky, turn to 325. If you are Unlucky, turn to 108.</text>
+  <choices>
+    <choice to="325">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="108">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

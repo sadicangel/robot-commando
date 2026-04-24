@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="176" location="Capital City">
+  <text>You pop out of the doomed flyer a second before it explodes. The enemy robots shoot past, without seeing you. You feel a tug on your harness — and over you spread the wings of a parasail! You find you can guide it as you please. If you steer for the heart of the enemy encampment, where a crowd of men are looking up at you, turn to 205. If you steer away and try to lose yourself in the buildings, turn to 226.</text>
+  <choices>
+    <choice to="205">
+      <text>If you steer for the heart of the enemy encampment, where a crowd of men are looking up at you.</text>
+    </choice>
+    <choice to="226">
+      <text>. If you steer away and try to lose yourself in the buildings.</text>
+    </choice>
+  </choices>
+</block>

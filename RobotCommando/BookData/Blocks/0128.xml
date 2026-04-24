@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="128" location="Inherit">
+  <text>Soon you arrive at a large clearing. In the middle of the clearing is a huge plant with many spiky leaves. In the centre Of the plant, barely within reach, is a stalk bearing several huge red-and-yellow blos soms. What will you do: Examine the plant more carefully? Turn to 292 Pick a flower? Turn to 373 Circle around the plant and continue? Turn to 33</text>
+  <choices>
+    <choice to="292">
+      <text>Examine the plant more carefully?</text>
+    </choice>
+    <choice to="373">
+      <text>Pick a flower?</text>
+    </choice>
+    <choice to="33">
+      <text>Circle around the plant and continue?</text>
+    </choice>
+  </choices>
+</block>

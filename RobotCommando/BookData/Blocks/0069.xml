@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="69" location="City of the Jungle">
+  <text>You leave the building on foot. The smashed remains of your robot lie in the street outside; the ones you fought are nowhere to be seen. You will have to explore the city on foot in hope of finding something. You cannot go to another city until you find a robot; if you have to fight a dinosaur, you will be in trouble! Where Will you go: The north part Of the city? The south part of the city? The jungle?</text>
+  <choices>
+    <choice to="16">
+      <text>The north part Of the city?</text>
+    </choice>
+    <choice to="225">
+      <text>The south part of the city?</text>
+    </choice>
+    <choice to="64">
+      <text>The jungle?</text>
+    </choice>
+  </choices>
+</block>

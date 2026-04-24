@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="117" location="City of Knowledge">
+  <text>You cross the electro-fence into the Dinosaur Preserve itself. Small lizards scurry about as your robot passes. For several minutes you explore, finding nothing of interest. Then you hear a coughing, trumpeting sound. Charging towards you are two huge, horned Triceratops. Underneath the jungle canopy, shape-changing robots cannot change to flying form; you will have to fight these foes on the ground. First TRICERATOPS ARMOUR 9 SPEED Medium SKILL 9 Second TRICERATOPS SKILLS ARMOUR 10 SPEED Medium You must fight them both at once. Each dinosaur will have a separate attack on you in each Attack Round, but you must choose which Of the two you will fight. Attack your chosen foe each round as in a normal battle. Against the other you must throw for your Attack Strength in the normal way, but even if your Attack Strength is greater, you will not wound it. You must just count this as though you have defended yourself from it. However, if its Attack Strength is greater, it will damage your robot in the usual way. If you turn to 270. If you defeat the dinosaurs, turn to 291. If your robot is des troyed, turn to 310.</text>
+  <choices>
+    <choice to="270">
+      <text>If you.</text>
+    </choice>
+    <choice to="291">
+      <text>. If you defeat the dinosaurs.</text>
+    </choice>
+    <choice to="310">
+      <text>. If your robot is des troyed.</text>
+    </choice>
+  </choices>
+</block>

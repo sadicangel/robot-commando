@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="310" location="City of Knowledge">
+  <text>Trapped in the Dinosaur Preserve, without a robot to carry you, you have little hope. Test your Luck twice in succession. If you are Lucky both times, turn to 329. Otherwise, turn to 348.</text>
+  <choices>
+    <choice to="329">
+      <text>If you are Lucky both times.</text>
+    </choice>
+    <choice to="348">
+      <text>. Otherwise.</text>
+    </choice>
+  </choices>
+</block>

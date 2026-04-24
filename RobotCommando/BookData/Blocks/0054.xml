@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="54" location="City of Knowledge">
+  <text>You are at the Collegeof Medicine. This is both the greatest hospital and the greatest medical labora­tory of your entire nation. You approach cautiously, but see no sign of the Karossean invaders. You leave your robot near the front steps.</text>
+  <choices>
+    <choice to="232">
+      <text>Enter the building.</text>
+      <condition>context.Page.IsVisited</condition>
+    </choice>
+    <choice to="77">
+      <text>Seek treatment for your own injuries.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="126">
+      <text>Look for information on the sleeping sickness.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+  </choices>
+</block>

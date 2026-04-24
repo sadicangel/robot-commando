@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="317" location="City of Industry">
+  <text>You step cautiously inside, ready to fight if need be. But the sounds were being made by an automated repair facility, hard at work stamping out armourplate. There is no sign of anyone awake. You leave your robot and investigate the controls of the repair shop. They seem simple enough. If you would like to attempt repairs on your robot, turn to 59. If your robot needs no repairs, or if you do not choose to attempt repairs, turn to 273.</text>
+  <choices>
+    <choice to="59">
+      <text>If you would like to attempt repairs on your robot.</text>
+    </choice>
+    <choice to="273">
+      <text>. If your robot needs no repairs, or if you do not choose to attempt repairs.</text>
+    </choice>
+  </choices>
+</block>

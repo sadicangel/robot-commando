@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="17" location="City of Knowledge">
+  <text>Are looking for something in particular?</text>
+  <choices>
+    <choice to="85">
+      <text>Go search something else.</text>
+      <condition>!context.Inventory.Contains("Cloak Model Reference")</condition>
+    </choice>
+    <choice to="53">
+      <text>Search for the Cloak of Invisibility.</text>
+      <condition>context.Inventory.Contains("Cloak Model Reference")</condition>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="237" location="Inherit">
+  <text>You continue through the jungle. It is hard going: hidden pits and logs take their toll on your robot. Reduce its ARMOUR by 2. (If this reduces its ARMOUR to o or less, leave its ARMOUR at t.) Eventually, the city comes into view; you are relieved! But, as you enter it, you twice see flytng Karossean robots patrolling overhead. Each time you hold your own robot motionless and they overlook you. But you realize that this city is no longer safe; there are Karosseans everywhere. If you came to this city in another robot and you would like to switch back to it, turn to 45. If you stay in your current robot to leave the city, turn to 298.</text>
+  <choices>
+    <choice to="45">
+      <text>If you came to this city in another robot and you would like to switch back to it.</text>
+    </choice>
+    <choice to="298">
+      <text>. If you stay in your current robot to leave the city.</text>
+    </choice>
+  </choices>
+</block>

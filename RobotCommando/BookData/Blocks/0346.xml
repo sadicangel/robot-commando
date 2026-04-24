@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="346" location="Unknown">
+  <text>MYRMIDON Human Form ARMOUR 12 SPEED Medium COMBAT BONUS +1 Plane Form ARMOVRIO srEED Very Fast COMBAT BONUS +1 SPECIAL ABILITIES: The Myrmidon can change shape— from humanoid to aircraft, and back. The Myrmidon takes one combat turn to change forms. During that turn, the robot makes its normal combat roll, but if it wins, it does no damage to the foe — it just defends itself. If you are not in combat, the robot can change shapes freely, with no penalty Of any kind — except that if the robot is in humanoid shape and has 2 or less ARMOUR points, it will fall apart if it changes to a plane! The controls are unfamiliar. If you have read the manual on Karossean robots, turn to 322. If not, turn to 3. 346 With the Cargo Crab, you can carry hundreds Of pounds of gold. If you load it up, turn to 287. If you leave the Treasure House empty-handed (and empty-clawed), turn to 308.</text>
+  <choices>
+    <choice to="322">
+      <text>If you have read the manual on Karossean robots.</text>
+    </choice>
+    <choice to="3">
+      <text>. If not.</text>
+    </choice>
+    <choice to="287">
+      <text>. 346 With the Cargo Crab, you can carry hundreds Of pounds of gold. If you load it up.</text>
+    </choice>
+    <choice to="308">
+      <text>. If you leave the Treasure House empty-handed (and empty-clawed).</text>
+    </choice>
+  </choices>
+</block>

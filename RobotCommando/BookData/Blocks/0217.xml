@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="217" location="City of Worship">
+  <text>Fight them as a single enemy: MINI-ROBOTS ARMOUR9 SPEED Fast sxn,L to SPECIAL ABILITIES: None If you Escape, turn to 278. If you defeat the Minirobots, return to 166 and choose from the options given there. If your ARMOUR is reduced to o, the Karosseans swarm over you, and your adventure ends here.</text>
+  <choices>
+    <choice to="278">
+      <text>None If you Escape.</text>
+    </choice>
+    <choice to="166">
+      <text>. If you defeat the Minirobots.</text>
+    </choice>
+  </choices>
+</block>

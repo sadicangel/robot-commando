@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="270" location="City of Knowledge">
+  <text>You are shaken up; lose STAMINA point. Because Of the narrow jungle trails, your robot takes 3 points Of damage as it escapes. If this is enough to bring its ARMOUR too, turn to 310. Otherwise, you flee the jungle: turn to</text>
+  <choices>
+    <choice to="310">
+      <text>If this is enough to bring its ARMOUR too.</text>
+    </choice>
+  </choices>
+</block>

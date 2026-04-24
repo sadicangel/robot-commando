@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="227" location="City of Worship">
+  <text>A violent storm is coming from over the ocean; it will strike land in minutes. If you fly into the storm, turn to 12. If you fly inland, away from the storm and the city, turn to 244.</text>
+  <choices>
+    <choice to="12">
+      <text>If you fly into the storm.</text>
+    </choice>
+    <choice to="244">
+      <text>. If you fly inland, away from the storm and the city.</text>
+    </choice>
+  </choices>
+</block>

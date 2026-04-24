@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="369" location="City of Industry">
+  <text>The lift doors shudder, and the lift drops half a metre and stops. The lights flicker on, and then off. If you push another button, return to 269 and choose again. If you leave the lift and enter the corridor beside it, turn to 398.</text>
+  <choices>
+    <choice to="269">
+      <text>If you push another button.</text>
+    </choice>
+    <choice to="398">
+      <text>and choose again. If you leave the lift and enter the corridor beside it.</text>
+    </choice>
+  </choices>
+</block>

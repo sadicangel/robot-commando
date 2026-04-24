@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="32" location="Capital City">
+  <text>If you possess the Cloak of Invisibility and have not used it, turn to 90. Otherwise, turn to 103.</text>
+  <choices>
+    <choice to="90">
+      <text>If you possess the Cloak of Invisibility and have not used it.</text>
+    </choice>
+    <choice to="103">
+      <text>. Otherwise.</text>
+    </choice>
+  </choices>
+</block>

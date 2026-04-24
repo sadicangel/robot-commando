@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="191" location="Unknown">
+  <text>If you had a robot, lose STAMINA point as you are thrown from the wreckage. If you are Still alive, you flee on foot as the Nothosaurus demolishes your robot. If you have not already explored the south Of the city, you may do so (turn to 225). Otherwise, you flee into the jungle (turn to 64).</text>
+  <choices>
+    <choice to="225">
+      <text>If you have not already explored the south Of the city, you may do so (.</text>
+    </choice>
+    <choice to="64">
+      <text>). Otherwise, you flee into the jungle (.</text>
+    </choice>
+  </choices>
+</block>

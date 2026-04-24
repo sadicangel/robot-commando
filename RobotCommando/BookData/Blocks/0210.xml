@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="210" location="City of Knowledge">
+  <text>You decide to leave the College of Medicine. You climb back into your trusty robot, Where will you go now:</text>
+  <choices>
+    <choice to="277">
+      <text>To the College of War.</text>
+    </choice>
+    <choice to="14">
+      <text>To the Thalian Museum.</text>
+    </choice>
+    <choice to="66">
+      <text>To the Dinosaur Preserve.</text>
+    </choice>
+    <choice to="390">
+      <text>Out of the city.</text>
+    </choice>
+  </choices>
+</block>

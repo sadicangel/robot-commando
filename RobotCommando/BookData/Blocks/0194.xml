@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="194" location="Capital City">
+  <text>The other robot's control bubble springs open, and out flies the Karossean soldier who was piloting it! His unfamiliarity with the controls was fatal: he hit the ejection lever by mistake! He falls under the wheels of his own machine and is lost. If you wish, you can take the Construction Robot instead of your current robot. Its COMBAT BONUS is o. Whether or not you take it, turn back to 308.</text>
+  <choices>
+    <choice to="308">
+      <text>Whether or not you take it.</text>
+    </choice>
+  </choices>
+</block>

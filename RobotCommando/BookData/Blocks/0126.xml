@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="126" location="City of Knowledge">
+  <text>You follow the signs to the Medical Library. There, amid huge, dusty stacks of books, you begin your search. Finally, in an old textbook, you find a clue to help you. It describes a medicine that - so it says - will instantly cure all types of sleeping sickness.</text>
+  <choices>
+    <choice to="104">
+      <text>Compound the medicine.</text>
+    </choice>
+    <choice to="210">
+      <text>Leave the hospital.</text>
+    </choice>
+  </choices>
+</block>

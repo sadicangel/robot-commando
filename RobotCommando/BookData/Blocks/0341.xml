@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="341" location="Inherit">
+  <text>As you speed over the jungle, your instruments warn of an enemy approaching. It is a single Karossean in a captured fighter-craft. He has somehow identified you as a foe; he is already attacking. His robot is a Wasp Fighter, a Sleek experimental machine. Only a few exist. It has very little armour, but it has good weapons and handles well. WASP FIGHTER ARMOUR 6 SPEED Very Fast SKILL 11 SPECIAL ABILITIES: Whenever the Wasp's Attack Roll exceeds its foe's roll by 4 or more, it has literally flown circles around its foe! It auto matically wins the next combat round — no rolls are You cannot Escape. If you defeat the Wasp, turn to 137. If your ARMOUR is reduced to 2, turn to 60. If your ARMOUR is reduced to 0, you will die in the wreckage of your craft.</text>
+  <choices>
+    <choice to="137">
+      <text>If you defeat the Wasp.</text>
+    </choice>
+    <choice to="60">
+      <text>. If your ARMOUR is reduced to 2.</text>
+    </choice>
+  </choices>
+</block>

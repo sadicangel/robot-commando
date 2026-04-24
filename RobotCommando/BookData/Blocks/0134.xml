@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="134" location="Capital City">
+  <text>You try your best to sneak in without being seen — but there are too many enemies about. If you have an enemy uniform and want to wear it for this trip, turn to 243. If not, turn to 266.</text>
+  <choices>
+    <choice to="243">
+      <text>If you have an enemy uniform and want to wear it for this trip.</text>
+    </choice>
+    <choice to="266">
+      <text>. If not.</text>
+    </choice>
+  </choices>
+</block>

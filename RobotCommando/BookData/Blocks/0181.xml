@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="181" location="Unknown">
+  <text>Roll two dice. If the result is less than or equal to your SKILL, turn to 28. If the result is greater than your SKILL, turn to 318.</text>
+  <choices>
+    <choice to="28">
+      <text>If the result is less than or equal to your SKILL.</text>
+    </choice>
+    <choice to="318">
+      <text>. If the result is greater than your SKILL.</text>
+    </choice>
+  </choices>
+</block>

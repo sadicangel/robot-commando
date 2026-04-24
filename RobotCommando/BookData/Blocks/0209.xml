@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="209" location="City of Industry">
+  <text>You set a course for the City of Industry, a place of great factories and machinery. There, you reason, you might find a robot or invention that would give you an advantage over the invaders.</text>
+  <choices>
+    <choice to="265">
+      <text>Keep flying to the city.</text>
+      <condition>context.Robot is not null &amp;&amp; context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+    </choice>
+    <choice to="39">
+      <text>Keep walking to the city.</text>
+      <condition>context.Robot is not null &amp;&amp; !context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+    </choice>
+  </choices>
+</block>

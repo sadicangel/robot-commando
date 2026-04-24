@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="66" location="City of Knowledge">
+  <text>You are at the entrance to the Dinosaur Preserve, where some of the wildest and most vicious creatures of all Thalos are kept for study. If you have already been here. turn to 189. Otherwise, keep reading. An electro-fence keeps the creatures from rampaging out. On your side of the fence is cool green grass; on the Other side is rank jungle. Also on your side of the fence are two buildings: the Administrative Building, and a huge, unmarked, barn-like structure. What will you do: Leave your robot and go to the Administrative Building? Turn to 85 Leave your robot and go to the Turn to 171 Other building? Stay in your robot and cross the electro-fence? Turn to 129 Turn to 150 Leave the Dinosaur Preserve?</text>
+  <choices>
+    <choice to="85">
+      <text>. Otherwise, keep reading. An electro-fence keeps the creatures from rampaging out. On your side of the fence is cool green grass; on the Other side is rank jungle. Also on your side of the fence are two buildings: the Administrative Building, and a huge, unmarked, barn-like structure. What will you do: Leave your robot and go to the Administrative Building?</text>
+    </choice>
+    <choice to="171">
+      <text>Leave your robot and go to the.</text>
+    </choice>
+    <choice to="129">
+      <text>Other building? Stay in your robot and cross the electro-fence?</text>
+    </choice>
+  </choices>
+</block>

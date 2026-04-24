@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="169" location="Unknown">
+  <text>You may take one of these robots if you like (there are many here). If you take one and leave, turn to 376. Or, if you would prefer a tank robot instead, turn to 247. 169 You must fight the enemy robots. There are two Of them, both Tripod Robots. These speedy machines walk about on three legs; they have metal tentacle arms that can carry guns or other devices. You recognize them as handling-machines belonging to the fuel plant. The Karosseans have taken them over as guard robots! You must fight them both at</text>
+  <choices>
+    <choice to="376">
+      <text>If you take one and leave.</text>
+    </choice>
+    <choice to="247">
+      <text>. Or, if you would prefer a tank robot instead.</text>
+    </choice>
+  </choices>
+</block>

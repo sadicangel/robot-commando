@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="342" location="City of Industry">
+  <text>Down a side-street you hear the sounds Of purpose ful action. Peering cautiously around the comer, you see that the sounds—banging, clanging noises— are coming from a shop marked 'Robot Repair'. The shop door, naturally, is big enougl. for a robot to enter, and is invitingly open. If you enter and investigate, turn to 317. If you go on your way, turn to to.</text>
+  <choices>
+    <choice to="317">
+      <text>If you enter and investigate.</text>
+    </choice>
+  </choices>
+</block>

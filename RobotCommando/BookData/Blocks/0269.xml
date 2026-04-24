@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="269" location="City of Industry">
+  <text>Which button will you press: Green? Red? Blue?</text>
+  <choices>
+    <choice to="369">
+      <text>Green?</text>
+    </choice>
+    <choice to="157">
+      <text>Red?</text>
+    </choice>
+    <choice to="44">
+      <text>Blue?</text>
+    </choice>
+  </choices>
+</block>

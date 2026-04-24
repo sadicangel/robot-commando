@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="244" location="City of Worship">
+  <text>You are leaving the City of Worship. Where would you like to go: The Capital City? The City Of Knowledge? The City of Storms?</text>
+  <choices>
+    <choice to="308">
+      <text>The Capital City?</text>
+    </choice>
+    <choice to="361">
+      <text>The City Of Knowledge?</text>
+    </choice>
+    <choice to="144">
+      <text>The City of Storms?</text>
+    </choice>
+  </choices>
+</block>

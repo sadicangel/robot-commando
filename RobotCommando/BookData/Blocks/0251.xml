@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="251" location="City of Industry">
+  <text>You have returned to the Robot Experimental Cene tre. If you acquired the Seeker Missile on a previous visit, turn to 198. If not, turn to 333.</text>
+  <choices>
+    <choice to="198">
+      <text>If you acquired the Seeker Missile on a previous visit.</text>
+    </choice>
+    <choice to="333">
+      <text>. If not.</text>
+    </choice>
+  </choices>
+</block>

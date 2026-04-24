@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="373" location="Inherit">
+  <text>You stretch a robot arm to its fullest extension and pluck one of the flowers. The plant shudders. If you possess a Blue Potion, turn to 211. Otherwise, turn to 248.</text>
+  <choices>
+    <choice to="211">
+      <text>If you possess a Blue Potion.</text>
+    </choice>
+    <choice to="248">
+      <text>. Otherwise.</text>
+    </choice>
+  </choices>
+</block>

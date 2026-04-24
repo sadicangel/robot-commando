@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="144" location="City of Storms">
+  <text>You are in the City Of Storms. This beautiful metropolis is on the sea-coast, and is often the site of spectacular thunderstorms. Where would you like to go: The Weather Bureau? The coast? Another city?</text>
+  <choices>
+    <choice to="260">
+      <text>The Weather Bureau?</text>
+    </choice>
+    <choice to="335">
+      <text>The coast?</text>
+    </choice>
+    <choice to="43">
+      <text>Another city?</text>
+    </choice>
+  </choices>
+</block>

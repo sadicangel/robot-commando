@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="331" location="Unknown">
+  <text>You nee from the Nothosaurus. If you are in a robot, turn to 382. If you are on foot, turn to 279.</text>
+  <choices>
+    <choice to="382">
+      <text>If you are in a robot.</text>
+    </choice>
+    <choice to="279">
+      <text>. If you are on foot.</text>
+    </choice>
+  </choices>
+</block>

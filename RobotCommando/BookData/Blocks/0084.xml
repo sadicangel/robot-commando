@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="84" location="City of Storms">
+  <text>The inquisitive dinosaurs totally surround your quarry. What will you do: Shove your way in among them? Fire a few shots to panic them? Shout at them over your speakers?</text>
+  <choices>
+    <choice to="387">
+      <text>Shove your way in among them?</text>
+    </choice>
+    <choice to="299">
+      <text>Fire a few shots to panic them?</text>
+    </choice>
+    <choice to="119">
+      <text>Shout at them over your speakers?</text>
+    </choice>
+  </choices>
+</block>

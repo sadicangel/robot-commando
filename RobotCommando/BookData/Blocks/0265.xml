@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="265" location="City of Industry">
+  <text>You are in the City of Industry. Normally, it is busy and bustling, but now you see no life anywhere. Everyone is asleep... everyone but you.&#xD;
+&#xD;
+Where will you go in your quest for usefull artefacts:</text>
+  <choices>
+    <choice to="105">
+      <text>The Fuel Refining Plant.</text>
+      <condition>context.Robot is not null &amp;&amp; context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+    </choice>
+    <choice to="25">
+      <text>The Robot Experimental Centre.</text>
+      <condition>context.Robot is not null &amp;&amp; !context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+    </choice>
+    <choice to="127">
+      <text>The tunnels underneath the city.</text>
+    </choice>
+    <choice to="34">
+      <text>Just explore.</text>
+    </choice>
+    <choice to="309">
+      <text>Leave the city.</text>
+    </choice>
+  </choices>
+</block>

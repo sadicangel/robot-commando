@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="60" location="Inherit">
+  <text>You can tell that your robot is nearly done for. If you would like to bail out of your crippled machine, turn to 183. If you would rather fight to a finish, return to 341 and complete the battle.</text>
+  <choices>
+    <choice to="183">
+      <text>If you would like to bail out of your crippled machine.</text>
+    </choice>
+    <choice to="341">
+      <text>. If you would rather fight to a finish.</text>
+    </choice>
+  </choices>
+</block>

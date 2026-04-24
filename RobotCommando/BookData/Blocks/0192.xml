@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="192" location="Capital City">
+  <text>You arrive safely at the Capital City hospital. You can see that you will have to be careful; you hear voices echoing through the halls. If you possess the Cloak of Invisibility and have not used it, you may use it now (turn to 29). If you have already used it, do not have it, or simply choose not to use it now, turn to 74.</text>
+  <choices>
+    <choice to="29">
+      <text>If you possess the Cloak of Invisibility and have not used it, you may use it now (.</text>
+    </choice>
+    <choice to="74">
+      <text>). If you have already used it, do not have it, or simply choose not to use it now.</text>
+    </choice>
+  </choices>
+</block>

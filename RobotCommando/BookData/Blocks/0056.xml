@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="56" location="Inherit">
+  <text>You have defeated the Ankylosaurus. Looking along the trail of destroyed vegetation that it left behind, you see a glint of metal. If you investigate, turn to 263. If you ignore it and go on, turn to 321.</text>
+  <choices>
+    <choice to="263">
+      <text>If you investigate.</text>
+    </choice>
+    <choice to="321">
+      <text>. If you ignore it and go on.</text>
+    </choice>
+  </choices>
+</block>

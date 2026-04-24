@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="10" location="Capital City">
+  <text>You decide to visit the Capitol Building, the seat of government of Thalos.</text>
+  <choices>
+    <choice to="42">
+      <text>Go in your robot.</text>
+    </choice>
+    <choice to="71">
+      <text>Travel on foot.</text>
+    </choice>
+  </choices>
+</block>

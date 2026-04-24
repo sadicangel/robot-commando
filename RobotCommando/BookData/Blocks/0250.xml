@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="250" location="Unknown">
+  <text>You wave to the robot and start to leave.. but as you do, alarms go off and lights flash. 'I'm very sorry,' says the robot, 'but museum property has been removed without authorization. You cannot leave.' Its metal arms reach out towards you. Roll two dice. If the number you roll is less than or equal to your SKILL, turn to 272. Otherv.'ise, turn to 294.</text>
+  <choices>
+    <choice to="272">
+      <text>If the number you roll is less than or equal to your SKILL.</text>
+    </choice>
+    <choice to="294">
+      <text>. Otherv.'ise.</text>
+    </choice>
+  </choices>
+</block>

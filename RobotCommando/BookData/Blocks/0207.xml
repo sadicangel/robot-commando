@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="207" location="City of Knowledge">
+  <text>You decide to fight. The Robot Tyrannosaurus is an intricate device, shaped just like a Tyrannosaurus, but all gears and metal — and tougher than a real dinosaur. It has no pilot, but runs on a pre-set (and very destructive) program. ROBOT TYRANNOSAURUS ARMOUR SPEED Fast SKILL 10 If you defeat it, Turn to 230. If it defeats you, turn to 255. If you Escape, turn to 52.</text>
+  <choices>
+    <choice to="230">
+      <text>ROBOT TYRANNOSAURUS ARMOUR SPEED Fast SKILL 10 If you defeat it.</text>
+    </choice>
+    <choice to="255">
+      <text>. If it defeats you.</text>
+    </choice>
+    <choice to="52">
+      <text>. If you Escape.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="20" location="City of Industry">
+  <text>The whole sixth floor of the Centre seems to be a cross between a laboratory and a gymnasium. In the middle of the room is a device like a suit of armour. Beside it is a sleeping fellow, somewhat battered around the face, in an athletic suit. After a little investigation, you find that the device on the floor is an experimental 'Amplifier Suit', designed to make its wearer almost as strong and last as a robot.</text>
+  <choices>
+    <choice to="83">
+      <text>Try the Amplifier Suit.</text>
+    </choice>
+    <choice to="333">
+      <text>Try another floor instead.</text>
+    </choice>
+  </choices>
+</block>

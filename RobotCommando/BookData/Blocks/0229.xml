@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="229" location="City of Industry">
+  <text>On the tenth floor, you find an incredible confusion Of cubbyholes, and nothing that looks like a robot or device. There are tall bookshelves everywhere, and more books on the floor and the desks. If you continue to investigate, turn to 360. If you return to the lobby, turn to 333.</text>
+  <choices>
+    <choice to="360">
+      <text>If you continue to investigate.</text>
+    </choice>
+    <choice to="333">
+      <text>. If you return to the lobby.</text>
+    </choice>
+  </choices>
+</block>

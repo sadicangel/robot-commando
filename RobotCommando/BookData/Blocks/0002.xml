@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="2" location="City of the Guardians">
+  <text>'Insufficient data,' replies the computer. 'Probability of Karossean trick 67 per cent. You have five seconds to change your course.'</text>
+  <choices>
+    <choice to="357">
+      <text>Continue to give the computer guardian more data.</text>
+    </choice>
+    <choice to="376">
+      <text>Turn your robot and go elsewhere.</text>
+    </choice>
+  </choices>
+</block>

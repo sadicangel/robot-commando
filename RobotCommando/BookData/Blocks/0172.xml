@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="172" location="Unknown">
+  <text>You're spotted! One Of them raises a huge weapon and points it at you. 'What's the password?' it broadcasts. What will you say: 'Seven'? 'Twooh-three'? 'Eighty-eight'?</text>
+  <choices>
+    <choice to="262">
+      <text>'Seven'?</text>
+    </choice>
+    <choice to="203">
+      <text>'Twooh-three'?</text>
+    </choice>
+    <choice to="88">
+      <text>'Eighty-eight'?</text>
+    </choice>
+  </choices>
+</block>

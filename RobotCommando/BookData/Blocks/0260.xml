@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="260" location="City of Storms">
+  <text>Flying over the Weather Bureau are the two red flags that you know mean 'STORM WARNING!' Parked outside the building you see another robot, a Walker Robot. Designed primarily for travel, this robot has four jointed legs that carry it swiftly over any terrain. WALKER ROBOT ARMOUR 6 SPEED Fast COMBAT BONUS SPECIAL ABILITIES: None If you like, you may exchange this robot for your own. If you come back to this spot after exchanging, your own robot may still be here; make a note that this is where you are leaving it. If you go inside the Weather Bureau, turn to 163. If you go on past, turn to 144.</text>
+  <choices>
+    <choice to="163">
+      <text>If you go inside the Weather Bureau.</text>
+    </choice>
+    <choice to="144">
+      <text>. If you go on past.</text>
+    </choice>
+  </choices>
+</block>

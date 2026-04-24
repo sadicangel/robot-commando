@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="93" location="City of Knowledge">
+  <text>You head for the City Of Knowledge. It is your people's greatest centre of learning. There, you hope, you will find information that Will help you defeat the invaders. After about an hour of travel, you sight a flying dinosaur ahead of you. It dives aggressively towards you. You must fight it. It is a Pteranodon, a large, predatory flying dinosaur. It is lightly built, but speedy and aggressive. PTERANODON ARMOUR 3 SPEED Fast SKILL9 srECIAL es: None if you defeat the Pteranodon, or if you turn to 186. If the Pteranodon reduces your robot's ARMOUR too, turn to 116.</text>
+  <choices>
+    <choice to="186">
+      <text>None if you defeat the Pteranodon, or if you.</text>
+    </choice>
+    <choice to="116">
+      <text>. If the Pteranodon reduces your robot's ARMOUR too.</text>
+    </choice>
+  </choices>
+</block>

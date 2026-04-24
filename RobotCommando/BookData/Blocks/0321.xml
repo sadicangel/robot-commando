@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="321" location="Inherit">
+  <text>If you explore the jungle on the Other path, turn to 73. If you want to go elsewhere, turn to 137.</text>
+  <choices>
+    <choice to="73">
+      <text>If you explore the jungle on the Other path.</text>
+    </choice>
+    <choice to="137">
+      <text>. If you want to go elsewhere.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="36" location="City of Knowledge">
+  <text>'Well, that depends on what kind of information you need. modern military information is classified, and you would have to ask at the War College. Historical military information is in Hall Beta. We have some wonderful exhibits.' If you go to Hall Beta to look at the military exhibits, turn to 146. If you ask for something else, turn back to 14.</text>
+  <choices>
+    <choice to="146">
+      <text>' If you go to Hall Beta to look at the military exhibits.</text>
+    </choice>
+    <choice to="14">
+      <text>. If you ask for something else.</text>
+    </choice>
+  </choices>
+</block>

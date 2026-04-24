@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="1" location="Farm">
+  <text>At the robot parking-area, you stop and look around. There are several robots there, but only two seem suitable for long-distance travel. You study them both. You can take a standard 'cowboy' walking robot, which is not fast, but sturdy and adaptable or a light flyer, which is very speedy and manoeuvrable, but not really intended for combat.</text>
+  <choices>
+    <choice to="24">
+      <text>Check the cowboy robot.</text>
+    </choice>
+    <choice to="47">
+      <text>Check the light flyer.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="38" location="City of Knowledge">
+  <text>If you are travelling on the ground. turn to 137. If you are flying, Turn to 313.</text>
+  <choices>
+    <choice to="313">
+      <text>. If you are flying.</text>
+    </choice>
+  </choices>
+</block>

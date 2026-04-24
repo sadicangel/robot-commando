@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="105" location="City of Industry">
+  <text>You bar the lab doors for safety and set to work. Fortunately, the instructions are clear and the lab is well stocked. Eventually, you have a one-litre flask of Blue Potion — all you can make with the materials at hand. Indeed, from the rarity Of the materials you used, you doubt that another litre could be made in the whole Of Thalos! But you also know from the Sook that one litre would be enough for everyone Thalos. Nevertheless, there is a problem. The potion is so volatile that once opened, it will pickly evaporate; you cannot awaken people one at a time. You must find a way to treat your whole ütion at once! So your quest is not over. Outside, you hear the strange squeaking once sain. If you leave immediately, Turn to 394. If you emain in the laboratory, checking your work one ust time, turn to 372. You decide to visit the Fuel-refining Plant. This i where the radioactive ores that power the robots an processed. A single block of fuel will drive a robo for a year. As you approach, you realize that someo the robots standing around the plant are active! Karosseans have sent a force to garrison thi strategic point. What will you do: Proceed normally? Turn to 23 Attack? Turn to 16 Turn to 13 Flee? Try a ruse? Turn to 19</text>
+  <choices>
+    <choice to="394">
+      <text>If you leave immediately.</text>
+    </choice>
+    <choice to="372">
+      <text>. If you emain in the laboratory, checking your work one ust time.</text>
+    </choice>
+    <choice to="23">
+      <text>. You decide to visit the Fuel-refining Plant. This i where the radioactive ores that power the robots an processed. A single block of fuel will drive a robo for a year. As you approach, you realize that someo the robots standing around the plant are active! Karosseans have sent a force to garrison thi strategic point. What will you do: Proceed normally?</text>
+    </choice>
+    <choice to="16">
+      <text>Attack?</text>
+    </choice>
+    <choice to="19">
+      <text>Flee? Try a ruse?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="15" location="City of Industry">
+  <text>The tunnel goes lower and lower into the earth. Then it opens into a wide, dimly lit vault.</text>
+  <choices>
+    <choice to="340">
+      <text>Enter the vault.</text>
+    </choice>
+    <choice to="178">
+      <text>Continue downwards.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="398" location="City of Industry">
+  <text>The corridor levels off and passes a small alcove. Within the alcove is a small lift, just big enough for one person. If you want to get in the lift and press the button, turn to 307. If you continue along the corridor, turn to 178.</text>
+  <choices>
+    <choice to="307">
+      <text>If you want to get in the lift and press the button.</text>
+    </choice>
+    <choice to="178">
+      <text>. If you continue along the corridor.</text>
+    </choice>
+  </choices>
+</block>

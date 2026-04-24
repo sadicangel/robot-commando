@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="123" location="Capital City">
+  <text>You enter the temple, but soon find that nothing is what it appears to be. Indeed, nothing is happening here. You seem to have gained nothing by having come. But then, nothing would be served by your leaving! Test your Luck. If you are Lucky, turn to 86. If you are Unlucky, turn to 204.</text>
+  <choices>
+    <choice to="86">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="204">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

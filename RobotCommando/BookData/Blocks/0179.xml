@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="179" location="City of Storms">
+  <text>An hour into your trip, a powerful storrn strikes. If your robot is a flying type, turn to 280. Otherwise, you ride out the storm safely on the ground and then resume your journey: turn to 144.</text>
+  <choices>
+    <choice to="280">
+      <text>If your robot is a flying type.</text>
+    </choice>
+    <choice to="144">
+      <text>. Otherwise, you ride out the storm safely on the ground and then resume your journey.</text>
+    </choice>
+  </choices>
+</block>

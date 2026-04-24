@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="193" location="Capital City">
+  <text>You enter the huge black building. You feel a tremor of uncertainty. As usual, you see steepers everywhere — but are they really asleep? They look dead! You lift the wrist Of the nearest one and check for a pulse. You feel nothing! You look wildly around you, but see nothing. Yet you are terrified. Screaming, you run back outside into the sunlight. When you escape from the temple, the irrational fear vanishes as quickly as it came. But you are still shaking. Reduce your SKILL by t. If you get hold of yourself and re-enter the grim temple, Turn to 327. Otherwise, return to 166.</text>
+  <choices>
+    <choice to="327">
+      <text>If you get hold of yourself and re-enter the grim temple.</text>
+    </choice>
+    <choice to="166">
+      <text>. Otherwise.</text>
+    </choice>
+  </choices>
+</block>

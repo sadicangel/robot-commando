@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="161" location="City of Knowledge">
+  <text>You carefully examine the Robot Surgeon. A pair of wites appears to be crossed. But when you switch them, the machine comes alive and grabs you! It seems to want to remove your appendix! Lose STAMINA point immediately! You must fight the berserk machine. ROBOT SURGEON SKILL 6 STAMINA 8 The room is so small that you cannot Escape. If you defeat the Robot Surgeon, turn to 126 to look for information on sleeping sickness, or turn to 210 to leave the building.</text>
+  <choices>
+    <choice to="126">
+      <text>If you defeat the Robot Surgeon.</text>
+    </choice>
+    <choice to="210">
+      <text>to look for information on sleeping sickness, or.</text>
+    </choice>
+  </choices>
+</block>

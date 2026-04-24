@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="81" location="Unknown">
+  <text>You decide to investigate the Capital City hospital. If you want to Stay in your robot, turn to 99. If you investigate on foot, turn to 152.</text>
+  <choices>
+    <choice to="99">
+      <text>If you want to Stay in your robot.</text>
+    </choice>
+    <choice to="152">
+      <text>. If you investigate on foot.</text>
+    </choice>
+  </choices>
+</block>

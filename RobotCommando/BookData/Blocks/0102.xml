@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="102" location="City of Knowledge">
+  <text>You find a stairway and head down. You find that both the Karosseans are dead. One was about your size; you quickly strip off his unifonn and put it on yourself. It may come in handy later! You check the signs. The demolished exhibit was labelled 'Tyrannosaurus'. The shouts from outside are coming closer, so you duck out of a convenient door.</text>
+  <choices>
+    <choice to="1014">
+      <text>Return to the front desk.</text>
+    </choice>
+  </choices>
+</block>

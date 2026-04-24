@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="142" location="City of Industry">
+  <text>Your mission is more important than this asinine robot. You will have to deal with it by force. GUARD ROBOT SKILLS STAMINA 10 Note that this robot is human-sized, and you fight it as though it were a human foe. You may Escape at any time by turning to 118. If you defeat the Guard Robot, Turn to 48.</text>
+  <choices>
+    <choice to="48">
+      <text>If you defeat the Guard Robot.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="262" location="Unknown">
+  <text>There is a brief buzz of conversation between your enemies. Your answer seems to have confused them. If you decide to attack immediately, turn to 281. If you stand your ground without attacking, turn to 203.</text>
+  <choices>
+    <choice to="281">
+      <text>If you decide to attack immediately.</text>
+    </choice>
+    <choice to="203">
+      <text>. If you stand your ground without attacking.</text>
+    </choice>
+  </choices>
+</block>

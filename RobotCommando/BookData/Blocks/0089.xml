@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="89" location="City of the Jungle">
+  <text>Your captors discuss what to do with you. Eventual iy they toss you into a basement room and lock the door. All your Possessions are lost. If you try to escape now, turn to 315. If you bide your time and wait for a better chance, Turn to 397.</text>
+  <choices>
+    <choice to="315">
+      <text>If you try to escape now.</text>
+    </choice>
+    <choice to="397">
+      <text>. If you bide your time and wait for a better chance.</text>
+    </choice>
+  </choices>
+</block>

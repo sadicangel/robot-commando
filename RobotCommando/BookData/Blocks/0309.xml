@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="309" location="City of Industry">
+  <text>You are leaving the City of Industry. Where will you go now?</text>
+  <choices>
+    <choice to="361">
+      <text>The City of Knowledge.</text>
+    </choice>
+    <choice to="165">
+      <text>The City of Knowledge.</text>
+    </choice>
+    <choice to="38">
+      <text>The City of Knowledge.</text>
+    </choice>
+    <choice to="122">
+      <text>The City of Knowledge.</text>
+      <condition>context.Inventory.Contains("City of Guardians Location")</condition>
+    </choice>
+  </choices>
+</block>

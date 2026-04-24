@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="44" location="City of Industry">
+  <text>The lift doors clang shut and it begins to descend. After about five minutes, it Stops again. Outside is a corridor even dimmer than the area you just left. The door opens just wide enough for you to squeeze out. Will you press another button (turn to 269), or step out and go down the corridor (Turn to 15)?</text>
+  <choices>
+    <choice to="269">
+      <text>Will you press another button (.</text>
+    </choice>
+    <choice to="15">
+      <text>), or step out and go down the corridor (.</text>
+    </choice>
+  </choices>
+</block>

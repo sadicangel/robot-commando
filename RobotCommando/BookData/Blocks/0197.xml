@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="197" location="Unknown">
+  <text>tf you have already been challenged by Karossean 197 soldiers using a number as a password, and you remember that number, turn to that reference. Otherwise, turn to 236.</text>
+  <choices>
+    <choice to="236">
+      <text>Otherwise.</text>
+    </choice>
+  </choices>
+</block>

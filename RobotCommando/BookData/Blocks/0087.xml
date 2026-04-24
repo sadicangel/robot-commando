@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="87" location="City of Knowledge">
+  <text>If you are wearing an enemy uniform, turn to 177. If you do not have a uniform, Test your Luck: if you are Lucky, turn to 199; if you are Unlucky, Turn to 223.</text>
+  <choices>
+    <choice to="177">
+      <text>If you are wearing an enemy uniform.</text>
+    </choice>
+    <choice to="199">
+      <text>. If you do not have a uniform, Test your Luck: if you are Lucky.</text>
+    </choice>
+    <choice to="223">
+      <text>if you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

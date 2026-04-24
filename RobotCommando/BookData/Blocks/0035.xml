@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="35" location="City of the Jungle">
+  <text>You have defeated the Karossean ambush. All three robots lie smashed and burning on the ground. What will you do: Explore the city? Explore the jungle? Leave the city?</text>
+  <choices>
+    <choice to="366">
+      <text>Explore the city?</text>
+    </choice>
+    <choice to="170">
+      <text>Explore the jungle?</text>
+    </choice>
+    <choice to="298">
+      <text>Leave the city?</text>
+    </choice>
+  </choices>
+</block>

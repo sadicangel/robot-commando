@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="361" location="City of Knowledge">
+  <text>You are in the City of Knowledge. Here are all of Thalos's greatest universities and museums. This is the home of those who most value learning. Here, you hope, you will find something to help you in your lone struggle. You have a wide choice of possible destinations within the City of Knowledge</text>
+  <revisitText>You are in the City of Knowledge.</revisitText>
+  <choices>
+    <choice to="40">
+      <text>Keep going to the city.</text>
+      <condition>context.Page.IsVisited</condition>
+    </choice>
+    <choice to="54">
+      <text>The College of Medicine.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="14">
+      <text>The Thalian Museum</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="66">
+      <text>Dinosaur Preserve</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="277">
+      <text>The War College</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+    <choice to="380">
+      <text>Out of the city.</text>
+      <condition>!context.Page.IsVisited</condition>
+      <effect>context.Page.IsVisited = true</effect>
+    </choice>
+  </choices>
+</block>

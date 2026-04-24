@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="104" location="City of Knowledge">
+  <text>Looking at a hospital map, you see that the Research Lab is not far away. Carrying the book with you, you set off to find it, and soon arrive at a large chemical laboratory. As you walked, you heard strange squeaks and shuffling noises in the hallway, but saw nothing. You are somewhat disturbed to note that there are no sleeping doctors or researchers here! No one is here at all.&#xD;
+&#xD;
+You bar the lab doors for safety and set to work. fortunately, the instructions are clear and the lab is still stocked. Eventually, you havea one-litre flask of Blue Potion - all you can make with the materials in hand. Indeed, from the rarity of the materials you used, you doubt that another litre could be made in the whole of Thalos! But you also know from the that one litre would be enough for everyone in Thalos. Nevertheless, there is a problem. The potion is so volatile that once opened, if will quickly evaporate; you cannot awaken people one at a time. You must find a way to treat your whole nation at once! So your quest is not over.&#xD;
+&#xD;
+Outside, you hear the strange squeaking once again.</text>
+  <choices>
+    <choice to="394">
+      <text>Leave immediately.</text>
+    </choice>
+    <choice to="372">
+      <text>Remain the laboratory and check the work one last time.</text>
+    </choice>
+  </choices>
+</block>

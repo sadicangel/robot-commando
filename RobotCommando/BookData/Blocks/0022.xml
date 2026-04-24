@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="22" location="City of the Guardians">
+  <text>You use the code-words you found with the map reference. 'Acceptable,' crackles the voice of the guardian computer. 'Entering at Clearance Level Zero.'</text>
+  <choices>
+    <choice to="175">
+      <text>Enter the building.</text>
+    </choice>
+  </choices>
+</block>

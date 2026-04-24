@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="215" location="Capital City">
+  <text>The guards are not prepared to fight an invisible opponent. Normally crack troops, their SKILL is low for this fight because of their surprise. Fight them one at a time: First GUARD SKILL 5 STAMINA 8 Second GUARD SKILL 4 STAMINA 9 Because Of your Cloak, you can Escape. if need be, without taking a wound. If you grab the sword and Escape, turn to 296. If you defeat the guards, Turn to 334.</text>
+  <choices>
+    <choice to="296">
+      <text>If you grab the sword and Escape.</text>
+    </choice>
+    <choice to="334">
+      <text>. If you defeat the guards.</text>
+    </choice>
+  </choices>
+</block>

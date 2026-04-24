@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="116" location="City of Knowledge">
+  <text>If you have a flying robot, turn to 139. Otherwise, turn to 162.</text>
+  <choices>
+    <choice to="139">
+      <text>If you have a flying robot.</text>
+    </choice>
+    <choice to="162">
+      <text>. Otherwise.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="304" location="Capital City">
+  <text>You decide to visit the Temple of Fear. On your way there, you see an unusual robot parked in an open space. If you stop to investigate it, turn to 261. If you go straight to the temple, turn to 57.</text>
+  <choices>
+    <choice to="261">
+      <text>If you stop to investigate it.</text>
+    </choice>
+    <choice to="57">
+      <text>. If you go straight to the temple.</text>
+    </choice>
+  </choices>
+</block>

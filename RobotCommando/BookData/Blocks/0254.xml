@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="254" location="City of Knowledge">
+  <text>Near by you hear more squeaking and shuffling. There were many more than three opened cages in the lab.</text>
+  <choices>
+    <choice to="276">
+      <text>Search through the lab.</text>
+    </choice>
+    <choice to="210">
+      <text>Leave the College of Medicine.</text>
+    </choice>
+  </choices>
+</block>

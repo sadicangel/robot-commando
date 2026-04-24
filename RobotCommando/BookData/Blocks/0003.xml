@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="3" location="City of Knowledge">
+  <text>Because you are not familiar with this type of robot, you do not get the normal combat bonus with it - in fact, your skill is 1 less than usual while you use it. You realize you had better get out of there while you can.</text>
+  <choices>
+    <choice to="147">
+      <text>Leave the College of War.</text>
+    </choice>
+  </choices>
+</block>

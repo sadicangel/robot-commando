@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="279" location="Unknown">
+  <text>Test your Luck. If you are Lucky, turn to 191. If you are Unlucky, Turn to 121.</text>
+  <choices>
+    <choice to="191">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="121">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>

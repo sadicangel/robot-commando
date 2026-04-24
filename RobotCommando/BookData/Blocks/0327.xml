@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="327" location="Capital City">
+  <text>You grit your teeth and summon up your courage — and go back inside. But it is worse than before. The Powers of Fear are all around you. Whatever help they may be able to give, you want none of it! Lose another SKI LL point and return to 166.</text>
+  <choices>
+    <choice to="166">
+      <text>Lose another SKI LL point and.</text>
+    </choice>
+  </choices>
+</block>

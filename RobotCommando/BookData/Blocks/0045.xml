@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="45" location="Inherit">
+  <text>You return to the robot that brought you to the city. You collect your Possessions and climb out of the one you used in the jungle. Just as you reach the ground, you hear a thunderous explosion. You have been ambushed! Your old robot is going up in flames. Behind you, guns are firing at the one that took you through the jungle. If you climb back into that robot and fight, turn to 347, If you run for cover, turn to 159.</text>
+  <choices>
+    <choice to="347">
+      <text>If you climb back into that robot and fight.</text>
+    </choice>
+    <choice to="159">
+      <text>If you run for cover.</text>
+    </choice>
+  </choices>
+</block>

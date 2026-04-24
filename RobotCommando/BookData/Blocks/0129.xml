@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="129" location="City of Knowledge">
+  <text>If you fly over the jungle of the Preserve, turn to 252. If you enter the jungle on the ground, turn to 117. Note that with some robots, you have a choice between flying or walking!</text>
+  <choices>
+    <choice to="252">
+      <text>If you fly over the jungle of the Preserve.</text>
+    </choice>
+    <choice to="117">
+      <text>. If you enter the jungle on the ground.</text>
+    </choice>
+  </choices>
+</block>

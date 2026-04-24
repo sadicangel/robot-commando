@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="261" location="Capital City">
+  <text>You turn aside and leave your own robot in order to examine this one. It is low-slung and seems spiky. You see that it is bristling with weapons, which is what gives the Hedgehog Robot its name. It was designed for air defence against flying dinosaurs, but it is equally effective against flying robots. HEDGEHOG ROBOT ARMOUR 8 SPEED Slow COüBAT BONUS O or +3 SPECIAL ABILITIES: Against flying foes, the Hedgehog has a COMBAT BONUS of +3, which more than cancels out its disadvantage in speed. If you like, you may exchange your present robot for this one. If you do so, make a note that your old robot is now parked here instead of the Hedgehog. If you go on towards the Temple of Fear, Turn to 57. If you return the way you came, turn to 166.</text>
+  <choices>
+    <choice to="57">
+      <text>If you go on towards the Temple of Fear.</text>
+    </choice>
+    <choice to="166">
+      <text>. If you return the way you came.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="314" location="Capital City">
+  <text>The tyrant shakes his head. 'Just because you're a Thalian doesn't mean I have to duel you.' But, hearing his men grumble, he adds: 'Until you prove yourself, that is. If you can defeat one of my officers, that will prove you are worthy to face me.' Instantly, one of his followers—a big. scarred brute — leaps out With drawn sword. Your sword is retumed to you. You Will have to fight the Karossean officer. OFFICER SKILL STAMINA 11 If you win, turn to 377.</text>
+  <choices>
+    <choice to="377">
+      <text>OFFICER SKILL STAMINA 11 If you win.</text>
+    </choice>
+  </choices>
+</block>

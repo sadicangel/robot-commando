@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="351" location="Unknown">
+  <text>You dive into the water, activating the 'jets' that let your machine swim. You are still in danger — the herd is not just on the land, but thundering through the shallow water as well. But, in the nick of time, you escape them. If you Return to the city, turn to 144. If you try to swim around the herd and investigate the spot where they were originally clustered, turn to 246.</text>
+  <choices>
+    <choice to="144">
+      <text>If you Return to the city.</text>
+    </choice>
+    <choice to="246">
+      <text>. If you try to swim around the herd and investigate the spot where they were originally clustered.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="219" location="Capital City">
+  <text>If you are wearing a Karossean uniform, turn to 303. If not, turn to 11.</text>
+  <choices>
+    <choice to="303">
+      <text>If you are wearing a Karossean uniform.</text>
+    </choice>
+    <choice to="11">
+      <text>. If not.</text>
+    </choice>
+  </choices>
+</block>

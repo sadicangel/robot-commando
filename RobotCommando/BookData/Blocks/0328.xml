@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="328" location="City of Knowledge">
+  <text>You are facing three Giant Lizards! You back into the corner of the room, so that you may fight them one at a time. You cannot try to escape until you have slain the first two.</text>
+  <enemies>
+    <enemy tag="Enemy" name="Giant Lizard I" stamina="4" staminaMax="4" skill="7" skillMax="7">
+      <description>A giant lizard used in laboratory experiments.</description>
+      <battleOutcome win="-1" />
+    </enemy>
+    <enemy tag="Enemy" name="Giant Lizard II" stamina="6" staminaMax="6" skill="6" skillMax="6">
+      <description>A giant lizard used in laboratory experiments.</description>
+      <battleOutcome win="-1" />
+    </enemy>
+    <enemy tag="Enemy" name="Giant Lizard III" stamina="5" staminaMax="5" skill="7" skillMax="7">
+      <description>A giant lizard used in laboratory experiments.</description>
+      <battleOutcome win="254" escape="254" />
+    </enemy>
+  </enemies>
+</block>

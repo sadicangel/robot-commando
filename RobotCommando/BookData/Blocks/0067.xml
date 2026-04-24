@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="67" location="City of Worship">
+  <text>Storm clouds are gathering as you approach. But even through the static on your radio, you can hear chatter in Karossean voices. Then you are challenged by several Karosseans in small robots. If you fight them, Turn to 217. If you fly away from them, turn to 12.</text>
+  <choices>
+    <choice to="217">
+      <text>If you fight them.</text>
+    </choice>
+    <choice to="12">
+      <text>. If you fly away from them.</text>
+    </choice>
+  </choices>
+</block>

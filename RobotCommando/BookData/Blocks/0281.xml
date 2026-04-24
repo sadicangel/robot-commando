@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="281" location="Unknown">
+  <text>Fight the two enemy Myrmidon robots, one at a time. The Myrmidon is the standard Karossean combat robot. It has two forms — humanoid and fighter-plane. These are in humanoid form and will not try to change during the battle. FirstMYRMIDON ARMOUR SPEED Medium SKILL to Second MYRMIDON ARMOUR 12 SPEE D Medium SKILL 9 SPECIAL ABILITIES: None in this combat If you defeat the two robots, turn to 192. If they reduce your robot's ARMOUR to o, Turn to 238. If you Escape, turn to 30S.</text>
+  <choices>
+    <choice to="192">
+      <text>None in this combat If you defeat the two robots.</text>
+    </choice>
+    <choice to="238">
+      <text>. If they reduce your robot's ARMOUR to o.</text>
+    </choice>
+    <choice to="30">
+      <text>. If you Escape.</text>
+    </choice>
+  </choices>
+</block>

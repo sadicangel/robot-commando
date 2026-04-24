@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="397" location="City of the Jungle">
+  <text>After a few hours, the door opens and a soldier tosses in a package of rations. Desperately, you grab his arm before the door closes! The Karossean turn. bles to the floor. He has no chance against your berserk rage. You leave him unconscious, at a cost of 2 STAMINA points to yourself. In an adjoining room, you find your sword lying underneath a table, but there is no sign of your other Possessions. If you search for them, turn to 174. If you leave immediately, turn to 69.</text>
+  <choices>
+    <choice to="174">
+      <text>If you search for them.</text>
+    </choice>
+    <choice to="69">
+      <text>. If you leave immediately.</text>
+    </choice>
+  </choices>
+</block>

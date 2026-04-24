@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="233" location="City of Storms">
+  <text>SKILL STAMINA First GIANT LIZARD 7 4 Second GIANT LIZARD 6 6 GIANT LIZARD 7 5 If you defeat all three Giant Lizards, or if you successfully Escape, turn to 254.</text>
+  <choices>
+    <choice to="254">
+      <text>SKILL STAMINA First GIANT LIZARD 7 4 Second GIANT LIZARD 6 6 GIANT LIZARD 7 5 If you defeat all three Giant Lizards, or if you successfully Escape.</text>
+    </choice>
+  </choices>
+</block>

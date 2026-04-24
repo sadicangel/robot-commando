@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="368" location="City of Knowledge">
+  <text>You realize that you must leave quickly. Looking outside, you see that the Karosseans have entered the building. The fools have left their robots outside and unguarded, parked near yours. You spring out of the window and run for them. If you get back into your own robot, turn to 322. If you get into a Karossean robot instead, turn to 345.</text>
+  <choices>
+    <choice to="322">
+      <text>If you get back into your own robot.</text>
+    </choice>
+    <choice to="345">
+      <text>. If you get into a Karossean robot instead.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="78" location="City of Knowledge">
+  <text>You fight the enemy robot. It is a Myrmidon, the Standard Karossean combat robot. It has two — humanoid and fighter-plane. This one is in humanoid form and will not be able to change itself during the battle. MYRMIDON ARMOUR 12 SPEED Medium SKILL to SPECIAL ABILITIES: None for this battle If you reduce the enemy's ARMOUR to o, turn t0109. If your own ARMOUR is reduced too, turn to 133.</text>
+  <choices>
+    <choice to="133">
+      <text>If your own ARMOUR is reduced too.</text>
+    </choice>
+  </choices>
+</block>

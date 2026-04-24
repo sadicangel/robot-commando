@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="24" location="Farm">
+  <text>This man-shaped robot is designed for dinosaur herding. It moves by walking. It has weapons for dealing with rogue dinosaurs, but they are not as powerful as those of a war robot.</text>
+  <choices>
+    <choice to="47">
+      <text>Check the light flyer.</text>
+    </choice>
+    <choice to="70" showWhenDisabled="true">
+      <text>Chose a place to go.</text>
+      <condition>context.Robot is not null</condition>
+    </choice>
+  </choices>
+  <robots>
+    <robot tag="Robot" name="Cowboy" frame="Humanoid" armor="10" armorMax="10" speed="Average" speedMax="Average" combatBonus="0" combatBonusMax="0">
+      <description>A man-shaped robot designed for dinosaur herding</description>
+    </robot>
+  </robots>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="335" location="City of Storms">
+  <text>You pilot your robot along the sea-coast. If you are flying, turn to 284. If you are not flying, Turn to 8.</text>
+  <choices>
+    <choice to="284">
+      <text>If you are flying.</text>
+    </choice>
+    <choice to="8">
+      <text>. If you are not flying.</text>
+    </choice>
+  </choices>
+</block>

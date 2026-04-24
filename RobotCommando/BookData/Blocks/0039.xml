@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="39" location="City of Industry">
+  <text>After several hours Of travel, you enter rocky terrain. The path narrows, and you are forced to use both of your robot's hands just to climb. You wish you were in a vehicle that could just fly over all this! Suddenly, you hear a roar. Looking behind you, you see a huge Tyrannosaurus sprinting through the rocks at you! Jaws agape, it lunges towards you, and robot and dinosaur fall to the ground, grappling fiercely. This huge meat-eater is the 'king of the dinosaurs', and attacks anything it sees to feed its savage appetite. You must fight it to the finish. TYRANNOSAURUS ARMOVR8 SPEED Fast SXtLL9 SPECIAL AblLITtES: None You cannot Escape; the Tyrannosaurus is faster than you are, and it is familiar with the territory. If you defeat the Tyrannosaurus, turn to 235. If it reduces your robot's ARMOUR to o, turn to 258.</text>
+  <choices>
+    <choice to="235">
+      <text>If you defeat the Tyrannosaurus.</text>
+    </choice>
+    <choice to="258">
+      <text>. If it reduces your robot's ARMOUR to o.</text>
+    </choice>
+  </choices>
+</block>

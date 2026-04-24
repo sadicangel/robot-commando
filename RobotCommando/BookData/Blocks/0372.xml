@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="372" location="City of Knowledge">
+  <text>You read through the book one last time... and discover an alarming footnote. One of the ingre dients you used was Essence of Man-trap Flower. But, according to the footnote, this essence loses its power over time. It may be that the material you used was weak or even totally worthless! The only way to be absolutely certain of success would be either to find some brartd-new essence, or to acquire a fresh Man-trap Flower and add it to your flask of Potion. But you have no idea where to look for fresh essence, and the flower itself grows only in the deepest jungle.</text>
+  <choices>
+    <choice to="302">
+      <text>Pack the fragile bottle of Blue Potion carefully and set out for your robot.</text>
+    </choice>
+  </choices>
+</block>

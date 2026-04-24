@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="47" location="Farm">
+  <text>This flyingrobot, called a Dragonfly Model D, looks like a gigantic dragonfly, complete with buzzing wings. Its main advantage in combat is its speed.</text>
+  <choices>
+    <choice to="70">
+      <text>Choose a place to go.</text>
+    </choice>
+    <choice to="24">
+      <text>Check the Cowboy Robot.</text>
+    </choice>
+  </choices>
+  <robots>
+    <robot tag="Robot" name="Dragonfly" frame="Unspecified" armor="5" armorMax="5" speed="Static" speedMax="Static" combatBonus="0" combatBonusMax="0" />
+  </robots>
+</block>

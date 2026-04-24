@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="370" location="City of Industry">
+  <text>You look around the junkyard, and see several things that might be of use. But then you are confronted by a huge creature with the remains of a collar around its neck. It is a Giant Ape, carrying the leg of a robot as though it were a club! At the moment, it seems curious rather than angry. What will you do: Flee? Speak to the Ape? Attack the Ape?</text>
+  <choices>
+    <choice to="110">
+      <text>Flee?</text>
+    </choice>
+    <choice to="234">
+      <text>Speak to the Ape?</text>
+    </choice>
+    <choice to="138">
+      <text>Attack the Ape?</text>
+    </choice>
+  </choices>
+</block>

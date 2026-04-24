@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="386" location="Capital City">
+  <text>11) 386 The enemy Construction Robot raises huge claws and moves towards you. It rolls on eight vast wheels. It has only a few guns, to protect against attacking dinosaurs, but it has four huge arms mounted all around. CONSTRUCTION ROBOT ARMOUR9 SPEED Slow SKILL 6 SPECIAL A BILITIES: None Fortunately for you, the Karossean soldier inside does not really know how to use this robot. If the two dice you roll for the Construction Robot ever total 6 or less, turn to 194. If you Escape, turn to 216. If you defeat the Construction Robot, turn to 92. If your own robot's ARMOUR is reduced to o, turn to 61.</text>
+  <choices>
+    <choice to="194">
+      <text>If the two dice you roll for the Construction Robot ever total 6 or less.</text>
+    </choice>
+    <choice to="216">
+      <text>. If you Escape.</text>
+    </choice>
+    <choice to="92">
+      <text>. If you defeat the Construction Robot.</text>
+    </choice>
+    <choice to="61">
+      <text>. If your own robot's ARMOUR is reduced to o.</text>
+    </choice>
+  </choices>
+</block>

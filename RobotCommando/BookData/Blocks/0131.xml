@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="131" location="City of Pleasure">
+  <text>If you are in the Wasp Fighter, turn to 359. If you are in any other robot, turn to 378.</text>
+  <choices>
+    <choice to="359">
+      <text>If you are in the Wasp Fighter.</text>
+    </choice>
+    <choice to="378">
+      <text>. If you are in any other robot.</text>
+    </choice>
+  </choices>
+</block>

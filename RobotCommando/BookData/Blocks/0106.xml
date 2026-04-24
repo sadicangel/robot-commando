@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="106" location="Capital City">
+  <text>You don the Cloak. It works like a charm: when yo walk in front Of a store window, you have reflection! Soon the Cloak is put to a harder test: yo walk in front of a Karossean patrol, but remai totally unseen. You enter the Capitol Building itsel There is no sign Of the legislators; you assume the have been taken away as hostages. While you at investigating the building. you observe a pair Karosseans standing guard over a huge displé case. You move closer and listen. 'That's right,' one is saying. 'Minos will come to take possession of this sword in a few hours. There'll be some kind of ceremony, I guess.' Looking in the case, you see that this is the Sword of State! You are reluctant to leave it where the tyrant can get it — but taking it would be a risk. What will you do: Go on and look elsewhere in the Capitol Building? Turn to 164 Try to take the sword by stealth? Turn to 190 t Attack the sentries and take the sword? Turn to 215</text>
+  <choices>
+    <choice to="164">
+      <text>Go on and look elsewhere in the Capitol Building?</text>
+    </choice>
+    <choice to="190">
+      <text>Try to take the sword by stealth?</text>
+    </choice>
+    <choice to="215">
+      <text>t Attack the sentries and take the sword?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="110" location="City of Industry">
+  <text>You continue to wander about the city for some time. You see many interesting sights, but nothing that looks as though it would help. At length you come to a large open area. At one side of the park is a large building marked 'Robot Experimental Centre'. Across the park is a sign that says 'Robots Working'. It looks like an open access to the citys tunnel system. Will you visit the Robot Experimental Centre (Turn to 25), or leave your robot and enter the tunnel system (Turn to 127)?</text>
+  <choices>
+    <choice to="25">
+      <text>Will you visit the Robot Experimental Centre (.</text>
+    </choice>
+    <choice to="127">
+      <text>), or leave your robot and enter the tunnel system (.</text>
+    </choice>
+  </choices>
+</block>

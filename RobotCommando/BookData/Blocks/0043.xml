@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="43" location="City of Storms">
+  <text>You are leaving the City of Storms. Where would you like to go: The City of Knowledge? Turn to 361 The City of Worship? Turn to 166 Turn to IXX The City of the Guardians? Note that you cannot visit the City of the Guardians until you know the numbers to use in place Of 'XX'.</text>
+  <choices>
+    <choice to="361">
+      <text>The City of Knowledge?</text>
+    </choice>
+    <choice to="166">
+      <text>The City of Worship?</text>
+    </choice>
+  </choices>
+</block>

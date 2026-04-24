@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="171" location="City of Knowledge">
+  <text>First TRIPOD ARMOUR 7 SPEED Fast SKILL 8 Second TRIPOD ARMOUR 7 SPEED Fast SKILL to SPECIAL ABILITIES: None If you Escape, turn to 293. If you defeat both Tripods, turn to 30. If your robot is defeated, turn to 336. If you have already opened this building, turn im mediately to 231. Otherwise, keep reading. You walk around the barn-like building and examine it. The walls are built of heavy metal, and the only door you can find is huge. A sign on the door reads, 'DANGER! KEEP our!' What will you do: Open the door? Turn to 212 Go to the Administrative Building (if you have not already done so)? Turn to 85 Get in your robot and cross the electro-fence? Turn to 129 Leave the Dinosaur Preserve? Turn to 150</text>
+  <choices>
+    <choice to="293">
+      <text>None If you Escape.</text>
+    </choice>
+    <choice to="30">
+      <text>. If you defeat both Tripods.</text>
+    </choice>
+    <choice to="336">
+      <text>. If your robot is defeated.</text>
+    </choice>
+    <choice to="212">
+      <text>. If you have already opened this building, turn im mediately to 231. Otherwise, keep reading. You walk around the barn-like building and examine it. The walls are built of heavy metal, and the only door you can find is huge. A sign on the door reads, 'DANGER! KEEP our!' What will you do: Open the door?</text>
+    </choice>
+    <choice to="85">
+      <text>Go to the Administrative Building (if you have not already done so)?</text>
+    </choice>
+    <choice to="129">
+      <text>Get in your robot and cross the electro-fence?</text>
+    </choice>
+    <choice to="150">
+      <text>Leave the Dinosaur Preserve?</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="137" location="City of the Jungle">
+  <text>You are in the City of the Jungle. Ifyou have been to this city before, turn to 349 immediately. If this is your first visit (no matter how many placesyou have already been in the city) keep reading. This is a relatively small city, a home for explorers, gatherers of valuable plants and lovers of the wilderness, Wild dinosaurs often walk the very streets of the City of the Jungle. What will you do here: Explore the city?ø Turn to 366 Explore the jungle? Turn to 170 Leave the City? Turn to 298</text>
+  <choices>
+    <choice to="349">
+      <text>Ifyou have been to this city before.</text>
+    </choice>
+    <choice to="366">
+      <text>immediately. If this is your first visit (no matter how many placesyou have already been in the city) keep reading. This is a relatively small city, a home for explorers, gatherers of valuable plants and lovers of the wilderness, Wild dinosaurs often walk the very streets of the City of the Jungle. What will you do here: Explore the city?ø.</text>
+    </choice>
+    <choice to="170">
+      <text>Explore the jungle?</text>
+    </choice>
+    <choice to="298">
+      <text>Leave the City?</text>
+    </choice>
+  </choices>
+</block>

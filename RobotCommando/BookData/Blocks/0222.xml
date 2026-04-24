@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="222" location="Capital City">
+  <text>pass, friend!' the sentry robot transmits. 'But don't go past the next ring. That's officer country.' If you continue in your robot, turn to 76. If you enter on foot, turn to 32.</text>
+  <choices>
+    <choice to="76">
+      <text>' If you continue in your robot.</text>
+    </choice>
+    <choice to="32">
+      <text>. If you enter on foot.</text>
+    </choice>
+  </choices>
+</block>

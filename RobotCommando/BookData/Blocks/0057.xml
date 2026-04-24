@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="57" location="Capital City">
+  <text>Soon your robot is parked in front Of the Temple Of Fear. It is a huge, irregularly shaped building, built entirely from black Stone. Within it are served the Powers of Fear. If you are having second thoughts about your visit, you may return to 166. If you Wish to go inside, Turn to 193.</text>
+  <choices>
+    <choice to="166">
+      <text>If you are having second thoughts about your visit, you may.</text>
+    </choice>
+    <choice to="193">
+      <text>. If you Wish to go inside.</text>
+    </choice>
+  </choices>
+</block>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<block id="99" location="Unknown">
+  <text>As you round a corner, you see a pair Of Karossean robots coming your way! Test your Luck. If you are Lucky, turn to 130. If you are Unlucky, turn to 172.</text>
+  <choices>
+    <choice to="130">
+      <text>If you are Lucky.</text>
+    </choice>
+    <choice to="172">
+      <text>. If you are Unlucky.</text>
+    </choice>
+  </choices>
+</block>
