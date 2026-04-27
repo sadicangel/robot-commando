@@ -5,9 +5,9 @@ namespace RobotCommando.Tests.GameBook;
 public sealed class BookBlockXmlStoreTests
 {
     [Test]
-    public void LoadDirectory_LoadsBundledBlocks()
+    public void LoadBook_LoadsBundledBook()
     {
-        var blocks = BookBlockXmlStore.LoadDirectory(GetBlockDirectory());
+        var blocks = BookBlockXmlStore.LoadBook(GetBookPath()).Blocks;
 
         blocks.Should().HaveCount(401);
         blocks.Select(block => block.Id).Should().BeInAscendingOrder();
@@ -27,8 +27,7 @@ public sealed class BookBlockXmlStoreTests
     [Test]
     public void Save_RoundTripsABlock()
     {
-        var directory = GetBlockDirectory();
-        var original = BookBlockXmlStore.Load(Path.Combine(directory, "0024.xml"));
+        var original = BookBlockXmlStore.LoadBook(GetBookPath()).Blocks.Single(block => block.Id == 24);
         var tempPath = Path.Combine(TestContext.CurrentContext.WorkDirectory, $"{Guid.NewGuid():N}.xml");
 
         try
@@ -78,14 +77,14 @@ public sealed class BookBlockXmlStoreTests
         }
     }
 
-    private static string GetBlockDirectory()
+    private static string GetBookPath()
     {
         var current = new DirectoryInfo(AppContext.BaseDirectory);
 
         while (current is not null)
         {
-            var candidate = Path.Combine(current.FullName, "RobotCommando", "BookData", "Blocks");
-            if (Directory.Exists(candidate))
+            var candidate = Path.Combine(current.FullName, "RobotCommando", "BookData", "book.xml");
+            if (File.Exists(candidate))
             {
                 return candidate;
             }
@@ -93,6 +92,6 @@ public sealed class BookBlockXmlStoreTests
             current = current.Parent;
         }
 
-        throw new DirectoryNotFoundException("Could not locate RobotCommando/BookData/Blocks from the test output directory.");
+        throw new FileNotFoundException("Could not locate RobotCommando/BookData/book.xml from the test output directory.");
     }
 }

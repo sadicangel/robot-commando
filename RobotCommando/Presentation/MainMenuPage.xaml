@@ -1,0 +1,83 @@
+<Page x:Class="RobotCommando.Presentation.MainMenuPage"
+      x:Name="Root"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      Background="{ThemeResource BackgroundBrush}"
+      mc:Ignorable="d">
+  <Grid utu:SafeArea.Insets="VisibleBounds">
+    <Grid.Background>
+      <LinearGradientBrush StartPoint="0,0"
+                           EndPoint="1,1">
+        <GradientStop Color="#FF0E1726"
+                      Offset="0" />
+        <GradientStop Color="#FF132238"
+                      Offset="0.55" />
+        <GradientStop Color="#FF21405A"
+                      Offset="1" />
+      </LinearGradientBrush>
+    </Grid.Background>
+
+    <ScrollViewer>
+      <Grid Padding="24">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border MaxWidth="760"
+                Padding="32"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Background="#CC07111D"
+                BorderBrush="#40F4F1DE"
+                BorderThickness="1"
+                CornerRadius="24">
+          <StackPanel Spacing="24">
+            <StackPanel Spacing="10">
+              <TextBlock Text="{Binding Title}"
+                         FontSize="42"
+                         FontWeight="SemiBold"
+                         Foreground="#FFF4F1DE" />
+              <TextBlock Text="{Binding Subtitle}"
+                         TextWrapping="Wrap"
+                         FontSize="18"
+                         Foreground="#FFD0D6DD" />
+            </StackPanel>
+
+            <Border Padding="18"
+                    Background="#14334F"
+                    CornerRadius="16">
+              <TextBlock Text="You are the only person still awake in Thalos. Step into the invasion, salvage the right robot, and drive the story one block at a time."
+                         TextWrapping="Wrap"
+                         Foreground="#FFE8ECF1" />
+            </Border>
+
+            <StackPanel Spacing="12">
+              <Button Content="Start Adventure"
+                      Padding="18,14"
+                      HorizontalAlignment="Stretch"
+                      HorizontalContentAlignment="Center"
+                      Command="{Binding StartAdventure}" />
+              <Button Content="Exit"
+                      Padding="18,14"
+                      HorizontalAlignment="Stretch"
+                      HorizontalContentAlignment="Center"
+                      IsEnabled="{Binding CanExit}"
+                      Command="{Binding ExitGame}" />
+            </StackPanel>
+          </StackPanel>
+        </Border>
+
+        <TextBlock Grid.Row="1"
+                   Margin="0,24,0,0"
+                   HorizontalAlignment="Center"
+                   Foreground="#FFD0D6DD"
+                   Opacity="0.72"
+                   Text="Load and save are intentionally deferred for this first playable slice." />
+      </Grid>
+    </ScrollViewer>
+  </Grid>
+</Page>

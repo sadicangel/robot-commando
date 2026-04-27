@@ -1,0 +1,541 @@
+{
+  "Air Fighter": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 113,
+      "lose": 136
+    },
+    "types": 0,
+    "armorMax": 7,
+    "armor": 7,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+        },
+        "id": "3ecacd17-d4dd-4648-b12b-dac4b8c77f77",
+        "tag": "PassiveAbility",
+        "name": "Flying",
+        "description": "Can fly.",
+        "icon": ""
+      }
+    ],
+    "id": "6d18b048-b49f-40cb-b20e-4bdcf812ffd9",
+    "tag": "Monster",
+    "name": "Air Fighter",
+    "description": "A sleek, arrow shaped flying Karossean robot.",
+    "icon": ""
+  },
+  "Ankylosaurus": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 56,
+      "escape": 115
+    },
+    "types": 1,
+    "armorMax": 12,
+    "armor": 12,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [
+      {
+        "condition": "c.Other.Type == MechaType.Humanoid",
+        "phase": 5,
+        "effects": {
+          "AfterHit": "c.Other.Statuses.Add(MechaBattlerStatus.KnockedDown)"
+        },
+        "id": "84957e0b-8dfa-4c4e-a56b-0c3212cef171",
+        "tag": "TriggerAbility",
+        "name": "Knockdown",
+        "description": "Whenever this robot hits a humanoid unit, knock it down. Knock down units deal no damage in the next turn.",
+        "icon": ""
+      }
+    ],
+    "id": "1d447ad4-d52e-407a-9254-98bd1163fecf",
+    "tag": "Monster",
+    "name": "Ankylosaurus",
+    "description": "A small but powerful dinosaur with armoured-plate.",
+    "icon": ""
+  },
+  "Battleman": {
+    "skillMax": 11,
+    "skill": 11,
+    "battleResult": {
+      "win": 290,
+      "lose": 61
+    },
+    "types": 2,
+    "armorMax": 11,
+    "armor": 11,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [
+      {
+        "condition": "c.This.Roll > c.Other.Roll",
+        "phase": 3,
+        "effects": {
+          "BeforeHit": "c.This.Damage += 1",
+          "AfterHit": "c.This.Damage -= 1"
+        },
+        "id": "740d1847-fc86-41ed-82ba-1babddf970a6",
+        "tag": "TriggerAbility",
+        "name": "Momentum",
+        "description": "Whenever roll exceeds enemy's roll by 4 or more, deal 1 extra damage that cannot be reduced.",
+        "icon": ""
+      }
+    ],
+    "id": "9af1c7e2-a8ab-4ebf-adba-25e5cae64305",
+    "tag": "Monster",
+    "name": "Battleman",
+    "description": "A heavy duty Karossean combat robot.",
+    "icon": ""
+  },
+  "Control Robot": {
+    "skillMax": 6,
+    "skill": 6,
+    "battleResult": {
+      "win": 92,
+      "lose": 61,
+      "escape": 216
+    },
+    "types": 0,
+    "armorMax": 9,
+    "armor": 9,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [
+      {
+        "condition": "c.This.Roll < 7",
+        "phase": 0,
+        "effects": {
+          "AfterRoll": "c.This.Armor = 0"
+        },
+        "id": "a3633787-ad87-49e9-a931-0d8f9699fc58",
+        "tag": "TriggerAbility",
+        "name": "Unfamiliar Controls",
+        "description": "Whenever roll is less than 7, eject controller."
+      }
+    ],
+    "id": "d510b3de-ae8b-45f6-ab79-83bcc1119b0d",
+    "tag": "Monster",
+    "name": "Control Robot",
+    "description": "A robot with huge claws rolling on eigth wheels.",
+    "icon": ""
+  },
+  "Crusher": {
+    "skillMax": 8,
+    "skill": 8,
+    "battleResult": {
+      "win": 275,
+      "lose": 384
+    },
+    "types": 0,
+    "armorMax": 14,
+    "armor": 14,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Damage *= 2",
+          "AfterBattle": "c.This.Damage /= 2"
+        },
+        "id": "8869dbd0-8c4d-404e-bd15-a8cc4e30a168",
+        "tag": "PassiveAbility",
+        "name": "Double Damage",
+        "description": "Deals double damage on hit.",
+        "icon": ""
+      }
+    ],
+    "id": "f02ac8d3-ba06-4d1d-9e4f-da8800dc68d3",
+    "tag": "Monster",
+    "name": "Crusher",
+    "description": "This robot is very powerful although not especially skilful.",
+    "icon": ""
+  },
+  "Iguanodon": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 137,
+      "lose": 306
+    },
+    "types": 1,
+    "armorMax": 5,
+    "armor": 5,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "0ba9da80-362b-48dd-a822-40d18ab68fb6",
+    "tag": "Monster",
+    "name": "Iguanodon",
+    "description": "A tough and heavy-set plant eating dinosaur.",
+    "icon": ""
+  },
+  "Man-Trap Plant": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 97,
+      "lose": 141
+    },
+    "types": 0,
+    "armorMax": 8,
+    "armor": 8,
+    "speedMax": 0,
+    "speed": 0,
+    "abilities": [],
+    "id": "a15a5ae0-cac0-4dd8-95c2-483a6ce529c4",
+    "tag": "Monster",
+    "name": "Man-Trap Plant",
+    "description": "A giant plant that has trapped you.",
+    "icon": ""
+  },
+  "Mini-Robots": {
+    "skillMax": 10,
+    "skill": 10,
+    "battleResult": {
+      "win": 166,
+      "lose": 278
+    },
+    "types": 0,
+    "armorMax": 9,
+    "armor": 9,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+        },
+        "id": "3ecacd17-d4dd-4648-b12b-dac4b8c77f77",
+        "tag": "PassiveAbility",
+        "name": "Flying",
+        "description": "Can fly.",
+        "icon": ""
+      }
+    ],
+    "id": "ee240e5c-5539-470f-9041-a0e29f6d608e",
+    "tag": "Monster",
+    "name": "Mini-Robots",
+    "description": "A swarm of small robots.",
+    "icon": ""
+  },
+  "Myrmidon": {
+    "skillMax": 10,
+    "skill": 10,
+    "battleResult": {
+      "win": 192,
+      "lose": 238,
+      "escape": 308
+    },
+    "types": 2,
+    "armorMax": 10,
+    "armor": 10,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "8863815b-9d9e-4076-bff1-cba6805f8744",
+    "tag": "Monster",
+    "name": "Myrmidon",
+    "description": "The standard Karossean robot in its human form.",
+    "icon": ""
+  },
+  "Nothosaurus": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 51,
+      "lose": 279,
+      "escape": 331
+    },
+    "types": 1,
+    "armorMax": 7,
+    "armor": 7,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [],
+    "id": "4580d70b-62f3-494f-8ee9-2f47a33a8cca",
+    "tag": "Monster",
+    "name": "Nothosaurus",
+    "description": "A four legged dinosaur that is both a predator and a scavenger.",
+    "icon": ""
+  },
+  "Pteranodon": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 186,
+      "lose": 116,
+      "escape": 186
+    },
+    "types": 1,
+    "armorMax": 3,
+    "armor": 3,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+        },
+        "id": "3ecacd17-d4dd-4648-b12b-dac4b8c77f77",
+        "tag": "PassiveAbility",
+        "name": "Flying",
+        "description": "Can fly.",
+        "icon": ""
+      }
+    ],
+    "id": "abab7db9-725e-42e3-ae5e-32736c1c139c",
+    "tag": "Monster",
+    "name": "Pteranodon",
+    "description": "A large predatory flying dinosaur.",
+    "icon": ""
+  },
+  "Street Cleaner": {
+    "skillMax": 7,
+    "skill": 7,
+    "battleResult": {
+      "win": 35,
+      "lose": 154
+    },
+    "types": 0,
+    "armorMax": 4,
+    "armor": 4,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "f4d1d5d0-72c7-40c6-b39f-6a73a32193b2",
+    "tag": "Monster",
+    "name": "Street Cleaner",
+    "description": "A robot made for cleaning streets.",
+    "icon": ""
+  },
+  "Robot Tyrannosaurus": {
+    "skillMax": 10,
+    "skill": 10,
+    "battleResult": {
+      "win": 230,
+      "lose": 255,
+      "escape": 52
+    },
+    "types": 0,
+    "armorMax": 11,
+    "armor": 11,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+        },
+        "id": "3ecacd17-d4dd-4648-b12b-dac4b8c77f77",
+        "tag": "PassiveAbility",
+        "name": "Flying",
+        "description": "Can fly.",
+        "icon": ""
+      }
+    ],
+    "id": "6e737853-1d53-44c2-bf46-e7d2b3e297df",
+    "tag": "Monster",
+    "name": "Robot Tyrannosaurus",
+    "description": "An intricated device shaped like a Tyrannosaurus but all gears and metal.",
+    "icon": ""
+  },
+  "Supertank": {
+    "skillMax": 12,
+    "skill": 12,
+    "battleResult": {
+      "win": 354,
+      "lose": 6
+    },
+    "types": 0,
+    "armorMax": 16,
+    "armor": 16,
+    "speedMax": 1,
+    "speed": 1,
+    "abilities": [
+      {
+        "effects": {
+          "AfterRound": "c.Other.Armor -= 1"
+        },
+        "id": "6915d667-bf2e-442f-8e2b-1907d7b3c1bf",
+        "tag": "PassiveAbility",
+        "name": "Retaliate",
+        "description": "At the end of each round, deals 1 damage to the enemy robot.",
+        "icon": ""
+      }
+    ],
+    "id": "19674823-4e73-4495-a16f-8d4594b34161",
+    "tag": "Monster",
+    "name": "Supertank",
+    "description": "The biggest robot of the Karosseans. Piloted by Minos himself.",
+    "icon": ""
+  },
+  "Towing Robot": {
+    "skillMax": 7,
+    "skill": 7,
+    "battleResult": {
+      "win": 35,
+      "lose": 154
+    },
+    "types": 0,
+    "armorMax": 6,
+    "armor": 6,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "29ec334a-1af4-4a27-9e88-750bf249dbd2",
+    "tag": "Monster",
+    "name": "Towing Robot",
+    "description": "A robot made for towing other robots.",
+    "icon": ""
+  },
+  "Traffic Copter": {
+    "skillMax": 8,
+    "skill": 8,
+    "battleResult": {
+      "win": 35,
+      "lose": 154
+    },
+    "types": 0,
+    "armorMax": 3,
+    "armor": 3,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [],
+    "id": "53cf4a94-fbe3-4503-8989-e8166924ca34",
+    "tag": "Monster",
+    "name": "Traffic Copter",
+    "description": "A flying robot made to report traffic congestion, detours, and traffic collisions.",
+    "icon": ""
+  },
+  "Triceratops": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 391,
+      "lose": 310,
+      "escape": 270
+    },
+    "types": 1,
+    "armorMax": 9,
+    "armor": 9,
+    "speedMax": 2,
+    "speed": 2,
+    "abilities": [],
+    "id": "8c9a1a37-f7e4-4ffd-83d4-30bbe51bb019",
+    "tag": "Monster",
+    "name": "Triceratops",
+    "description": "A huge horned triceratops.",
+    "icon": ""
+  },
+  "Tripod": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 30,
+      "lose": 336,
+      "escape": 293
+    },
+    "types": 0,
+    "armorMax": 7,
+    "armor": 7,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [],
+    "id": "618ffe9f-0482-45d9-a71f-432e08b12128",
+    "tag": "Monster",
+    "name": "Tripod",
+    "description": "Speed machine that has metal tentacle arms carrying guns an other devices.",
+    "icon": ""
+  },
+  "Tylosaurus": {
+    "skillMax": 10,
+    "skill": 10,
+    "battleResult": {
+      "win": 101
+    },
+    "types": 1,
+    "armorMax": 9,
+    "armor": 9,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [],
+    "id": "cd032703-3456-4dea-a87f-1f672443dc5c",
+    "tag": "Monster",
+    "name": "Tylosaurus",
+    "description": "A cross between a huge, toothy lizard and a shark.",
+    "icon": ""
+  },
+  "Tyrannosaurus": {
+    "skillMax": 9,
+    "skill": 9,
+    "battleResult": {
+      "win": 235,
+      "lose": 258
+    },
+    "types": 1,
+    "armorMax": 8,
+    "armor": 8,
+    "speedMax": 3,
+    "speed": 3,
+    "abilities": [],
+    "id": "eacae5d8-9515-4e1f-9548-e9f3795b462e",
+    "tag": "Monster",
+    "name": "Tyrannosaurus",
+    "description": "This huge meat-eater is the king of the dinosaurus.",
+    "icon": ""
+  },
+  "Wasp Fighter": {
+    "skillMax": 11,
+    "skill": 11,
+    "battleResult": {
+      "win": 35,
+      "lose": 154
+    },
+    "types": 0,
+    "armorMax": 6,
+    "armor": 6,
+    "speedMax": 4,
+    "speed": 4,
+    "abilities": [
+      {
+        "condition": "c.This.Roll >= c.Other.Roll + 4",
+        "phase": 3,
+        "effects": {
+          "AfterRound": "c.This.Statuses.Add(MechaBattlerStatus.Accelerated)"
+        },
+        "id": "5ed2ab3c-7bab-40b5-ac68-8a0e32807aa2",
+        "tag": "TriggerAbility",
+        "name": "Acceleration",
+        "description": "Whenever roll exceeds enemy's roll by 4 or more, automatically win the next round.",
+        "icon": ""
+      },
+      {
+        "effects": {
+          "BeforeBattle": "c.This.Statuses.Add(MechaBattlerStatus.Flying)",
+          "AfterBattle": "c.This.Statuses.Remove(MechaBattlerStatus.Flying)"
+        },
+        "id": "3ecacd17-d4dd-4648-b12b-dac4b8c77f77",
+        "tag": "PassiveAbility",
+        "name": "Flying",
+        "description": "Can fly.",
+        "icon": ""
+      }
+    ],
+    "id": "50d1ee2c-5507-40af-bf56-d94fec04ec4d",
+    "tag": "Monster",
+    "name": "Wasp Fighter",
+    "description": "A small but deadly looking fighting machine.",
+    "icon": ""
+  }
+}

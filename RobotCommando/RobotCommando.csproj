@@ -43,7 +43,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="BookData\Blocks\**\*.xml">
+    <None Update="BookData\book.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="BookData\Legacy\*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

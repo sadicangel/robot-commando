@@ -4,6 +4,7 @@ global using Microsoft.Extensions.Hosting;
 global using Microsoft.Extensions.Localization;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.Extensions.Options;
+global using RobotCommando.GameBook;
 global using RobotCommando.Models;
 global using RobotCommando.Presentation;
 global using RobotCommando.Services.Endpoints;

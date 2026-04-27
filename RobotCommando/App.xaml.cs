@@ -76,8 +76,8 @@ public partial class App : Application
                 })
                 .ConfigureServices((context, services) =>
                 {
-                    // TODO: Register your services
-                    //services.AddSingleton<IMyService, MyService>();
+                    services.AddSingleton<IBookRepository, BookRepository>();
+                    services.AddSingleton<IAdventureService, AdventureService>();
                 })
                 .UseNavigation(ReactiveViewModelMappings.ViewModelMappings, RegisterRoutes)
             );
@@ -95,16 +95,16 @@ public partial class App : Application
     {
         views.Register(
             new ViewMap(ViewModel: typeof(ShellModel)),
-            new ViewMap<MainPage, MainModel>(),
-            new DataViewMap<SecondPage, SecondModel, Entity>()
+            new ViewMap<MainMenuPage, MainMenuModel>(),
+            new ViewMap<AdventurePage, AdventureModel>()
         );
 
         routes.Register(
             new RouteMap("", View: views.FindByViewModel<ShellModel>(),
                 Nested:
                 [
-                    new ("Main", View: views.FindByViewModel<MainModel>(), IsDefault:true),
-                    new ("Second", View: views.FindByViewModel<SecondModel>()),
+                    new ("Menu", View: views.FindByViewModel<MainMenuModel>(), IsDefault:true),
+                    new ("Adventure", View: views.FindByViewModel<AdventureModel>()),
                 ]
             )
         );
