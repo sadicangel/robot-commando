@@ -1,5 +1,3 @@
-using System.Text.RegularExpressions;
-
 namespace RobotCommando.GameBook;
 
 public sealed partial class AdventureService : IAdventureService
@@ -7,18 +5,6 @@ public sealed partial class AdventureService : IAdventureService
     public const int EndAdventureBlockId = -1;
 
     private const string EndAdventureChoiceText = "Return to ending screen.";
-
-    private static readonly Regex InventoryContainsRegex = new(
-        "^context\\.Inventory\\.Contains\\(\"(?<tag>.+)\"\\)$",
-        RegexOptions.Compiled);
-
-    private static readonly Regex RobotAbilityRegex = new(
-        "^context\\.Robot is not null\\s*&&\\s*(?<negation>!)?context\\.Robot\\.Abilities\\.Any\\(a\\s*=>\\s*a\\.Name == \"(?<ability>.+)\"\\)$",
-        RegexOptions.Compiled);
-
-    private static readonly Regex PageLocationRegex = new(
-        "^context\\.Page\\.Location\\s*==\\s*WorldLocation\\.(?<location>\\w+)$",
-        RegexOptions.Compiled);
 
     private readonly IBookRepository _bookRepository;
     private readonly IState<AdventureViewState> _viewState;
@@ -47,16 +33,27 @@ public sealed partial class AdventureService : IAdventureService
     public async Task SelectChoice(string actionId, CancellationToken cancellationToken = default)
     {
         var session = GetSession();
-        var choice = BuildViewState(session)
+        var viewChoice = BuildViewState(session)
             .Choices
             .FirstOrDefault(candidate => string.Equals(candidate.Id, actionId, StringComparison.Ordinal));
 
-        if (choice is null || !choice.IsEnabled)
+        if (viewChoice is null || !viewChoice.IsEnabled)
         {
             throw new InvalidOperationException($"Choice '{actionId}' is not available.");
         }
 
-        if (choice.TargetBlockId == EndAdventureBlockId
+        var choiceIndex = ParseActionIndex(actionId, "choice");
+        var block = session.CurrentBlock ?? throw new InvalidOperationException("No current block is active.");
+        if (choiceIndex < 0 || choiceIndex >= block.Choices.Count)
+        {
+            throw new InvalidOperationException($"Choice '{actionId}' is not available.");
+        }
+
+        var choice = block.Choices[choiceIndex];
+        choice.Effect?.Execute(session.GameState);
+
+        var targetBlockId = session.GameState.Page.Choices[choiceIndex].To;
+        if (targetBlockId == EndAdventureBlockId
             && string.Equals(choice.Text, EndAdventureChoiceText, StringComparison.Ordinal))
         {
             _session = null;
@@ -64,7 +61,7 @@ public sealed partial class AdventureService : IAdventureService
             return;
         }
 
-        await EnterBlockAsync(choice.TargetBlockId, cancellationToken);
+        await EnterBlockAsync(targetBlockId, cancellationToken);
     }
 
     public async Task PickUpItem(string actionId, CancellationToken cancellationToken = default)
@@ -89,6 +86,11 @@ public sealed partial class AdventureService : IAdventureService
             quantity: 1,
             metadata.Description,
             metadata.Icon);
+        if (ShouldRunTrigger(item.OnAcquire, session.GameState))
+        {
+            item.OnAcquire!.Effect?.Execute(session.GameState);
+        }
+
         progress.TakenItemIndices.Add(itemIndex);
 
         await PublishAsync(BuildViewState(session), cancellationToken);
@@ -195,8 +197,14 @@ public sealed partial class AdventureService : IAdventureService
         session.GameState.Page.Number = block.Id;
         session.GameState.Page.Location = nextLocation;
         session.GameState.Page.IsVisited = wasVisited;
+        SyncPageChoices(session.GameState.Page, block);
         session.GameState.City.Location = nextCity ?? WorldLocation.Unknown;
         session.GameState.City.IsVisited = isCityVisited;
+
+        foreach (var effect in block.Effects)
+        {
+            effect.Execute(session.GameState);
+        }
 
         session.VisitedBlockIds.Add(blockId);
 
@@ -350,6 +358,11 @@ public sealed partial class AdventureService : IAdventureService
 
     private static ImmutableArray<ChoiceViewData> ProjectChoices(AdventureSession session, BookBlock block)
     {
+        if (session.GameState.Page.Choices.Count != block.Choices.Count)
+        {
+            SyncPageChoices(session.GameState.Page, block);
+        }
+
         var choices = ImmutableArray.CreateBuilder<ChoiceViewData>();
 
         for (var index = 0; index < block.Choices.Count; index++)
@@ -365,7 +378,7 @@ public sealed partial class AdventureService : IAdventureService
             choices.Add(new ChoiceViewData(
                 Id: $"choice:{index}",
                 Text: choice.Text,
-                TargetBlockId: choice.To,
+                TargetBlockId: session.GameState.Page.Choices[index].To,
                 IsEnabled: availability.IsEnabled));
         }
 
@@ -393,81 +406,28 @@ public sealed partial class AdventureService : IAdventureService
             return ChoiceAvailability.VisibleEnabled;
         }
 
-        if (TryEvaluateCondition(choice.Condition.Text, gameState, out var conditionMatches))
-        {
-            return conditionMatches
-                ? ChoiceAvailability.VisibleEnabled
-                : choice.ShowWhenDisabled
-                    ? ChoiceAvailability.VisibleDisabled
-                    : ChoiceAvailability.Hidden;
-        }
-
-        return choice.ShowWhenDisabled
-            ? ChoiceAvailability.VisibleDisabled
-            : ChoiceAvailability.Hidden;
+        return choice.Condition.Evaluate(gameState)
+            ? ChoiceAvailability.VisibleEnabled
+            : choice.ShowWhenDisabled
+                ? ChoiceAvailability.VisibleDisabled
+                : ChoiceAvailability.Hidden;
     }
 
-    private static bool TryEvaluateCondition(string condition, GameState gameState, out bool result)
+    private static bool ShouldRunTrigger(ItemTrigger? trigger, GameState gameState)
+        => trigger is not null
+            && (trigger.Condition is null || string.IsNullOrWhiteSpace(trigger.Condition.Text) || trigger.Condition.Evaluate(gameState));
+
+    private static void SyncPageChoices(PageState page, BookBlock block)
     {
-        var trimmed = condition.Trim();
-
-        if (string.Equals(trimmed, "context.Robot is not null", StringComparison.Ordinal))
+        page.Choices.Clear();
+        foreach (var choice in block.Choices)
         {
-            result = gameState.Robot is not null;
-            return true;
+            page.Choices.Add(new PageChoiceState
+            {
+                To = choice.To,
+                Text = choice.Text,
+            });
         }
-
-        if (string.Equals(trimmed, "context.Page.IsVisited", StringComparison.Ordinal))
-        {
-            result = gameState.Page.IsVisited;
-            return true;
-        }
-
-        if (string.Equals(trimmed, "!context.Page.IsVisited", StringComparison.Ordinal))
-        {
-            result = !gameState.Page.IsVisited;
-            return true;
-        }
-
-        if (string.Equals(trimmed, "context.City.IsVisited", StringComparison.Ordinal))
-        {
-            result = gameState.City.IsVisited;
-            return true;
-        }
-
-        if (string.Equals(trimmed, "!context.City.IsVisited", StringComparison.Ordinal))
-        {
-            result = !gameState.City.IsVisited;
-            return true;
-        }
-
-        var locationMatch = PageLocationRegex.Match(trimmed);
-        if (locationMatch.Success && Enum.TryParse<WorldLocation>(locationMatch.Groups["location"].Value, out var location))
-        {
-            result = gameState.Page.Location == location;
-            return true;
-        }
-
-        var inventoryMatch = InventoryContainsRegex.Match(trimmed);
-        if (inventoryMatch.Success)
-        {
-            result = gameState.Inventory.Contains(inventoryMatch.Groups["tag"].Value);
-            return true;
-        }
-
-        var abilityMatch = RobotAbilityRegex.Match(trimmed);
-        if (abilityMatch.Success)
-        {
-            var abilityName = abilityMatch.Groups["ability"].Value;
-            var hasAbility = gameState.Robot is not null
-                && gameState.Robot.Abilities.Any(ability => string.Equals(ability.Name, abilityName, StringComparison.OrdinalIgnoreCase));
-
-            result = abilityMatch.Groups["negation"].Success ? !hasAbility : hasAbility;
-            return true;
-        }
-
-        result = false;
-        return false;
     }
 
     private static bool TryGetCityLocation(WorldLocation location, out WorldLocation cityLocation)

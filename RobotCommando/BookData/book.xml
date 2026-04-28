@@ -2288,11 +2288,11 @@
     <choices>
       <choice to="265">
         <text>Keep flying to the city.</text>
-        <condition>context.Robot is not null &amp;&amp; context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+        <condition>context.Robot is not null &amp;&amp; context.Robot.HasAbility("Flying")</condition>
       </choice>
       <choice to="39">
         <text>Keep walking to the city.</text>
-        <condition>context.Robot is not null &amp;&amp; !context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+        <condition>context.Robot is not null &amp;&amp; !context.Robot.HasAbility("Flying")</condition>
       </choice>
     </choices>
   </block>
@@ -2860,11 +2860,11 @@
     <choices>
       <choice to="105">
         <text>The Fuel Refining Plant.</text>
-        <condition>context.Robot is not null &amp;&amp; context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+        <condition>context.Robot is not null &amp;&amp; context.Robot.HasAbility("Flying")</condition>
       </choice>
       <choice to="25">
         <text>The Robot Experimental Centre.</text>
-        <condition>context.Robot is not null &amp;&amp; !context.Robot.Abilities.Any(a =&gt; a.Name == "Flying")</condition>
+        <condition>context.Robot is not null &amp;&amp; !context.Robot.HasAbility("Flying")</condition>
       </choice>
       <choice to="127">
         <text>The tunnels underneath the city.</text>

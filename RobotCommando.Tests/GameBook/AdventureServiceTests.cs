@@ -94,6 +94,71 @@ public sealed class AdventureServiceTests
     }
 
     [Test]
+    public async Task PickingUpItem_RunsAcquireEffect()
+    {
+        var block = new BookBlock
+        {
+            Id = 0,
+            Location = WorldLocation.Farm,
+            Text = "A storeroom."
+        };
+        block.Items.Add(new BookItem
+        {
+            Tag = "Interface Transponder",
+            Name = "Interface Transponder",
+            OnAcquire = new ItemTrigger
+            {
+                Effect = "context.Player.RobotSkill++"
+            }
+        });
+
+        var service = new AdventureService(new TestBookRepository(block));
+
+        await service.StartNewGame();
+        await service.PickUpItem("item:0");
+
+        GetGameState(service).Player.RobotSkill.Should().Be(1);
+    }
+
+    [Test]
+    public async Task SelectingChoice_RunsEffectBeforeResolvingTarget()
+    {
+        var start = new BookBlock
+        {
+            Id = 0,
+            Location = WorldLocation.Farm,
+            Text = "Choose."
+        };
+        start.Choices.Add(new BookChoice
+        {
+            To = 1,
+            Text = "Roll onward.",
+            Effect = "context.Page.Choices[0].To = 2"
+        });
+
+        var originalTarget = new BookBlock
+        {
+            Id = 1,
+            Location = WorldLocation.Farm,
+            Text = "Original."
+        };
+        var redirectedTarget = new BookBlock
+        {
+            Id = 2,
+            Location = WorldLocation.Farm,
+            Text = "Redirected."
+        };
+
+        var service = new AdventureService(new TestBookRepository(start, originalTarget, redirectedTarget));
+
+        await service.StartNewGame();
+        await service.SelectChoice("choice:0");
+
+        service.Snapshot.BlockId.Should().Be(2);
+        service.Snapshot.PageText.Should().Be("Redirected.");
+    }
+
+    [Test]
     public async Task RevisitingCity_AfterLeaving_UsesRevisitTextAndVisitedChoiceFiltering()
     {
         var cityHub = new BookBlock
