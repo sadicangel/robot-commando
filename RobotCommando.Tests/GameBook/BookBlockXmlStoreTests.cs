@@ -19,6 +19,31 @@ public sealed class BookBlockXmlStoreTests
         var interfaceTransponder = blocks.Single(block => block.Id == 392).Items.Single();
         interfaceTransponder.OnAcquire!.Effect!.Text.Should().Be("context.Player.RobotSkill++");
 
+        blocks.Single(block => block.Id == 11).Items.Single(item => item.Tag == "Medikit").Quantity.Should().Be(2);
+        blocks.SelectMany(block => block.Items)
+            .Select(item => item.Tag)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .Should()
+            .BeEquivalentTo(
+            [
+                "Armor Plate",
+                "Blue Potion",
+                "City of Guardians Location",
+                "Cloak Model Reference",
+                "Cloak of Invisibility",
+                "Interface Transponder",
+                "Karossean Book Reference",
+                "Karossean Countersign",
+                "Karossean Password",
+                "Karossean Uniform",
+                "Lavender Potion",
+                "Luck Amulet",
+                "Medikit",
+                "Seeker Missile",
+                "Sword of State",
+                "Tangler Field",
+            ]);
+
         var giantLizards = blocks.Single(block => block.Id == 328).Enemies;
         giantLizards.Should().HaveCount(3);
         giantLizards.Last().BattleOutcome!.Escape.Should().Be(254);

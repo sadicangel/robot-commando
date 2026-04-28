@@ -83,7 +83,7 @@ public sealed partial class AdventureService : IAdventureService
         session.GameState.Inventory.Add(
             metadata.Tag,
             metadata.Name,
-            quantity: 1,
+            quantity: item.Quantity,
             metadata.Description,
             metadata.Icon);
         if (ShouldRunTrigger(item.OnAcquire, session.GameState))

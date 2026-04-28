@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Seeker Missile icon">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="38%" r="68%"><stop offset="0%" stop-color="#16324a"/><stop offset="58%" stop-color="#09131f"/><stop offset="100%" stop-color="#03060b"/></radialGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff2bd"/><stop offset=".35" stop-color="#d7a84d"/><stop offset="1" stop-color="#6d481d"/></linearGradient>
+  <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#94a8ba"/><stop offset="1" stop-color="#263343"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ff7ff"/><stop offset=".45" stop-color="#278aff"/><stop offset="1" stop-color="#3d2cff"/></linearGradient>
+  <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9ff"/><stop offset=".4" stop-color="#9a52ff"/><stop offset="1" stop-color="#311165"/></linearGradient>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#00a7ff" flood-opacity=".35"/><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#ffe0a3" flood-opacity=".35"/></filter>
+</defs>
+<rect width="512" height="512" rx="96" fill="url(#bg)"/>
+<circle cx="256" cy="256" r="198" fill="none" stroke="#1b6b9e" stroke-opacity=".25" stroke-width="2"/>
+<circle cx="256" cy="256" r="154" fill="none" stroke="#d7a84d" stroke-opacity=".16" stroke-width="2" stroke-dasharray="8 16"/>
+<g filter="url(#soft)"><path d="M94 342 C159 252 260 143 408 82 C364 230 255 331 165 396 Z" fill="url(#silver)" stroke="url(#gold)" stroke-width="8"/><path d="M305 137 L415 74 L352 184 Z" fill="url(#blue)" filter="url(#glow)"/><path d="M123 322 L80 415 L174 373 Z" fill="url(#gold)"/><path d="M182 303 L118 282 L156 248 Z" fill="#101d2e" stroke="#57c7ff" stroke-width="5"/><circle cx="292" cy="205" r="25" fill="url(#violet)" stroke="url(#gold)" stroke-width="7" filter="url(#glow)"/></g>
+<path d="M86 425 C148 454 364 454 426 425" fill="none" stroke="#66d9ff" stroke-opacity=".22" stroke-width="5"/>
+</svg>

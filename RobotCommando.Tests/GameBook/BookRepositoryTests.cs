@@ -16,7 +16,7 @@ public sealed class BookRepositoryTests
         repository.GetBlock(361).Location.Should().Be(WorldLocation.CityOfKnowledge);
         repository.GetBlock(24).Robots.Should().ContainSingle(robot => robot.Name == "Cowboy");
         repository.GetBlock(39).Monsters.Should().ContainSingle(monster => monster.Name == "Tyrannosaurus");
-        repository.GetBlock(39).Text.Should().Be("After several hours Of travel, you enter rocky terrain. The path narrows, and you are forced to use both of your robot's hands just to climb. You wish you were in a vehicle that could just fly over all this! Suddenly, you hear a roar. Looking behind you, you see a huge Tyrannosaurus sprinting through the rocks at you! Jaws agape, it lunges towards you, and robot and dinosaur fall to the ground, grappling fiercely. This huge meat-eater is the 'king of the dinosaurs', and attacks anything it sees to feed its savage appetite. You must fight it to the finish.");
+        repository.GetBlock(39).Text.Should().Be("After several hours of travel, you enter rocky terrain. The path narrows, and you are forced to use both of your robot's hands just to climb. You wish you were in a vehicle that could just fly over all this! Suddenly, you hear a roar. Looking behind you, you see a huge Tyrannosaurus sprinting through the rocks at you! Jaws agape, it lunges towards you, and robot and dinosaur fall to the ground, grappling fiercely. This huge meat-eater is the 'king of the dinosaurs', and attacks anything it sees to feed its savage appetite. You must fight it to the finish.");
         repository.GetBlock(39).Monsters.Single().BattleOutcome!.Lose.Should().Be(258);
         repository.GetBlock(207).Monsters.Should().ContainSingle(monster => monster.Name == "Robot Tyrannosaurus");
     }

@@ -18,13 +18,13 @@ public sealed class AdventureServiceTests
             entry.Name == "Medikit"
             && entry.Quantity == 5
             && entry.Description == "Use: +1 stamina."
-            && entry.Icon == "medikit.png"
+            && entry.Icon == "medikit.svg"
             && entry.IconGlyph == "\u271A");
         service.Snapshot.Inventory.Should().ContainSingle(entry =>
             entry.Name == "Sword"
             && entry.Quantity == 1
             && entry.Description == "Your trustworthy weapon."
-            && entry.Icon == "sword.png"
+            && entry.Icon == "sword.svg"
             && entry.IconGlyph == "\u2694");
         service.Snapshot.Choices.Should().ContainSingle(choice => choice.TargetBlockId == 1 && choice.IsEnabled);
     }
