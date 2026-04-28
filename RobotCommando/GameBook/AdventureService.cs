@@ -16,6 +16,10 @@ public sealed partial class AdventureService : IAdventureService
         "^context\\.Robot is not null\\s*&&\\s*(?<negation>!)?context\\.Robot\\.Abilities\\.Any\\(a\\s*=>\\s*a\\.Name == \"(?<ability>.+)\"\\)$",
         RegexOptions.Compiled);
 
+    private static readonly Regex PageLocationRegex = new(
+        "^context\\.Page\\.Location\\s*==\\s*WorldLocation\\.(?<location>\\w+)$",
+        RegexOptions.Compiled);
+
     private readonly IBookRepository _bookRepository;
     private readonly IState<AdventureViewState> _viewState;
 
@@ -171,12 +175,28 @@ public sealed partial class AdventureService : IAdventureService
         var session = GetSession();
         var block = _bookRepository.GetBlock(blockId);
         var wasVisited = session.VisitedBlockIds.Contains(blockId);
+        var nextLocation = ResolveEffectiveLocation(session, block.Location);
+        var previousCity = TryGetCityLocation(session.GameState.City.Location, out var currentCity)
+            ? currentCity
+            : (WorldLocation?)null;
+        var nextCity = TryGetCityLocation(nextLocation, out var targetCity)
+            ? targetCity
+            : (WorldLocation?)null;
+
+        if (previousCity is not null && previousCity != nextCity)
+        {
+            session.VisitedCityLocations.Add(previousCity.Value);
+        }
+
+        var isCityVisited = nextCity is not null && session.VisitedCityLocations.Contains(nextCity.Value);
 
         session.CurrentBlockId = blockId;
         session.CurrentBlock = block;
         session.GameState.Page.Number = block.Id;
-        session.GameState.Page.Location = block.Location;
+        session.GameState.Page.Location = nextLocation;
         session.GameState.Page.IsVisited = wasVisited;
+        session.GameState.City.Location = nextCity ?? WorldLocation.Unknown;
+        session.GameState.City.IsVisited = isCityVisited;
 
         session.VisitedBlockIds.Add(blockId);
 
@@ -188,6 +208,36 @@ public sealed partial class AdventureService : IAdventureService
         _snapshot = viewState;
         await _viewState.UpdateAsync(_ => viewState, cancellationToken);
     }
+
+    private static WorldLocation ResolveEffectiveLocation(AdventureSession session, WorldLocation location)
+        => location == WorldLocation.Inherit
+            ? session.GameState.Page.Location
+            : location;
+
+    private static string GetPageText(AdventureSession session, BookBlock block)
+    {
+        if (string.IsNullOrWhiteSpace(block.RevisitText))
+        {
+            return block.Text;
+        }
+
+        var isCityRevisitBlock = UsesCityVisitedState(block);
+        if (isCityRevisitBlock && session.GameState.City.IsVisited)
+        {
+            return block.RevisitText!;
+        }
+
+        if (!isCityRevisitBlock && session.GameState.Page.IsVisited)
+        {
+            return block.RevisitText!;
+        }
+
+        return block.Text;
+    }
+
+    private static bool UsesCityVisitedState(BookBlock block)
+        => block.Choices.Any(choice =>
+            choice.Condition?.Text.Contains("context.City.IsVisited", StringComparison.Ordinal) == true);
 
     private AdventureViewState BuildViewState(AdventureSession session)
     {
@@ -215,10 +265,8 @@ public sealed partial class AdventureService : IAdventureService
             HasSession: true,
             BlockId: block.Id,
             BlockNumberText: $"Block {block.Id}",
-            LocationDisplay: GetLocationDisplayName(block.Location),
-            PageText: session.GameState.Page.IsVisited && !string.IsNullOrWhiteSpace(block.RevisitText)
-                ? block.RevisitText!
-                : block.Text,
+            LocationDisplay: GetLocationDisplayName(session.GameState.Page.Location),
+            PageText: GetPageText(session, block),
             Player: ProjectPlayer(session.GameState.Player),
             Robot: ProjectRobot(session.GameState.Robot),
             Inventory: inventory,
@@ -381,6 +429,25 @@ public sealed partial class AdventureService : IAdventureService
             return true;
         }
 
+        if (string.Equals(trimmed, "context.City.IsVisited", StringComparison.Ordinal))
+        {
+            result = gameState.City.IsVisited;
+            return true;
+        }
+
+        if (string.Equals(trimmed, "!context.City.IsVisited", StringComparison.Ordinal))
+        {
+            result = !gameState.City.IsVisited;
+            return true;
+        }
+
+        var locationMatch = PageLocationRegex.Match(trimmed);
+        if (locationMatch.Success && Enum.TryParse<WorldLocation>(locationMatch.Groups["location"].Value, out var location))
+        {
+            result = gameState.Page.Location == location;
+            return true;
+        }
+
         var inventoryMatch = InventoryContainsRegex.Match(trimmed);
         if (inventoryMatch.Success)
         {
@@ -401,6 +468,19 @@ public sealed partial class AdventureService : IAdventureService
 
         result = false;
         return false;
+    }
+
+    private static bool TryGetCityLocation(WorldLocation location, out WorldLocation cityLocation)
+    {
+        cityLocation = location;
+        return location is WorldLocation.CapitalCity
+            or WorldLocation.CityOfIndustry
+            or WorldLocation.CityOfKnowledge
+            or WorldLocation.CityOfPleasure
+            or WorldLocation.CityOfStorms
+            or WorldLocation.CityOfTheGuardians
+            or WorldLocation.CityOfTheJungle
+            or WorldLocation.CityOfWorship;
     }
 
     private EncounterState? GetActiveEncounter(AdventureSession session)
@@ -666,6 +746,8 @@ public sealed partial class AdventureService : IAdventureService
         public GameState GameState { get; }
 
         public HashSet<int> VisitedBlockIds { get; } = [];
+
+        public HashSet<WorldLocation> VisitedCityLocations { get; } = [];
 
         public int CurrentBlockId { get; set; }
 

@@ -6,6 +6,7 @@ public sealed class GameState
     public RobotState? Robot { get; set; }
     public InventoryState Inventory { get; init; } = new();
     public WorldState World { get; init; } = new();
+    public CityState City { get; init; } = new();
     public PageState Page { get; init; } = new();
     public DiceState Die { get; init; } = new();
 }
@@ -136,6 +137,12 @@ public sealed class WorldState
     public void AddFact(string fact) => _facts.Add(fact);
 
     public bool HasFact(string fact) => _facts.Contains(fact);
+}
+
+public sealed class CityState
+{
+    public WorldLocation Location { get; set; }
+    public bool IsVisited { get; set; }
 }
 
 public sealed class PageState

@@ -13,7 +13,7 @@ public sealed class BookBlockXmlStoreTests
         blocks.Select(block => block.Id).Should().BeInAscendingOrder();
 
         var cityOfKnowledge = blocks.Single(block => block.Id == 361);
-        cityOfKnowledge.RevisitText.Should().Be("You are in the City of Knowledge.");
+        cityOfKnowledge.RevisitText.Should().Be("You are back in the City of Knowledge.");
         cityOfKnowledge.Choices.Should().HaveCount(6);
 
         var interfaceTransponder = blocks.Single(block => block.Id == 392).Items.Single();

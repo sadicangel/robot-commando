@@ -17,7 +17,7 @@ public sealed class BookRepositoryTests
         repository.GetBlock(24).Robots.Should().ContainSingle(robot => robot.Name == "Cowboy");
         repository.GetBlock(39).Monsters.Should().ContainSingle(monster => monster.Name == "Tyrannosaurus");
         repository.GetBlock(39).Text.Should().Be("After several hours Of travel, you enter rocky terrain. The path narrows, and you are forced to use both of your robot's hands just to climb. You wish you were in a vehicle that could just fly over all this! Suddenly, you hear a roar. Looking behind you, you see a huge Tyrannosaurus sprinting through the rocks at you! Jaws agape, it lunges towards you, and robot and dinosaur fall to the ground, grappling fiercely. This huge meat-eater is the 'king of the dinosaurs', and attacks anything it sees to feed its savage appetite. You must fight it to the finish.");
-        repository.GetBlock(39).Choices.Select(choice => choice.Text).Should().Contain("If it reduces your robot's ARMOUR to 0.");
+        repository.GetBlock(39).Monsters.Single().BattleOutcome!.Lose.Should().Be(258);
         repository.GetBlock(207).Monsters.Should().ContainSingle(monster => monster.Name == "Robot Tyrannosaurus");
     }
 
@@ -32,12 +32,14 @@ public sealed class BookRepositoryTests
         var block26 = document.Blocks.Single(block => block.Id == 26);
         block26.Monsters.Should().ContainSingle(monster => monster.Name == "Air Fighter");
         block26.Text.Should().NotContain("AIR-FIGHTER ARMOUR7");
-        block26.Choices.Select(choice => choice.Text).Should().Contain("If your own robot's ARMOUR is reduced to 0.");
+        block26.Choices.Should().BeEmpty();
+        block26.Monsters.Single().BattleOutcome!.Lose.Should().Be(136);
 
         var block39 = document.Blocks.Single(block => block.Id == 39);
         block39.Monsters.Should().ContainSingle(monster => monster.Name == "Tyrannosaurus");
         block39.Text.Should().EndWith("You must fight it to the finish.");
-        block39.Choices.Select(choice => choice.Text).Should().Contain("If it reduces your robot's ARMOUR to 0.");
+        block39.Choices.Should().BeEmpty();
+        block39.Monsters.Single().BattleOutcome!.Lose.Should().Be(258);
 
         var block207 = document.Blocks.Single(block => block.Id == 207);
         block207.Monsters.Should().ContainSingle(monster => monster.Name == "Robot Tyrannosaurus");

@@ -94,59 +94,137 @@ public sealed class AdventureServiceTests
     }
 
     [Test]
-    public async Task RevisitingBlock_UsesRevisitTextAndVisitedChoiceFiltering()
+    public async Task RevisitingCity_AfterLeaving_UsesRevisitTextAndVisitedChoiceFiltering()
     {
-        var firstVisit = new BookBlock
+        var cityHub = new BookBlock
         {
             Id = 0,
             Location = WorldLocation.CityOfKnowledge,
             Text = "You arrive for the first time.",
             RevisitText = "You are back again."
         };
-        firstVisit.Choices.Add(new BookChoice
+        cityHub.Choices.Add(new BookChoice
         {
             To = 1,
-            Text = "Leave the square.",
-            Condition = "!context.Page.IsVisited"
+            Text = "Explore the square.",
+            Condition = "!context.City.IsVisited"
         });
-        firstVisit.Choices.Add(new BookChoice
+        cityHub.Choices.Add(new BookChoice
         {
-            To = 2,
+            To = 3,
             Text = "Visit the archive.",
-            Condition = "context.Page.IsVisited"
+            Condition = "context.City.IsVisited"
         });
 
-        var connector = new BookBlock
+        var sameCityStreet = new BookBlock
         {
             Id = 1,
-            Location = WorldLocation.Inherit,
+            Location = WorldLocation.CityOfKnowledge,
             Text = "An empty street."
         };
-        connector.Choices.Add(new BookChoice
+        sameCityStreet.Choices.Add(new BookChoice
         {
             To = 0,
-            Text = "Go back."
+            Text = "Return to the square."
+        });
+        sameCityStreet.Choices.Add(new BookChoice
+        {
+            To = 2,
+            Text = "Leave the city."
+        });
+
+        var outsideCity = new BookBlock
+        {
+            Id = 2,
+            Location = WorldLocation.Unknown,
+            Text = "Outside the city."
+        };
+        outsideCity.Choices.Add(new BookChoice
+        {
+            To = 0,
+            Text = "Return to the city."
         });
 
         var revisitDestination = new BookBlock
         {
-            Id = 2,
-            Location = WorldLocation.Inherit,
+            Id = 3,
+            Location = WorldLocation.CityOfKnowledge,
             Text = "Archive."
         };
 
-        var service = new AdventureService(new TestBookRepository(firstVisit, connector, revisitDestination));
+        var service = new AdventureService(new TestBookRepository(cityHub, sameCityStreet, outsideCity, revisitDestination));
 
         await service.StartNewGame();
         service.Snapshot.PageText.Should().Be("You arrive for the first time.");
-        service.Snapshot.Choices.Select(choice => choice.Text).Should().Equal("Leave the square.");
+        service.Snapshot.Choices.Select(choice => choice.Text).Should().Equal("Explore the square.");
 
         await service.SelectChoice("choice:0");
         await service.SelectChoice("choice:0");
 
         service.Snapshot.BlockId.Should().Be(0);
+        service.Snapshot.PageText.Should().Be("You arrive for the first time.");
+        service.Snapshot.Choices.Select(choice => choice.Text).Should().Equal("Explore the square.");
+
+        await service.SelectChoice("choice:0");
+        await service.SelectChoice("choice:1");
+        await service.SelectChoice("choice:0");
+
+        service.Snapshot.BlockId.Should().Be(0);
         service.Snapshot.PageText.Should().Be("You are back again.");
         service.Snapshot.Choices.Select(choice => choice.Text).Should().Equal("Visit the archive.");
+    }
+
+    [Test]
+    public async Task RevisitingSameBlock_BeforeLeavingCity_DoesNotCountAsCityRevisit()
+    {
+        var cityHub = new BookBlock
+        {
+            Id = 0,
+            Location = WorldLocation.CityOfKnowledge,
+            Text = "First city text.",
+            RevisitText = "City revisit text."
+        };
+        cityHub.Choices.Add(new BookChoice
+        {
+            To = 1,
+            Text = "Walk around.",
+            Condition = "!context.City.IsVisited"
+        });
+        cityHub.Choices.Add(new BookChoice
+        {
+            To = 2,
+            Text = "Use revisit route.",
+            Condition = "context.City.IsVisited"
+        });
+
+        var loop = new BookBlock
+        {
+            Id = 1,
+            Location = WorldLocation.Inherit,
+            Text = "Still in the same city."
+        };
+        loop.Choices.Add(new BookChoice
+        {
+            To = 0,
+            Text = "Loop back."
+        });
+
+        var revisitRoute = new BookBlock
+        {
+            Id = 2,
+            Location = WorldLocation.CityOfKnowledge,
+            Text = "Revisit route."
+        };
+
+        var service = new AdventureService(new TestBookRepository(cityHub, loop, revisitRoute));
+
+        await service.StartNewGame();
+        await service.SelectChoice("choice:0");
+        await service.SelectChoice("choice:0");
+
+        service.Snapshot.BlockId.Should().Be(0);
+        service.Snapshot.PageText.Should().Be("First city text.");
+        service.Snapshot.Choices.Select(choice => choice.Text).Should().Equal("Walk around.");
     }
 
     [Test]
